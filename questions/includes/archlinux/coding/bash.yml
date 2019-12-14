@@ -1,0 +1,29 @@
+tree:
+  children:
+    - title: arch-boxes
+      subtitle: the project that builds our Vagrant and cloud images
+      link: https://github.com/archlinux/arch-boxes
+
+    - title: archlinux-docker
+      subtitle: builds our official Arch Linux Docker images
+      link: https://github.com/archlinux/archlinux-docker
+
+    - title: contrib
+      subtitle: a toolbox with various useful scripts for package management
+      link: https://github.com/archlinux/contrib
+
+    - title: archlinux-repro
+      subtitle: tools to reproduce Arch Linux packages
+      link: https://github.com/archlinux/archlinux-repro
+
+    - title: mkinitcpio
+      subtitle: Arch Linux initramfs generation tools
+      link: https://github.com/archlinux/mkinitcpio
+
+    - title: asp
+      subtitle: Arch Linux build source management tool
+      link: https://github.com/archlinux/asp
+
+    - title: devtools
+      subtitle: tools for building Arch Linux packages
+      link: https://github.com/archlinux/devtools
