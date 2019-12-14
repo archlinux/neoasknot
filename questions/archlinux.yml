@@ -1,0 +1,37 @@
+title: What can I do for Arch Linux?
+description: What can I do for Arch Linux?
+favicon: https://www.archlinux.org/favicon.ico
+negatives:
+    - "No"
+    - Nope, nope, nope
+    - Nope
+    - No, thanks
+    - Not on your life
+    - Doesn't sound like me
+    - Absolutely not
+    - Next, please
+affirmatives:
+    - "Yes"
+    - Sounds awesome
+    - Tell me more
+    - That's me!
+    - Totally
+    - Sure
+backlinks:
+    - I was wrong, take me back
+    - I think I made a mistake
+    - Get me outta here!
+
+navlinks:
+    - name: Home
+      link: "javascript:reloadHome();"
+    - name: Get Arch Linux
+      link: https://archlinux.org/download/
+
+tree:
+  segue1: Want to help Arch Linux?  Tell me...
+  segue2: what's your area of interest?
+  children:
+  - title: Packaging!
+    subtitle: Trusted users
+    link: https://wiki.archlinux.org/index.php/Trusted_Users
