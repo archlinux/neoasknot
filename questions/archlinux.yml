@@ -33,5 +33,28 @@ tree:
   segue2: what's your area of interest?
   children:
   - title: Packaging!
-    subtitle: Trusted users
+    subtitle: Join the trusted users
     link: https://wiki.archlinux.org/index.php/Trusted_Users
+
+  - title: Security!
+    subtitle: Join the Security Team
+    link: https://wiki.archlinux.org/index.php/Arch_Security_Team
+
+  - title: Housekeeping the Wiki!
+    subtitle: Help cleaning and maintaining the ArchWiki
+    link: https://wiki.archlinux.org
+
+  - title: Assigning bugs!
+    subtitle: Help managing the endless number of bugs and assign them to maintainers
+    link: https://bugs.archlinux.org
+
+  - title: Infrastructure!
+    subtitle: Join the DevOps team and keep our servers running
+    link: https://projects.archlinux.org
+
+  - title: Code!
+    subtitle: Software is our daily prayer..
+    segue1: Nice! We need people who can code.
+    segue2: Which language do you like at most?
+    children: includes/archlinux/coding.yml
+
