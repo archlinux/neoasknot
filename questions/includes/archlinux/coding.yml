@@ -1,5 +1,11 @@
 tree:
   children:
+    - title: Bash
+      subtitle: simple but loved <3
+      segue1: So, you enjoy writing bash, because it's fast and easy?
+      segue2: Are you interested in hacking on...
+      children: coding/bash.yml
+
     - title: Python
       subtitle: a dynamic language for rapid development
       segue1: So, you enjoy traceback-driven development?  What could go wrong?
