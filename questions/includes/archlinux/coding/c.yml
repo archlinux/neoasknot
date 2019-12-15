@@ -1,21 +1,17 @@
 tree:
   children:
-    - title: OSTree
-      subtitle: git for operating system binaries
-      link: https://ostree.readthedocs.io/en/latest/
+    - title: Linux
+      subtitle: Arch Linux kernel sources, with patches
+      link: https://git.archlinux.org/linux.git/
 
-    - title: systemd
-      subtitle: widely renowned init system and suite of building blocks
-      link: http://www.freedesktop.org/wiki/Software/systemd/
+    - title: linux-hardened
+      subtitle: Minimal supplement to upstream Kernel Self Protection Project changes
+      link: https://github.com/anthraxx/linux-hardened
 
-    - title: Cockpit
-      subtitle: a server manager that makes it easy to administer via a web browser
-      link: http://cockpit-project.org/
+    - title: pacman
+      subtitle: library-based package manager with dependency suppor
+      link: https://git.archlinux.org/pacman.git/
 
-    - title: GNOME
-      subtitle: an easy and elegant way to use your computer
-      link: http://www.gnome.org/gnome-3/source/
-
-    - title: The Linux Kernel
-      subtitle: that thing that connects application software to the hardware of a computer
-      link: http://kernelnewbies.org/FirstKernelPatch
+    - title: pyalpm
+      subtitle: C extension for Python 3 that give access to the libalpm API for package management
+      link: https://git.archlinux.org/pyalpm.git/

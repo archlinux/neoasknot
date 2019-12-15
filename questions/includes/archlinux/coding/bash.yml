@@ -4,26 +4,58 @@ tree:
       subtitle: the project that builds our Vagrant and cloud images
       link: https://github.com/archlinux/arch-boxes
 
+    - title: arch-install-scripts
+      subtitle: small suite of scripts aimed at automating some menial tasks when installing Arch Linux
+      link: https://git.archlinux.org/arch-install-scripts.git/
+
+    - title: archboot
+      subtitle: set of scripts to generate bootable media for CD/USB/PXE, designed for installation or rescue operation
+      link: https://git.archlinux.org/archboot.git/
+
+    - title: archiso
+      subtitle: small set of bash scripts capable of building fully functional Arch Linux live CD/DVD/USB images
+      link: https://git.archlinux.org/archiso.git/
+
     - title: archlinux-docker
       subtitle: builds our official Arch Linux Docker images
       link: https://github.com/archlinux/archlinux-docker
-
-    - title: contrib
-      subtitle: a toolbox with various useful scripts for package management
-      link: https://github.com/archlinux/contrib
 
     - title: archlinux-repro
       subtitle: tools to reproduce Arch Linux packages
       link: https://github.com/archlinux/archlinux-repro
 
-    - title: mkinitcpio
-      subtitle: Arch Linux initramfs generation tools
-      link: https://github.com/archlinux/mkinitcpio
-
     - title: asp
       subtitle: Arch Linux build source management tool
       link: https://github.com/archlinux/asp
 
+    - title: contrib
+      subtitle: a toolbox with various useful scripts for package management
+      link: https://github.com/archlinux/contrib
+
+    - title: dbscripts
+      subtitle: Arch Linux repository management scripts
+      link: https://git.archlinux.org/dbscripts.git/
+
     - title: devtools
       subtitle: tools for building Arch Linux packages
-      link: https://github.com/archlinux/devtools
+      link: https://git.archlinux.org/devtools.git/
+
+    - title: infrastructure
+      subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
+      link: https://git.archlinux.org/infrastructure.git/
+
+    - title: mkinitcpio
+      subtitle: Arch Linux initramfs generation tools
+      link: https://git.archlinux.org/mkinitcpio.git/
+
+    - title: netctl
+      subtitle: profile based systemd network management
+      link: https://git.archlinux.org/netctl.git/
+
+    - title: pacman
+      subtitle: library-based package manager with dependency suppor
+      link: https://git.archlinux.org/pacman.git/
+
+    - title: pacman-contrib
+      subtitle: contributed scripts to pacman
+      link: https://git.archlinux.org/pacman-contrib.git/
