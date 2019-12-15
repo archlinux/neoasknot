@@ -6,6 +6,12 @@ tree:
       segue2: Are you interested in hacking on...
       children: coding/bash.yml
 
+    - title: Perl
+      subtitle: general-purpose programming language
+      segue1: So, you enjoy practicality?  What could go wrong?
+      segue2: Are you interested in hacking on...
+      children: coding/perl.yml
+
     - title: Python
       subtitle: a dynamic language for rapid development
       segue1: So, you enjoy traceback-driven development?  What could go wrong?

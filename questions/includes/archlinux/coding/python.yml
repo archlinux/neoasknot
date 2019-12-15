@@ -4,22 +4,42 @@ tree:
       subtitle: the project that builds our Vagrant and cloud images
       link: https://github.com/archlinux/arch-boxes
 
-    - title: contrib
-      subtitle: a toolbox with various useful scripts for package management
-      link: https://github.com/archlinux/contrib
+    - title: arch-repo-management
+      subtitle: our next-generation repository management tools for migrating to git
+      link: https://github.com/archlinux/arch-repo-management
 
     - title: arch-security-tracker
       subtitle: a CVE tracker for our packages written with flask
       link: https://github.com/archlinux/arch-security-tracker
 
-    - title: arch-repo-management
-      subtitle: our next-generation repository management tools for migrating to git
-      link: https://github.com/archlinux/arch-repo-management
-
     - title: arch-signoff
       subtitle: software for package signoffs for testing
       link: https://github.com/archlinux/arch-signoff
 
+    - title: contrib
+      subtitle: a toolbox with various useful scripts for package management
+      link: https://github.com/archlinux/contrib
+
+    - title: dbscripts
+      subtitle: Arch Linux repository management scripts
+      link: https://git.archlinux.org/dbscripts.git/
+
+    - title: infrastructure
+      subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
+      link: https://git.archlinux.org/infrastructure.git/
+
     - title: namcap
       subtitle: tool for checking binary packages and source PKGBUILDs
       link: https://git.archlinux.org/namcap.git/
+
+    - title: pacman
+      subtitle: library-based package manager with dependency suppor
+      link: https://git.archlinux.org/pacman.git/
+
+    - title: pacman-contrib
+      subtitle: contributed scripts to pacman
+      link: https://git.archlinux.org/pacman-contrib.git/
+
+    - title: pyalpm
+      subtitle: C extension for Python 3 that give access to the libalpm API for package management
+      link: https://git.archlinux.org/pyalpm.git/

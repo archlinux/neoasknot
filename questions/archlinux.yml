@@ -58,7 +58,6 @@ tree:
     segue2: Which language do you like at most?
     children: includes/archlinux/coding.yml
 
-  - title: Reproducible packages?!
-    subtitle: Making Arch Linux more secure by reproducible building packages?
-    link: https://archlinux.org
-
+  - title: Reproducible packages!
+    subtitle: Make Arch Linux more secure with reproducible package builds
+    link: https://github.com/archlinux/archlinux-repro
