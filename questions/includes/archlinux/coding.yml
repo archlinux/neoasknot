@@ -6,6 +6,12 @@ tree:
       segue2: Are you interested in hacking on...
       children: coding/bash.yml
 
+    - title: Perl
+      subtitle: general-purpose programming language
+      segue1: So, you enjoy practicality?  What could go wrong?
+      segue2: Are you interested in hacking on...
+      children: coding/perl.yml
+
     - title: Python
       subtitle: a dynamic language for rapid development
       segue1: So, you enjoy traceback-driven development?  What could go wrong?
@@ -28,13 +34,3 @@ tree:
           segue1: Great!
           segue2: Would you like something more
           children: coding/web.yml
-
-    - title: Ruby
-      subtitle: hashrockets and bare words
-      link: https://fedoraproject.org/wiki/Ruby_SIG
-
-    - title: C++
-      subtitle: imperative and object-oriented with the power of low-level memory manipulation
-      segue1: So, you're not happy if your error messages are comprehensible?  We have a place for you.
-      segue2: Try digging into...
-      children: coding/c++.yml
