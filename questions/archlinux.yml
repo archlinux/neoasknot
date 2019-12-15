@@ -62,3 +62,9 @@ tree:
     subtitle: Making Arch Linux more secure by reproducible building packages?
     link: https://archlinux.org
 
+  - title: Translations
+    subtitle: Do you like spoken languages?
+    segue1: Cool! We need people like you
+    segue2: Which project do you want to support?
+    children: includes/archlinux/translation.yml
+

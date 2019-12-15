@@ -18,24 +18,6 @@ tree:
       segue2: How about working on...
       children: coding/c.yml
 
-    - title: Haskell
-      subtitle: a nondynamic language for rapid development
-      segue1: So, programming without side-effects is what you're all about?  Sounds useful!
-      segue2: How about...
-      children: coding/haskell.yml
-
-    - title: Java
-      subtitle: a nondynamic language for nonrapid development
-      segue1: So you're a believer in <code>AbstractMethodFactoryBean</code>s?  Straightforward enough...
-      segue2: How about...
-      children: coding/java.yml
-
-    - title: Scala
-      subtitle: a nondynamic language for semirapid development
-      segue1: So, just OOP or functional languages wouldn't do it?  You had to have both, huh?
-      segue2: How about working on...
-      children: coding/scala.yml
-
     - title: JavaScript
       subtitle: a dynamic web-oriented language for backend and frontend
       segue1: So, you think having native integers is over-rated?  What could go wrong?
