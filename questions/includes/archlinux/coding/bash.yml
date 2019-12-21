@@ -16,6 +16,10 @@ tree:
       subtitle: small set of bash scripts capable of building fully functional Arch Linux live CD/DVD/USB images
       link: https://git.archlinux.org/archiso.git/
 
+    - title: archivetools
+      subtitle: used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and boostrap tarballs
+      link: https://github.com/archlinux/archivetools
+
     - title: archlinux-docker
       subtitle: builds our official Arch Linux Docker images
       link: https://github.com/archlinux/archlinux-docker
