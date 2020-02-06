@@ -3,3 +3,11 @@ tree:
     - title: asknot-ng
       subtitle: is this cool landing page here
       link: https://github.com/shibumi/asknot-ng
+
+    - title: aurweb
+      subtitle: Arch User Repository (AUR)
+      link: https://www.transifex.com/lfleischer/aurweb/
+
+    - title: pacman
+      subtitle: library-based package manager with dependency support
+      link: https://www.transifex.com/toofishes/archlinux-pacman/

@@ -4,12 +4,8 @@ tree:
       subtitle: Arch Linux kernel sources, with patches
       link: https://git.archlinux.org/linux.git/
 
-    - title: linux-hardened
-      subtitle: Minimal supplement to upstream Kernel Self Protection Project changes
-      link: https://github.com/anthraxx/linux-hardened
-
     - title: pacman
-      subtitle: library-based package manager with dependency suppor
+      subtitle: library-based package manager with dependency support
       link: https://git.archlinux.org/pacman.git/
 
     - title: pyalpm
