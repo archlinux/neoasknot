@@ -1,6 +1,6 @@
 title: What can I do for Arch?
 description: What can I do for Arch?
-favicon: https://getfedora.org/static/images/favicon.ico
+favicon: https://raw.githubusercontent.com/archlinux/archweb/master/sitestatic/favicon.ico
 google-site-verification: a-S_XZt6rQej92LXTbscezXa1RLTN1KoaLoPUyvwAGM
 negatives:
     - "No"
