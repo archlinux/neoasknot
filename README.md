@@ -33,7 +33,7 @@ We have a [Fedora instance up and running][wcidff] if you’d like to poke it.
 The site-generator script is written in Python, so you’ll need that.
 Furthermore, see [requirements.txt][requirements] or just run::
 
-    $ sudo pacman -S python-yaml python-mako python-virtualenv
+    $ sudo pacman -S python-mako python-yaml python-virtualenv
 
 The script can optionally generate an svg visualizing your question tree.  This
 requires pygraphviz which you could install like so:
@@ -57,10 +57,8 @@ Create a virtualenv into which you can install the module.
 
 Run the script with the Fedora configuration::
 
-    $ ./asknot-ng.py templates/index.html questions/arch.yml l10n/arch/locale --theme arch
-    
-    
-Wrote build/en/index.html
+    $ ./asknot-ng.py templates/index.html questions/archlinux.yml l10n/arch/locale --theme arch
+    Wrote build/en/index.html
 
 and open up `build/en/index.html` in your favorite browser.
 

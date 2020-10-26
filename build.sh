@@ -4,6 +4,6 @@
 
 python3 asknot-ng.py \
 	templates/index.html \
-	questions/arch.yml \
+	questions/archlinux.yml \
 	l10n/arch/locale \
 	--theme arch
