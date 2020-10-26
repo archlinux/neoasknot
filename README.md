@@ -26,6 +26,8 @@ that works like a static-site generator.  It takes as input three things:
 
 We have a [Fedora instance up and running][wcidff] if you’d like to poke it.
 
+[![Translation status](https://translate.fedoraproject.org/widgets/fedora-infra/-/asknot-ng/287x66-grey.png)](https://translate.fedoraproject.org/engage/fedora-infra/?utm_source=widget)
+
 ## Requirements
 
 The site-generator script is written in Python, so you’ll need that.
@@ -71,7 +73,7 @@ First, setup a virtualenv, install Babel, and build the egg info.
 
 Then, extract the translatable strings:
 
-    $ python setup.py extract_messages --output-file l10n/fedora/locale/asknot-ng.pot
+    $ python setup.py extract_messages --output-file l10n/fedora/locale/asknot-ng.pot --input-dir=.
 
 ## Container
 
@@ -107,7 +109,7 @@ In your Favorite Browser Just type:
  localhost:8080
 ```
 
-## ## Application Deployment
+## Application Deployment
 
 ``asknot-ng`` currently runs on Fedora infrastructure Openshift instance. There are 2 deployments one in [staging] and one in [production].
 

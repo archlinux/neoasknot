@@ -8,11 +8,14 @@ RUN dnf -y install gettext python3-setuptools python3-pyyaml python3-mako python
 FROM fedora:latest
 
 COPY --from=builder /code/build /var/www/html/
+COPY --from=builder /code/container/l10n.conf /etc/httpd/conf/l10n.conf
 COPY container/favicon.ico /var/www/html/static/image/favicon.ico
 COPY container/whatcanidoforfedora-web.conf /etc/httpd/conf/httpd.conf
 RUN dnf -y install httpd && dnf clean all\
     && chown apache:0 /etc/httpd/conf/httpd.conf \
     && chmod g+r /etc/httpd/conf/httpd.conf \
+    && chown apache:0 /etc/httpd/conf/l10n.conf \
+    && chmod g+r /etc/httpd/conf/l10n.conf \
     && chown apache:0 /var/log/httpd  \
     && chmod g+rwX /var/log/httpd \
     && chown apache:0 /var/run/httpd \
