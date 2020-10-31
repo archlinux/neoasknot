@@ -1,8 +1,8 @@
 tree:
   children:
     - title: asknot-ng
-      subtitle: is this cool landing page here
-      link: https://github.com/shibumi/asknot-ng
+      subtitle: Contribution landing page for Arch Linux
+      link: https://github.com/archlinux/asknot-ng
 
     - title: aurweb
       subtitle: Arch User Repository (AUR)

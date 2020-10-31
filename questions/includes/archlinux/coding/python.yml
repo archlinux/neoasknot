@@ -2,11 +2,11 @@ tree:
   children:
     - title: arch-boxes
       subtitle: the project that builds our Vagrant and cloud images
-      link: https://github.com/archlinux/arch-boxes
+      link: https://gitlab.archlinux.org/archlinux/arch-boxes
 
     - title: arch-repo-management
       subtitle: our next-generation repository management tools for migrating to git
-      link: https://github.com/archlinux/arch-repo-management
+      link: https://gitlab.archlinux.org/archlinux/arch-repo-management
 
     - title: arch-security-tracker
       subtitle: a CVE tracker for our packages written with flask
@@ -14,11 +14,11 @@ tree:
 
     - title: arch-signoff
       subtitle: software for package signoffs for testing
-      link: https://github.com/archlinux/arch-signoff
+      link: https://gitlab.archlinux.org/archlinux/arch-signoff
 
     - title: archivetools
       subtitle: used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and boostrap tarballs
-      link: https://github.com/archlinux/archivetools
+      link: https://gitlab.archlinux.org/archlinux/archivetools
 
     - title: contrib
       subtitle: a toolbox with various useful scripts for package management
@@ -30,7 +30,7 @@ tree:
 
     - title: infrastructure
       subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
-      link: https://git.archlinux.org/infrastructure.git/
+      link: https://gitlab.archlinux.org/archlinux/infrastructure
 
     - title: namcap
       subtitle: tool for checking binary packages and source PKGBUILDs
@@ -46,4 +46,4 @@ tree:
 
     - title: pyalpm
       subtitle: C extension for Python 3 that give access to the libalpm API for package management
-      link: https://git.archlinux.org/pyalpm.git/
+      link: https://gitlab.archlinux.org/archlinux/pyalpm

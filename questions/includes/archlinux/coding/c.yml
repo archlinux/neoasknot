@@ -10,4 +10,4 @@ tree:
 
     - title: pyalpm
       subtitle: C extension for Python 3 that give access to the libalpm API for package management
-      link: https://git.archlinux.org/pyalpm.git/
+      link: https://gitlab.archlinux.org/archlinux/pyalpm

@@ -2,69 +2,68 @@ title: What can I do for Arch Linux?
 description: What can I do for Arch Linux?
 favicon: https://www.archlinux.org/favicon.ico
 negatives:
-    - "No"
-    - Nope, nope, nope
-    - Nope
-    - No, thanks
-    - Not on your life
-    - Doesn't sound like me
-    - Absolutely not
-    - Next, please
+  - "No"
+  - Nope, nope, nope
+  - Nope
+  - No, thanks
+  - Not on your life
+  - Doesn't sound like me
+  - Absolutely not
+  - Next, please
 affirmatives:
-    - "Yes"
-    - Sounds awesome
-    - Tell me more
-    - That's me!
-    - Totally
-    - Sure
+  - "Yes"
+  - Sounds awesome
+  - Tell me more
+  - That's me!
+  - Totally
+  - Sure
 backlinks:
-    - I was wrong, take me back
-    - I think I made a mistake
-    - Get me outta here!
+  - I was wrong, take me back
+  - I think I made a mistake
+  - Get me outta here!
 
 navlinks:
-    - name: Home
-      link: "javascript:reloadHome();"
-    - name: Get Arch Linux
-      link: https://archlinux.org/download/
+  - name: Home
+    link: "javascript:reloadHome();"
+  - name: Get Arch Linux
+    link: https://archlinux.org/download/
 
 tree:
   segue1: Want to help Arch Linux?  Tell me...
   segue2: what's your area of interest?
   children:
-  - title: Packaging!
-    subtitle: Join the trusted users
-    link: https://wiki.archlinux.org/index.php/Trusted_Users
+    - title: Packaging!
+      subtitle: Join the trusted users
+      link: https://wiki.archlinux.org/index.php/Trusted_Users
 
-  - title: Security!
-    subtitle: Join the Security Team
-    link: https://wiki.archlinux.org/index.php/Arch_Security_Team
+    - title: Security!
+      subtitle: Join the Security Team
+      link: https://wiki.archlinux.org/index.php/Arch_Security_Team
 
-  - title: Housekeeping the Wiki!
-    subtitle: Help cleaning and maintaining the ArchWiki
-    link: https://wiki.archlinux.org
+    - title: Housekeeping the Wiki!
+      subtitle: Help cleaning and maintaining the ArchWiki
+      link: https://wiki.archlinux.org
 
-  - title: Assigning bugs!
-    subtitle: Help managing the endless number of bugs and assign them to maintainers
-    link: https://bugs.archlinux.org
+    - title: Assigning bugs!
+      subtitle: Help managing the endless number of bugs and assign them to maintainers
+      link: https://bugs.archlinux.org
 
-  - title: Infrastructure!
-    subtitle: Join the DevOps team and keep our servers running
-    link: https://projects.archlinux.org
+    - title: Infrastructure!
+      subtitle: Join the DevOps team and keep our servers running
+      link: https://gitlab.archlinux.org/archlinux/infrastructure
 
-  - title: Code!
-    subtitle: Software is our daily prayer..
-    segue1: Nice! We need people who can code.
-    segue2: Which language do you like at most?
-    children: includes/archlinux/coding.yml
+    - title: Code!
+      subtitle: Software is our daily prayer..
+      segue1: Nice! We need people who can code
+      segue2: Which language do you like at most?
+      children: includes/archlinux/coding.yml
 
-  - title: Reproducible packages!
-    subtitle: Making Arch Linux more secure by reproducible building packages?
-    link: https://archlinux.org
+    - title: Reproducible packages!
+      subtitle: Make Arch Linux more secure with reproducible package builds
+      link: https://reproducible.archlinux.org/
 
-  - title: Translations
-    subtitle: Do you like spoken languages?
-    segue1: Cool! We need people like you
-    segue2: Which project do you want to support?
-    children: includes/archlinux/translation.yml
-
+    - title: Translations
+      subtitle: Do you like spoken languages?
+      segue1: Cool! We need people like you
+      segue2: Which project do you want to support?
+      children: includes/archlinux/translation.yml

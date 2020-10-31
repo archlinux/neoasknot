@@ -2,7 +2,7 @@ tree:
   children:
     - title: arch-boxes
       subtitle: the project that builds our Vagrant and cloud images
-      link: https://github.com/archlinux/arch-boxes
+      link: https://gitlab.archlinux.org/archlinux/arch-boxes
 
     - title: arch-install-scripts
       subtitle: small suite of scripts aimed at automating some menial tasks when installing Arch Linux
@@ -14,15 +14,15 @@ tree:
 
     - title: archiso
       subtitle: small set of bash scripts capable of building fully functional Arch Linux live CD/DVD/USB images
-      link: https://git.archlinux.org/archiso.git/
+      link: https://gitlab.archlinux.org/archlinux/archiso
 
     - title: archivetools
       subtitle: used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and boostrap tarballs
-      link: https://github.com/archlinux/archivetools
+      link: https://gitlab.archlinux.org/archlinux/archivetools
 
     - title: archlinux-docker
       subtitle: builds our official Arch Linux Docker images
-      link: https://github.com/archlinux/archlinux-docker
+      link: https://gitlab.archlinux.org/archlinux/archlinux-docker
 
     - title: archlinux-repro
       subtitle: tools to reproduce Arch Linux packages
@@ -46,7 +46,7 @@ tree:
 
     - title: infrastructure
       subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
-      link: https://git.archlinux.org/infrastructure.git/
+      link: https://gitlab.archlinux.org/archlinux/infrastructure
 
     - title: mkinitcpio
       subtitle: Arch Linux initramfs generation tools

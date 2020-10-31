@@ -1,16 +1,16 @@
 tree:
   children:
-      - title: archweb
-        subtitle: Arch Linux website code
-        # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-        link: https://git.archlinux.org/archweb.git/
+    - title: archweb
+      subtitle: Arch Linux website code
+      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
+      link: https://git.archlinux.org/archweb.git/
 
-      - title: aurweb
-        subtitle: Arch User Repository (AUR)
-        # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-        link: https://git.archlinux.org/aurweb.git/
+    - title: asknot-ng
+      subtitle: Contribution landing page for Arch Linux
+      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
+      link: https://github.com/archlinux/asknot-ng
 
-      - title: AskNot Site
-        subtitle: this thing -- the page you're looking at right now!
-        # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-        link: https://github.com/fedora-infra/asknot-ng
+    - title: aurweb
+      subtitle: Arch User Repository (AUR)
+      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
+      link: https://gitlab.archlinux.org/archlinux/aurweb
