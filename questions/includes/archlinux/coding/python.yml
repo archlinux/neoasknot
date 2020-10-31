@@ -20,6 +20,10 @@ tree:
       subtitle: used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and boostrap tarballs
       link: https://gitlab.archlinux.org/archlinux/archivetools
 
+    - title: bugbot
+      subtitle: Arch Linux \#archlinux-bugs bug bot
+      link: https://gitlab.archlinux.org/archlinux/bugbot
+
     - title: contrib
       subtitle: a toolbox with various useful scripts for package management
       link: https://github.com/archlinux/contrib
