@@ -1,0 +1,30 @@
+.artifacts:
+  artifacts:
+    paths:
+      - public
+
+build:
+  extends: .artifacts
+  image: python:alpine
+  before_script:
+    - apk add py3-mako py3-yaml
+    - python -m venv --system-site-packages venv
+    - source venv/bin/activate
+    - python setup.py develop
+  script:
+    - ./asknot-ng.py templates/index.html questions/archlinux.yml
+      l10n/fedora/locale --theme archlinux
+  after_script:
+    - mv build/en public
+
+pages:
+  extends: .artifacts
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  image: alpine
+  script:
+    find public -type f -regex '.*\.\(css\|html\|jpg|js\|png\)' -exec
+    gzip -k {} +
+  only:
+    - archlinux
