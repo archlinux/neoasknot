@@ -3,7 +3,7 @@
     paths:
       - public
 
-build:
+.build:
   extends: .artifacts
   image: python:alpine
   before_script:
@@ -17,7 +17,25 @@ build:
   after_script:
     - mv build/en public
 
+build:
+  extends: .build
+  except:
+    - archlinux
+    - schedules
+    - tags
+
+build:secure:
+  extends: .build
+  tags:
+    - secure
+  only:
+    - archlinux
+    - schedules
+    - tags
+
 pages:
+  tags:
+    - secure
   extends: .artifacts
   stage: deploy
   variables:
