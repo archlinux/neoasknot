@@ -17,7 +17,12 @@ default:
     - ./asknot-ng.py templates/index.html questions/archlinux.yml
       l10n/fedora/locale --theme archlinux
   after_script:
-    - mv build/en public
+    - mv build public
+    - |
+      cat << EOF > public/_redirects
+      / /en/ 302
+      /index.html /en/index.html 302
+      EOF
 
 build:
   extends: .build
