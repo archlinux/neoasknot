@@ -47,8 +47,12 @@ pages:
   stage: deploy
   variables:
     GIT_STRATEGY: none
+  before_script:
+    - pacman -Syu --noconfirm brotli
   script:
-    - find public -type f -regex '.*\.\(css\|html\|jpg|js\|png\)' -exec
+    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\)' -exec
       gzip -k {} +
+    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\)' -exec
+      brotli {} +
   only:
     - archlinux
