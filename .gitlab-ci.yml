@@ -50,9 +50,9 @@ pages:
   before_script:
     - pacman -Syu --noconfirm brotli
   script:
-    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\)' -exec
+    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\|svg\)' -exec
       gzip -k {} +
-    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\)' -exec
+    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\|svg\)' -exec
       brotli {} +
   only:
     - archlinux
