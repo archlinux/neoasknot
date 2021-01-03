@@ -10,9 +10,6 @@ default:
   extends: .artifacts
   before_script:
     - pacman -Syu --noconfirm python-mako python-yaml
-    - python -m venv --system-site-packages venv
-    - source venv/bin/activate
-    - python setup.py develop
   script:
     - ./asknot-ng.py templates/index.html questions/archlinux.yml
       l10n/fedora/locale --theme archlinux
