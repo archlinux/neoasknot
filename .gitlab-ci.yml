@@ -6,6 +6,12 @@ default:
     paths:
       - public
 
+validate_yaml:
+  before_script:
+    - pacman -Syu --noconfirm python-nose python-yaml
+  script:
+    - nosetests
+
 .build:
   extends: .artifacts
   before_script:
