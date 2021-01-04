@@ -6,11 +6,12 @@ default:
     paths:
       - public
 
-validate_yaml:
+validate yaml:
   before_script:
-    - pacman -Syu --noconfirm python-nose python-yaml
+    - pacman -Syu --noconfirm python-nose yamllint
   script:
     - nosetests
+    - yamllint questions
 
 .build:
   extends: .artifacts
@@ -18,9 +19,8 @@ validate_yaml:
     - pacman -Syu --noconfirm python-mako python-yaml
   script:
     - ./asknot-ng.py templates/index.html questions/archlinux.yml
-      l10n/fedora/locale --theme archlinux
+      l10n/fedora/locale --theme archlinux --build public
   after_script:
-    - mv build public
     - |
       cat << EOF > public/_redirects
       / /en/ 302
