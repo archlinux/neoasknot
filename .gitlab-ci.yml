@@ -8,9 +8,8 @@ default:
 
 validate yaml:
   before_script:
-    - pacman -Syu --noconfirm python-nose yamllint
+    - pacman -Syu --noconfirm yamllint
   script:
-    - nosetests
     - yamllint questions
 
 .build:
