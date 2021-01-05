@@ -6,7 +6,7 @@ default:
     paths:
       - public
 
-validate yaml:
+lint:
   before_script:
     - pacman -Syu --noconfirm yamllint
   script:
@@ -58,3 +58,5 @@ pages:
       brotli {} +
   only:
     - archlinux
+  except:
+    - schedules
