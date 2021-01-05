@@ -3,6 +3,7 @@
 *.pyc
 *.egg-info
 build
+public
 *.mo
 env
 venv
