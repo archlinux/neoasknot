@@ -27,6 +27,7 @@ lint:
   before_script:
     - pacman -Syu --noconfirm python-mako python-yaml
   script:
+    - ./compile-translations.sh
     - ./asknot-ng.py templates/index.html questions/archlinux.yml
       l10n/fedora/locale --theme archlinux --build public
   after_script:
