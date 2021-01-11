@@ -1,9 +1,5 @@
 tree:
   children:
-    - title: Linux
-      subtitle: Arch Linux kernel sources, with patches
-      link: https://git.archlinux.org/linux.git/
-
     - title: pacman
       subtitle: library-based package manager with dependency support
       link: https://git.archlinux.org/pacman.git/
