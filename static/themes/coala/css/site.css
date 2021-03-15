@@ -40,19 +40,14 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
-  height: -webkit-calc(100% - 40px);
-  height: -moz-calc(100% - 40px);
   height: calc(100% - 40px);
 }
 .cover-container {
   position: relative;
   top: 40%;
-  -webkit-transform: translateY(-45%);
-  -ms-transform: translateY(-45%);
   transform: translateY(-45%);
   width: 100%;
 }
