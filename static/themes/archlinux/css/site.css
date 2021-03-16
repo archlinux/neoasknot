@@ -234,21 +234,13 @@ body {
     .bandana {
       min-height: 200px;
       background-image:
-        -moz-radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
-        -moz-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
-        -moz-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
-      background-image:
         -webkit-radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
         -webkit-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
         -webkit-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
       background-image:
-        -o-radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
-        -o-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
-        -o-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
-      background-image:
-        radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
-        radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
-        radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
+        radial-gradient(ellipse farthest-side at center top, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
+        radial-gradient(ellipse farthest-side at center top, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
+        radial-gradient(ellipse farthest-side at center top, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
       background-size: 100% 5px, 100% 20px, 100% 35px;
       background-repeat: no-repeat;
     }
