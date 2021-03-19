@@ -21,8 +21,7 @@ function hashSelect(first) {
     });
     if (! found) {
         $("#" + first).removeClass('hidden');
-        var original = location.href.replace(/\/$/, "");
-        history.pushState({}, '', original + SEP + first);
+        history.pushState({}, '', location.href + SEP + first);
     }
 }
 
