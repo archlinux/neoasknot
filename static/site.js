@@ -66,6 +66,5 @@ $(document).ready(function() {
 
 });
 function reloadHome() {
-    window.location = "#";
-    window.location.reload();
+    window.location = "#" + question_tree.children[0].id;
 }
