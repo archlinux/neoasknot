@@ -1,65 +1,78 @@
 function hashSelect(first) {
     console.log("Changing to new hash...");
     var found = false;
-    $.each(all_ids, function(i, idx) {
-        var curr = $('#' + idx);
+    all_ids.forEach(idx => {
+        var curr = document.querySelector('#' + idx);
         if (location.href.endsWith(SEP + idx)) {
-            curr.removeClass('hidden');
+            curr.classList.remove('hidden');
             found = true;
         }
         else {
-            var isHidden = curr.hasClass('hidden');
+            var isHidden = curr.classList.contains('hidden');
             if (! isHidden) {
-                curr.addClass('hidden');
+                curr.classList.add('hidden');
             }
         }
     });
     if (! found) {
-        $("#" + first).removeClass('hidden');
+        document.querySelector("#" + first).classList.remove('hidden');
         history.pushState({}, '', location.href + SEP + first);
     }
 }
 
-$(document).ready(function() {
-    // First thing.. hide the warning about javascript being required.
-    $("#js-warning").addClass('hidden');
+var ready = (callback) => {
+    if (document.readyState != "loading") callback();
+    else document.addEventListener("DOMContentLoaded", callback);
+};
 
+ready(() => {
+    // First thing.. hide the warning about javascript being required.
+    document.querySelector("#js-warning").classList.add('hidden');
+
+    all_ids.shift()
     var first = question_tree.children[0].id;
     hashSelect(first);
 
     // Wire up the "yes" links
-    $("a.yes").click(function(event) {
-        $(this).parent().parent().addClass('hidden');
-        var next = $(this).attr('data-next');
-        $('#' + next).removeClass('hidden');
-        var original = location.href.replace(/\/$/, "");
-        history.pushState({}, '', original + SEP + next);
+    document.querySelectorAll("a.yes").forEach((yes) => {
+        yes.addEventListener("click", (e) => {
+            e.currentTarget.parentElement.parentElement.classList.add('hidden');
+            var next = e.currentTarget.getAttribute('data-next');
+            document.querySelector('#' + next).classList.remove('hidden');
+            var original = location.href.replace(/\/$/, "");
+            history.pushState({}, '', original + SEP + next);
+        });
     });
 
     // Wire up the "nope" links
-    $("a.nope").click(function(event) {
-        $(this).parent().parent().addClass('hidden');
-        var next = $(this).attr('data-next');
-        $('#' + next).removeClass('hidden');
-        var tokens = location.href.replace(/\/$/, "").split(SEP).slice(0, -1);
-        tokens.push(next);
-        history.replaceState({}, '', tokens.join(SEP));
+    document.querySelectorAll("a.nope").forEach((nope) => {
+        nope.addEventListener("click", (e) => {
+            e.currentTarget.parentElement.parentElement.classList.add('hidden');
+            var next = e.currentTarget.getAttribute('data-next');
+            document.querySelector('#' + next).classList.remove('hidden');
+            var tokens = location.href.replace(/\/$/, "").split(SEP).slice(0, -1);
+            tokens.push(next);
+            history.replaceState({}, '', tokens.join(SEP));
+        });
     });
 
     // Wire up the "back" links
-    $("a.back").click(function(event) {
-        $(this).parent().parent().addClass('hidden');
-        var tokens = location.href.replace(/\/$/, "").split(SEP).slice(0, -1);
-        var next = tokens.slice(-1).pop();
-        history.go(-1);
-        $('#' + next).removeClass('hidden');
+    document.querySelectorAll("a.back").forEach((back) => {
+        back.addEventListener("click", (e) => {
+            e.currentTarget.parentElement.parentElement.classList.add('hidden');
+            var tokens = location.href.replace(/\/$/, "").split(SEP).slice(0, -1);
+            var next = tokens.slice(-1).pop();
+            history.go(-1);
+            document.querySelector('#' + next).classList.remove('hidden');
+        });
     });
-    $(window).on('hashchange', function() {
+    window.addEventListener('hashchange', function() {
         // Detect hash changes for "back" functions
         hashSelect(first);
     });
 
 });
+
 function reloadHome() {
     window.location = "#" + question_tree.children[0].id;
 }
