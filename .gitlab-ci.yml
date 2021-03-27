@@ -18,8 +18,9 @@ external linkcheck:
 
 lint:
   before_script:
-    - pacman -Syu --noconfirm yamllint
+    - pacman -Syu --noconfirm eslint yamllint
   script:
+    - eslint static/site.js
     - yamllint questions
 
 .build:
