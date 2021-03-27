@@ -26,9 +26,6 @@ var ready = (callback) => {
 };
 
 ready(() => {
-    // First thing.. hide the warning about javascript being required.
-    document.querySelector("#js-warning").classList.add('hidden');
-
     all_ids.shift()
     var first = question_tree.children[0].id;
     hashSelect(first);
