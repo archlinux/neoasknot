@@ -1,3 +1,4 @@
+var first = question_tree.children[0].id;
 function hashSelect(first) {
     console.log("Changing to new hash...");
     var found = false;
@@ -27,7 +28,6 @@ var ready = (callback) => {
 
 ready(() => {
     all_ids.shift()
-    var first = question_tree.children[0].id;
     hashSelect(first);
 
     // Wire up the "yes" links
@@ -71,5 +71,5 @@ ready(() => {
 });
 
 function reloadHome() {
-    window.location = "#" + question_tree.children[0].id;
+    window.location = "#" + first;
 }
