@@ -11,6 +11,17 @@ external linkcheck:
   only:
     - schedules
 
+internal linkcheck:
+  before_script:
+    - pacman -Syu --noconfirm lychee-link-checker yq
+  script:
+    - yq '.tree | .children | .[].link' questions/archlinux.yml
+      questions/includes/archlinux/**/*.yml | lychee -v -
+  only:
+    - archlinux
+  except:
+    - schedules
+
 lint:
   before_script:
     - pacman -Syu --noconfirm eslint yamllint
