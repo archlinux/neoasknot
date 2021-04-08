@@ -57,6 +57,8 @@ lint:
 
 build:
   extends: .build
+  only:
+    - branches
   except:
     - archlinux
     - tags
