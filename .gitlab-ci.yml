@@ -30,6 +30,7 @@ lint:
     - yamllint questions
   only:
     - branches
+    - merge_requests
   except:
     - schedules
 
@@ -59,6 +60,7 @@ build:
   extends: .build
   only:
     - branches
+    - merge_requests
   except:
     - archlinux
     - tags
