@@ -8,8 +8,8 @@ external linkcheck:
   variables:
     GIT_STRATEGY: none
   script: lychee -v https://whatcanidofor.archlinux.org
-  only:
-    - schedules
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
 
 internal linkcheck:
   before_script:
@@ -17,10 +17,8 @@ internal linkcheck:
   script:
     - yq '.tree | .children | .[].link' questions/archlinux.yml
       questions/includes/archlinux/**/*.yml | lychee -v -
-  only:
-    - archlinux
-  except:
-    - schedules
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
 
 lint:
   before_script:
@@ -28,18 +26,16 @@ lint:
   script:
     - eslint static/site.js
     - yamllint questions
-  only:
-    - branches
-    - merge_requests
-  except:
-    - schedules
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
+      when: never
+    - if: '$CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
 
 .artifacts:
   artifacts:
     paths:
       - public
-  except:
-    - schedules
 
 .build:
   extends: .artifacts
@@ -58,20 +54,20 @@ lint:
 
 build:
   extends: .build
-  only:
-    - branches
-    - merge_requests
-  except:
-    - archlinux
-    - tags
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: never
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
+      when: never
+    - if: '$CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
 
 build:secure:
   extends: .build
   tags:
     - secure
-  only:
-    - archlinux
-    - tags
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
 
 pages:
   tags:
@@ -87,5 +83,5 @@ pages:
       gzip -k {} +
     - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\|svg\)' -exec
       brotli {} +
-  only:
-    - archlinux
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
