@@ -28,6 +28,8 @@ lint:
   script:
     - eslint static/site.js
     - yamllint questions
+  only:
+    - branches
   except:
     - schedules
 
