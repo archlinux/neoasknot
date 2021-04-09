@@ -19,6 +19,9 @@ internal linkcheck:
       questions/includes/archlinux/**/*.yml | lychee -v -
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: manual
+      allow_failure: true
 
 lint:
   before_script:
