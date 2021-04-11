@@ -22,16 +22,6 @@ a:hover {
   color: #27ae60;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
 html,
 body {
   height: 100%;
@@ -121,10 +111,6 @@ body {
   color: #fff;
   background-color: transparent;
   border-bottom-color: #fff;
-}
-
-.dropdown-menu {
-    min-width: 105px;
 }
 
 .masthead, .mastfoot {
