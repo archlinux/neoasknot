@@ -16,7 +16,7 @@ internal linkcheck:
   before_script:
     - pacman -Syu --noconfirm lychee-link-checker yq
   script:
-    - yq '.tree | .children | .[].link' questions/archlinux.yml
+    - yq '..|.link?' questions/archlinux.yml
       questions/includes/archlinux/**/*.yml | lychee -v -
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
