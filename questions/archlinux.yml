@@ -1,6 +1,6 @@
 title: What can I do for Arch Linux?
 description: What can I do for Arch Linux?
-favicon: https://archlinux.org/favicon.ico
+favicon: ../static/themes/archlinux/img/favicon.ico
 negatives:
   - "No"
   - Nope, nope, nope
