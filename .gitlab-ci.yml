@@ -28,7 +28,7 @@ lint:
     - pacman -Syu --noconfirm eslint stylelint-config-standard yamllint
   script:
     - eslint static/site.js
-    - stylelint static/themes/*/css
+    - stylelint templates/site.css
     - yamllint questions
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
@@ -43,9 +43,15 @@ lint:
 
 .build:
   extends: .artifacts
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - .npm
   before_script:
-    - pacman -Syu --noconfirm python-mako python-yaml
-  script: ./build.sh
+    - pacman -Syu --noconfirm npm python-mako python-yaml
+  script:
+    - npm ci --cache .npm --prefer-offline
+    - ./build.sh
   after_script:
     - mv build public
     - |

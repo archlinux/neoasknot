@@ -27,9 +27,16 @@ poke it.
 
 ## Requirements
 
-The site-generator script is written in Python, so you’ll need that:
+Clone the repo:
 
-    $ sudo pacman -Syu python-mako python-yaml
+    $ git clone https://gitlab.archlinux.org/archlinux/asknot-ng.git
+    $ cd asknot-ng
+
+The site-generator is written in Python, and the CSS build deps are written in
+Node.js:
+
+    $ sudo pacman -Syu npm python-mako python-yaml
+    $ npm ci
 
 The script can optionally generate an svg visualizing your question tree.  This
 requires pygraphviz which you could install like so:
@@ -40,15 +47,11 @@ requires pygraphviz which you could install like so:
 
 ## Giving it a run
 
-Clone the repo:
-
-    $ git clone https://gitlab.archlinux.org/archlinux/asknot-ng.git
-    $ cd asknot-ng
-
 Run the script with the Arch Linux configuration:
 
-    $ ./asknot-ng.py templates/index.html questions/archlinux.yml l10n/fedora/locale --theme archlinux
-    Wrote build/en/index.html
+    $ ./build.sh
+    …
+    Copied /home/user/repos/asknot-ng/static to build/static
 
 and open up `build/en/index.html` in your favorite browser.
 

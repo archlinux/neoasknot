@@ -1,9 +1,13 @@
 #!/bin/bash
 
+ASKNOT_THEME=${ASKNOT_THEME:-archlinux}
+
 ./compile-translations.sh
+
+npx postcss templates/site.css -o build/site.css
 
 python asknot-ng.py \
        templates/index.html \
-       questions/archlinux.yml \
+       questions/"$ASKNOT_THEME".yml \
        l10n/fedora/locale \
-       --theme archlinux
+       --theme "$ASKNOT_THEME"
