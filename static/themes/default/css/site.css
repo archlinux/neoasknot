@@ -46,7 +46,7 @@ body {
   padding: 30px;
 }
 
-#js-warning .panel-body {
+#js-warning .card-body {
   background-color: #3c6eb4;
 }
 
