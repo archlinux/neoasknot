@@ -12,7 +12,7 @@ external linkcheck:
     entrypoint: [""]
   variables:
     GIT_STRATEGY: none
-  script: lychee -v https://whatcanwedofor.archlinux.org
+  script: lychee -v https://whatcanidofor.archlinux.org
   only:
     - schedules
 
