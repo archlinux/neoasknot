@@ -72,10 +72,10 @@ body {
   margin-left: auto;
 
   display: block;
-  width: 600px;
-  height: 100px;
+  width: 217px;
+  height: 72px;
   background: url('../img/archlinux.png');
-  background-size: 300px;
+  background-size: 200px;
   background-repeat: no-repeat;
   /* This is hilarious. */
   text-indent: -9999px;
