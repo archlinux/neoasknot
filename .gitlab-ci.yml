@@ -26,9 +26,10 @@ internal linkcheck:
 
 lint:
   before_script:
-    - pacman -Syu --noconfirm eslint yamllint
+    - pacman -Syu --noconfirm eslint stylelint-config-standard yamllint
   script:
     - eslint static/site.js
+    - stylelint static/themes/*/css
     - yamllint questions
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'

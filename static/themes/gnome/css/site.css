@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
 }
 
 #js-warning .panel-body {
@@ -42,7 +42,7 @@ body {
 }
 
 .masthead-nav > li > a {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 
 .mastfoot a {

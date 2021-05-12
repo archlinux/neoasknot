@@ -93,13 +93,16 @@ body {
   border-bottom-color: #fff;
 }
 
-.masthead, .mastfoot {
+.masthead,
+.mastfoot {
   margin-right: auto;
   margin-left: auto;
 }
 
 .mastfoot {
   height: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -149,11 +152,6 @@ body {
   z-index: -1;
   height: 400px;
   width: 400px;
-}
-
-.mastfoot {
-  color: rgba(255, 255, 255, 0.5);
-  display: none;
 }
 
 .title {
