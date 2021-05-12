@@ -4,6 +4,7 @@
   font-weight: 400;
   src: local('Montserrat-Regular'), url(../fonts/montserrat.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -15,22 +16,23 @@ html,
 body {
   background-image: url('../img/background.png');
 }
+
 body {
   font-family: 'Open Sans';
 }
 
 .masthead-brand {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
-
   display: block;
   width: 217px;
   height: 72px;
   background: url('../img/archlinux.png');
   background-size: 200px;
   background-repeat: no-repeat;
+
   /* This is hilarious. */
   text-indent: -9999px;
 }

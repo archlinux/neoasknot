@@ -4,6 +4,7 @@
   font-weight: 400;
   src: local('Montserrat-Regular'), url(../fonts/montserrat.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -15,26 +16,27 @@ html,
 body {
   background-image: url('../img/adwaita-morning.jpg');
 }
+
 body {
   font-family: 'Open Sans';
 }
 
 #js-warning .panel-body {
-  background-color: #C3CFE0;
+  background-color: #c3cfe0;
 }
 
 .masthead-brand {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
-
   display: block;
   width: 301px;
   height: 72px;
   background-image: url('../img/GnomeLogoHorizontal.png');
   background-size: 200px;
   background-repeat: no-repeat;
+
   /* This is hilarious. */
   text-indent: -9999px;
 }
@@ -42,16 +44,18 @@ body {
 .masthead-nav > li > a {
   font-family: Montserrat;
 }
+
 .mastfoot a {
   color: #111;
 }
 
 .mastfoot {
-  margin: 0px, 0px, 0px, 0px;
+  margin: 0, 0, 0, 0;
   height: 70px;
   padding-top: 40px;
   color: #666 !important;
   background-image: url('../img/grass.png');
+
   /* You need "important" here to override the media-specific css queries */
   width: 100% !important;
 }
