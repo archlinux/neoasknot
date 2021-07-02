@@ -6,4 +6,4 @@ tree:
 
     - title: pacman-contrib
       subtitle: contributed scripts to pacman
-      link: https://git.archlinux.org/pacman-contrib.git/
+      link: https://gitlab.archlinux.org/pacman/pacman-contrib

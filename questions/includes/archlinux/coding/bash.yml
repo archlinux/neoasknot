@@ -6,11 +6,7 @@ tree:
 
     - title: arch-install-scripts
       subtitle: small suite of scripts aimed at automating some menial tasks when installing Arch Linux
-      link: https://git.archlinux.org/arch-install-scripts.git/
-
-    - title: archboot
-      subtitle: set of scripts to generate bootable media for CD/USB/PXE, designed for installation or rescue operation
-      link: https://git.archlinux.org/archboot.git/
+      link: https://github.com/archlinux/arch-install-scripts
 
     - title: archiso
       subtitle: small set of bash scripts capable of building fully functional Arch Linux live CD/DVD/USB images
@@ -38,11 +34,11 @@ tree:
 
     - title: dbscripts
       subtitle: Arch Linux repository management scripts
-      link: https://git.archlinux.org/dbscripts.git/
+      link: https://github.com/archlinux/dbscripts
 
     - title: devtools
       subtitle: tools for building Arch Linux packages
-      link: https://git.archlinux.org/devtools.git/
+      link: https://github.com/archlinux/devtools
 
     - title: infrastructure
       subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
@@ -50,16 +46,16 @@ tree:
 
     - title: mkinitcpio
       subtitle: Arch Linux initramfs generation tools
-      link: https://git.archlinux.org/mkinitcpio.git/
+      link: https://github.com/archlinux/mkinitcpio
 
     - title: netctl
       subtitle: profile based systemd network management
-      link: https://git.archlinux.org/netctl.git/
+      link: https://gitlab.archlinux.org/archlinux/netctl
 
     - title: pacman
       subtitle: library-based package manager with dependency suppor
-      link: https://git.archlinux.org/pacman.git/
+      link: https://gitlab.archlinux.org/pacman/pacman
 
     - title: pacman-contrib
       subtitle: contributed scripts to pacman
-      link: https://git.archlinux.org/pacman-contrib.git/
+      link: https://gitlab.archlinux.org/pacman/pacman-contrib

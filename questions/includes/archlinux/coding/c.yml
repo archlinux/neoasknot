@@ -2,7 +2,7 @@ tree:
   children:
     - title: pacman
       subtitle: library-based package manager with dependency support
-      link: https://git.archlinux.org/pacman.git/
+      link: https://gitlab.archlinux.org/pacman/pacman
 
     - title: pyalpm
       subtitle: C extension for Python 3 that give access to the libalpm API for package management

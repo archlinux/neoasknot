@@ -3,7 +3,7 @@ tree:
     - title: archweb
       subtitle: Arch Linux website code
       # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-      link: https://git.archlinux.org/archweb.git/
+      link: https://github.com/archlinux/archweb
 
     - title: archlinux-common-style
       subtitle: Common Arch Linux style components
@@ -13,7 +13,7 @@ tree:
     - title: asknot-ng
       subtitle: Contribution landing page for Arch Linux
       # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-      link: https://github.com/archlinux/asknot-ng
+      link: https://gitlab.archlinux.com/archlinux/asknot-ng
 
     - title: aurweb
       subtitle: Arch User Repository (AUR)

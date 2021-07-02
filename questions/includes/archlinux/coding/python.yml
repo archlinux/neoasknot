@@ -30,7 +30,7 @@ tree:
 
     - title: dbscripts
       subtitle: Arch Linux repository management scripts
-      link: https://git.archlinux.org/dbscripts.git/
+      link: https://github.com/archlinux/dbscripts
 
     - title: infrastructure
       subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
@@ -38,15 +38,15 @@ tree:
 
     - title: namcap
       subtitle: tool for checking binary packages and source PKGBUILDs
-      link: https://git.archlinux.org/namcap.git/
+      link: https://gitlab.archlinux.org/pacman/namcap
 
     - title: pacman
       subtitle: library-based package manager with dependency suppor
-      link: https://git.archlinux.org/pacman.git/
+      link: https://gitlab.archlinux.org/pacman/pacman
 
     - title: pacman-contrib
       subtitle: contributed scripts to pacman
-      link: https://git.archlinux.org/pacman-contrib.git/
+      link: https://gitlab.archlinux.org/pacman/pacman-contrib
 
     - title: pyalpm
       subtitle: C extension for Python 3 that give access to the libalpm API for package management
