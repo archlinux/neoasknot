@@ -13,7 +13,7 @@ tree:
     - title: asknot-ng
       subtitle: Contribution landing page for Arch Linux
       # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-      link: https://gitlab.archlinux.com/archlinux/asknot-ng
+      link: https://gitlab.archlinux.org/archlinux/asknot-ng
 
     - title: aurweb
       subtitle: Arch User Repository (AUR)
