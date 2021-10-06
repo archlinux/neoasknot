@@ -13,9 +13,9 @@ external linkcheck:
 
 internal linkcheck:
   before_script:
-    - pacman -Syu --noconfirm lychee-link-checker yq
+    - pacman -Syu --noconfirm go-yq lychee-link-checker
   script:
-    - yq '..|.link?' questions/archlinux.yml
+    - yq eval -N '..|.link?' questions/archlinux.yml
       questions/includes/archlinux/**/*.yml | lychee -v -
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
