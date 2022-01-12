@@ -14,9 +14,6 @@ setup(
         'mako',
         'PyYAML',
         ],
-    extras_require={
-        'tests': ['nose'],
-        },
     packages=[],
     py_modules=['asknot_lib'],
 
