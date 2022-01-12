@@ -7,5 +7,3 @@ public
 *.mo
 env
 venv
-.zanata-cache
-container/l10n.conf
