@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat-Regular'), url(../fonts/montserrat.ttf) format('truetype');
+  src: local('Montserrat-Regular'), url('../fonts/montserrat.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(../fonts/open-sans.ttf) format('truetype');
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/open-sans.ttf') format('truetype');
 }
 
 html,
@@ -22,10 +22,7 @@ body {
 }
 
 .masthead-brand {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   display: block;
   width: 217px;
   height: 72px;

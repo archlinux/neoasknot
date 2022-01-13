@@ -20,14 +20,14 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
 }
 
 .site-wrapper {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  box-shadow: inset 0 0 75px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 75px rgb(0 0 0 / 50%);
 }
 
 .site-wrapper-inner {
@@ -71,7 +71,7 @@ body {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(255 255 255 / 75%);
   border-bottom: 2px solid transparent;
 }
 
@@ -79,7 +79,7 @@ body {
 .masthead-nav > li > a:focus {
   background-color: transparent;
   border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255, 255, 255, 0.25);
+  border-bottom-color: rgb(255 255 255 / 25%);
 }
 
 .masthead-nav > .active > a,
@@ -101,7 +101,7 @@ body {
 
 .mastfoot {
   height: 40px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255 255 255 / 50%);
   display: none;
 }
 
@@ -192,13 +192,13 @@ body {
   .bandana {
     min-height: 200px;
     background-image:
-      -webkit-radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
-      -webkit-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
-      -webkit-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
+      radial-gradient(center top, ellipse farthest-side, rgb(116 116 116 / 50%), rgb(116 116 116 / 0%) 95%),
+      radial-gradient(center top, ellipse farthest-side, rgb(36 36 36 / 50%), rgb(36 36 36 / 0%)),
+      radial-gradient(center top, ellipse farthest-side, rgb(36 36 36 / 30%), rgb(36 36 36 / 0%));
     background-image:
-      radial-gradient(ellipse farthest-side at center top, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
-      radial-gradient(ellipse farthest-side at center top, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
-      radial-gradient(ellipse farthest-side at center top, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
+      radial-gradient(ellipse farthest-side at center top, rgb(116 116 116 / 50%), rgb(116 116 116 / 0%) 95%),
+      radial-gradient(ellipse farthest-side at center top, rgb(36 36 36 / 50%), rgb(36 36 36 / 0%)),
+      radial-gradient(ellipse farthest-side at center top, rgb(36 36 36 / 30%), rgb(36 36 36 / 0%));
     background-size: 100% 5px, 100% 20px, 100% 35px;
     background-repeat: no-repeat;
   }
