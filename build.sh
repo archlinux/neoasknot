@@ -1,10 +1,10 @@
 #!/bin/bash
 
-./compile-translations.sh
+# Not needed until we set up our own translations.
+#./compile-translations.sh
 
-python3 asknot-ng.py \
-	./templates/index.html \
-	./questions/fedora.yml \
-	./l10n/fedora/locale \
-	-s ./static \
-	-t fedora
+python asknot-ng.py \
+       templates/index.html \
+       questions/archlinux.yml \
+       l10n/fedora/locale \
+       --theme archlinux

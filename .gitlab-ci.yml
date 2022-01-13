@@ -45,11 +45,9 @@ lint:
   extends: .artifacts
   before_script:
     - pacman -Syu --noconfirm python-mako python-yaml
-  script:
-    - ./compile-translations.sh
-    - ./asknot-ng.py templates/index.html questions/archlinux.yml
-      l10n/fedora/locale --theme archlinux --build public
+  script: ./build.sh
   after_script:
+    - mv build public
     - |
       cat << EOF > public/_redirects
       / /en/ 302
