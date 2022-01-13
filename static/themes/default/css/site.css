@@ -192,10 +192,6 @@ body {
   .bandana {
     min-height: 200px;
     background-image:
-      radial-gradient(center top, ellipse farthest-side, rgb(116 116 116 / 50%), rgb(116 116 116 / 0%) 95%),
-      radial-gradient(center top, ellipse farthest-side, rgb(36 36 36 / 50%), rgb(36 36 36 / 0%)),
-      radial-gradient(center top, ellipse farthest-side, rgb(36 36 36 / 30%), rgb(36 36 36 / 0%));
-    background-image:
       radial-gradient(ellipse farthest-side at center top, rgb(116 116 116 / 50%), rgb(116 116 116 / 0%) 95%),
       radial-gradient(ellipse farthest-side at center top, rgb(36 36 36 / 50%), rgb(36 36 36 / 0%)),
       radial-gradient(ellipse farthest-side at center top, rgb(36 36 36 / 30%), rgb(36 36 36 / 0%));
