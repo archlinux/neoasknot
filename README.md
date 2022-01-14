@@ -80,7 +80,10 @@ repository, thanks to the following 2 branches: ``staging`` and ``archlinux``.
 
 ### Staging
 
-Currently this is a bit convoluted and done on gitlab.com.
+Currently this is a bit convoluted and done on gitlab.com (at least until
+[multiple version Pages
+support](https://gitlab.com/gitlab-org/gitlab/-/issues/16208) is implemented or
+one of the proposed solutions is used).
 
 ### Production
 
