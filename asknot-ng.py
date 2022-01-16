@@ -93,6 +93,8 @@ def main(localedir, languages, strict, build, static, **kw):
 
     if not languages:
         print("No languages found.")
+    else:
+        languages.sort()
 
     fallback = not strict
     for lang in languages:
