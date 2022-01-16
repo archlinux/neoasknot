@@ -99,7 +99,7 @@ them to us][patches].  It would be nice to build a library of deployments so we
 can all learn.
 
 **Note**: While the application is licensed GPLv3+, The [Fedora 22
-wallpaper](static/themes/archlinux/img/background.png) used is licensed under a
+wallpaper](static/themes/archlinux/img/background.jpg) used is licensed under a
 *Creative Commons Attribution 4 License*.
 
 Of course, bug reports and patches to the main script are appreciated as
