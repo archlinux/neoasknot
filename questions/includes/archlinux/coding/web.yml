@@ -5,6 +5,10 @@ tree:
       # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
       link: https://github.com/archlinux/archweb
 
+    - title: archmanweb
+      subtitle: Arch Linux manual pages website
+      link: https://gitlab.archlinux.org/archlinux/archmanweb
+
     - title: archlinux-common-style
       subtitle: Common Arch Linux style components
       # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
