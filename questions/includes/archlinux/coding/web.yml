@@ -1,30 +1,25 @@
 tree:
   children:
-    - title: archweb
-      subtitle: Arch Linux website code
-      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-      link: https://github.com/archlinux/archweb
+    - title: archlinux-common-style
+      subtitle: Common Arch Linux style components
+      link: https://gitlab.archlinux.org/archlinux/archlinux-common-style
 
     - title: archmanweb
       subtitle: Arch Linux manual pages website
       link: https://gitlab.archlinux.org/archlinux/archmanweb
 
-    - title: archlinux-common-style
-      subtitle: Common Arch Linux style components
-      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
-      link: https://gitlab.archlinux.org/archlinux/archlinux-common-style
+    - title: archweb
+      subtitle: Arch Linux website code
+      link: https://github.com/archlinux/archweb
 
     - title: asknot-ng
       subtitle: Contribution landing page for Arch Linux
-      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
       link: https://gitlab.archlinux.org/archlinux/asknot-ng
 
     - title: aurweb
       subtitle: Arch User Repository (AUR)
-      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
       link: https://gitlab.archlinux.org/archlinux/aurweb
 
     - title: Rebuilderd Website
       subtitle: Arch Linux Rebuilderd status webpage
-      # image: https://badges.fedoraproject.org/pngs/rock-the-web.png
       link: https://gitlab.archlinux.org/archlinux/rebuilderd-website
