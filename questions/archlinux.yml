@@ -27,6 +27,8 @@ navlinks:
     link: "javascript:reloadHome();"
   - name: Get Arch Linux
     link: https://archlinux.org/download/
+  - name: Chat
+    link: https://wiki.archlinux.org/title/Arch_IRC_channels
 
 tree:
   segue1: Want to help Arch Linux?  Tell me...
