@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'body-background': "url('static/themes/archlinux/img/background.jpg')",
+        'body-background': '',
         'navbar-logo': "url('static/themes/archlinux/img/archlinux.png')",
       },
     },
