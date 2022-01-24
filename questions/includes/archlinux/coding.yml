@@ -6,18 +6,6 @@ tree:
       segue2: Are you interested in hacking on...
       children: coding/bash.yml
 
-    - title: Perl
-      subtitle: general-purpose programming language
-      segue1: So, you enjoy practicality?  What could go wrong?
-      segue2: Are you interested in hacking on...
-      children: coding/perl.yml
-
-    - title: Python
-      subtitle: a dynamic language for rapid development
-      segue1: So, you enjoy traceback-driven development?  What could go wrong?
-      segue2: Are you interested in hacking on...
-      children: coding/python.yml
-
     - title: C
       subtitle: close to the metal
       segue1: So, you think OOP is for hipsters?  Let me tell you, back in my day...
@@ -29,3 +17,15 @@ tree:
       segue1: So, you think having native integers is over-rated?  What could go wrong?
       segue2: There's plenty to do.  How about joining the..
       children: coding/web.yml
+
+    - title: Perl
+      subtitle: general-purpose programming language
+      segue1: So, you enjoy practicality?  What could go wrong?
+      segue2: Are you interested in hacking on...
+      children: coding/perl.yml
+
+    - title: Python
+      subtitle: a dynamic language for rapid development
+      segue1: So, you enjoy traceback-driven development?  What could go wrong?
+      segue2: Are you interested in hacking on...
+      children: coding/python.yml

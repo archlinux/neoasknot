@@ -1,26 +1,26 @@
 title: What can I do for Arch Linux?
 description: What can I do for Arch Linux?
 favicon: ../static/themes/archlinux/img/favicon.png
-negatives:
-  - "No"
-  - Nope, nope, nope
-  - Nope
-  - No, thanks
-  - Not on your life
-  - Doesn't sound like me
-  - Absolutely not
-  - Next, please
 affirmatives:
-  - "Yes"
   - Sounds awesome
+  - Sure
   - Tell me more
   - That's me!
   - Totally
-  - Sure
+  - "Yes"
+negatives:
+  - Absolutely not
+  - Doesn't sound like me
+  - Next, please
+  - "No"
+  - No, thanks
+  - Nope
+  - Nope, nope, nope
+  - Not on your life
 backlinks:
-  - I was wrong, take me back
-  - I think I made a mistake
   - Get me outta here!
+  - I think I made a mistake
+  - I was wrong, take me back
 
 navlinks:
   - name: Home
@@ -32,40 +32,40 @@ navlinks:
 
 tree:
   segue1: Want to help Arch Linux?  Tell me...
-  segue2: what's your area of interest?
+  segue2: What's your area of interest?
   children:
-    - title: Packaging
-      subtitle: Join the trusted users
-      link: https://wiki.archlinux.org/index.php/Trusted_Users
-
-    - title: Security
-      subtitle: Join the Security Team
-      link: https://wiki.archlinux.org/index.php/Arch_Security_Team
-
-    - title: Housekeeping the Wiki
-      subtitle: Help cleaning and maintaining the ArchWiki
-      link: https://wiki.archlinux.org
-
-    - title: Assigning bugs
-      subtitle: Help managing the endless number of bugs and assign them to maintainers
-      link: https://bugs.archlinux.org
+    - title: Coding
+      subtitle: Software is our daily prayer..
+      segue1: Nice! We need people who can code
+      segue2: Which language do you like the most?
+      children: includes/archlinux/coding.yml
 
     - title: Infrastructure
       subtitle: Join the DevOps team and keep our servers running
       link: https://gitlab.archlinux.org/archlinux/infrastructure
 
-    - title: Coding
-      subtitle: Software is our daily prayer..
-      segue1: Nice! We need people who can code
-      segue2: Which language do you like at most?
-      children: includes/archlinux/coding.yml
+    - title: Packaging
+      subtitle: Join the Trusted Users
+      link: https://wiki.archlinux.org/index.php/Trusted_Users
 
     - title: Reproducible packages
       subtitle: Make Arch Linux more secure with reproducible package builds
       link: https://reproducible.archlinux.org/
+
+    - title: Security
+      subtitle: Join the Security Team
+      link: https://wiki.archlinux.org/index.php/Arch_Security_Team
 
     - title: Translation
       subtitle: Do you like spoken languages?
       segue1: Cool! We need people like you
       segue2: Which project do you want to support?
       children: includes/archlinux/translation.yml
+
+    - title: Wiki housekeeping
+      subtitle: Help clean and maintain the ArchWiki
+      link: https://wiki.archlinux.org/title/ArchWiki:Contributing
+
+    - title: Wrangling bugs
+      subtitle: Help manage bugs and assign them to maintainers
+      link: https://bugs.archlinux.org
