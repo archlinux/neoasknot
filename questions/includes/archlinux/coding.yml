@@ -16,7 +16,7 @@ tree:
       subtitle: a dynamic web-oriented language for backend and frontend
       segue1: So, you think having native integers is over-rated?  What could go wrong?
       segue2: There's plenty to do.  How about joining the..
-      children: coding/web.yml
+      children: coding/javascript.yml
 
     - title: Perl
       subtitle: general-purpose programming language

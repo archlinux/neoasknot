@@ -2,7 +2,7 @@ tree:
   children:
     - title: asknot-ng
       subtitle: Contribution landing page for Arch Linux
-      link: https://github.com/archlinux/asknot-ng
+      link: https://translate.fedoraproject.org/engage/fedora-infra/
 
     - title: aurweb
       subtitle: Arch User Repository (AUR)
