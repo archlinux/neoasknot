@@ -17,7 +17,7 @@ tree:
       link: https://gitlab.archlinux.org/archlinux/arch-signoff
 
     - title: archivetools
-      subtitle: used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and boostrap tarballs
+      subtitle: used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and bootstrap tarballs
       link: https://gitlab.archlinux.org/archlinux/archivetools
 
     - title: archmanweb
@@ -53,7 +53,7 @@ tree:
       link: https://gitlab.archlinux.org/pacman/namcap
 
     - title: pacman
-      subtitle: library-based package manager with dependency suppor
+      subtitle: library-based package manager with dependency support
       link: https://gitlab.archlinux.org/pacman/pacman
 
     - title: pacman-contrib
