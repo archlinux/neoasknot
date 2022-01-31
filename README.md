@@ -2,25 +2,22 @@
 
 Ask not what `$ORG` can do for you, but what you can do for `$ORG`.
 
-Originally written by [@ralphbean][threebean].  Inspired by [the original
-work][wcidfm] of [Josh Matthews][jdm], [Henri Koivuneva][wham], and
-[others][asknot-contribs].
+Originally written by [@ralphbean].  Inspired by [the original work][wcidfm] of
+[Josh Matthews][jdm], [Henri Koivuneva][wham], and [others][asknot-contribs].
 
-```
-I stumbled upon and loved the original [whatcanidoformozilla.org][wcidfm] and
-wanted to deploy it for the [Fedora Community][fedora] but I found that I
-couldn’t easily change the questions and links that were presented.  A year
-went by and in 2015 I wrote this:  “asknot-ng”.
-```
+> I stumbled upon and loved the original [whatcanidoformozilla.org][wcidfm] and
+> wanted to deploy it for the [Fedora Community][fedora] but I found that I
+> couldn't easily change the questions and links that were presented.  A year
+> went by and in 2015 I wrote this:  "asknot-ng".
 
 The gist of this “next generation” rewrite is to make it as configurable as
 possible.  There is a primary script, ``asknot-ng.py``
 that works like a static-site generator.  It takes as input three things:
 
 - A questions file, written in yaml (see eg.
-  [archlinux.yaml][archlinux-questions]).  You’ll have to write your own one of
+  [archlinux.yml](questions/archlinux.yml)).  You’ll have to write your own one of
   these.
-- A template file, written in mako (the [default][default-template] should work
+- A template file, written in mako (the [default](templates/index.html) should work
   for everybody).
 - A ‘theme’ argument to specify what CSS to use.  The default is nice enough,
   but you’ll probably want to customize it to your own use case.
@@ -107,10 +104,8 @@ always.
 
 Happy Hacking!
 
-[threebean]: http://threebean.org
+[@ralphbean]: http://threebean.org
 [fedora]: https://getfedora.org
-[archlinux-questions]: https://gitlab.archlinux.org/archlinux/asknot-ng/-/blob/archlinux/questions/archlinux.yml
-[default-template]: https://gitlab.archlinux.org/archlinux/asknot-ng/-/blob/archlinux/templates/index.html
 [patches]: https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html
 [wcidfm]: https://whatcanidoformozilla.org
 [wcidfa]: https://whatcanidofor.archlinux.org
