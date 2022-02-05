@@ -1,0 +1,13 @@
+tree:
+  children:
+    - title: Make new AUR packages
+      subtitle: Create, adopt and maintain unofficial packages in our community-driven repository
+      link: https://aur.archlinux.org/
+
+    - title: Test packages
+      subtitle: Join the Arch Testing Team and test new packages
+      link: https://wiki.archlinux.org/title/Arch_Testing_Team
+
+    - title: Join the Trusted Users
+      subtitle: Join the Trusted Users and maintain the operation of the AUR packages
+      link: https://wiki.archlinux.org/index.php/Trusted_Users
