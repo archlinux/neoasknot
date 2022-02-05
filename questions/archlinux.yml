@@ -45,8 +45,10 @@ tree:
       link: https://gitlab.archlinux.org/archlinux/infrastructure
 
     - title: Packaging
-      subtitle: Join the Trusted Users
-      link: https://wiki.archlinux.org/index.php/Trusted_Users
+      subtitle: Get involved with the packaging community
+      segue1: Great! Let's get some new software into Arch
+      segue2: How do you want to make our packages better?
+      children: includes/archlinux/packaging.yml
 
     - title: Reproducible packages
       subtitle: Make Arch Linux more secure with reproducible package builds
