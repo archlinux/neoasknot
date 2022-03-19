@@ -1,7 +1,7 @@
 /*.html
 *.svg
 *.pyc
-*.egg-info
+*.egg-info/
 build/
 public/
 *.mo
