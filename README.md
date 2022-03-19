@@ -60,12 +60,11 @@ First, install Babel, setup a virtualenv, and build the egg info:
 
     $ sudo pacman -Syu python-babel
     $ python -m venv --system-site-packages venv
-    $ source venv/bin/activate
-    $ python setup.py develop
+    $ venv/bin/python setup.py develop
 
 Then, extract the translatable strings:
 
-    $ python setup.py extract_messages --output-file l10n/fedora/locale/asknot-ng.pot --input-dir=.
+    $ venv/bin/python setup.py extract_messages --output-file l10n/fedora/locale/asknot-ng.pot --input-dir=.
 
 ## Application Deployment
 

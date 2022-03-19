@@ -2,8 +2,9 @@
 *.svg
 *.pyc
 *.egg-info
-build
-public
+build/
+public/
 *.mo
-env
-venv
+env/
+venv/
+node_modules/
