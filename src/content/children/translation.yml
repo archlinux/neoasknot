@@ -1,0 +1,10 @@
+heading: Which project do you want to translate?
+
+children:
+  - title: aurweb
+    subtitle: Arch User Repository (AUR)
+    link: https://www.transifex.com/lfleischer/aurweb/
+
+  - title: pacman
+    subtitle: library-based package manager with dependency support
+    link: https://www.transifex.com/toofishes/archlinux-pacman/

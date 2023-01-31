@@ -1,0 +1,16 @@
+children:
+  - title: archlinux-common-style
+    subtitle: Common Arch Linux style components
+    link: https://gitlab.archlinux.org/archlinux/archlinux-common-style
+
+  - title: archweb
+    subtitle: Arch Linux website code
+    link: https://github.com/archlinux/archweb
+
+  - title: asknot-ng
+    subtitle: Contribution landing page for Arch Linux
+    link: https://gitlab.archlinux.org/archlinux/asknot-ng
+
+  - title: Rebuilderd Website
+    subtitle: Arch Linux Rebuilderd status webpage
+    link: https://gitlab.archlinux.org/archlinux/rebuilderd-website

@@ -1,9 +1,0 @@
-tree:
-  children:
-    - title: infrastructure
-      subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
-      link: https://gitlab.archlinux.org/archlinux/infrastructure
-
-    - title: pacman-contrib
-      subtitle: contributed scripts to pacman
-      link: https://gitlab.archlinux.org/pacman/pacman-contrib

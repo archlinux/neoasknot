@@ -1,0 +1,64 @@
+children:
+  - title: arch-boxes
+    subtitle: the project that builds our Vagrant and cloud images
+    link: https://gitlab.archlinux.org/archlinux/arch-boxes
+
+  - title: arch-repo-management
+    subtitle: our next-generation repository management tools for migrating to git
+    link: https://gitlab.archlinux.org/archlinux/arch-repo-management
+
+  - title: arch-security-tracker
+    subtitle: a CVE tracker for our packages written with flask
+    link: https://github.com/archlinux/arch-security-tracker
+
+  - title: arch-signoff
+    subtitle: software for package signoffs for testing
+    link: https://gitlab.archlinux.org/archlinux/arch-signoff
+
+  - title: archivetools
+    subtitle: used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and bootstrap tarballs
+    link: https://gitlab.archlinux.org/archlinux/archivetools
+
+  - title: archmanweb
+    subtitle: Arch Linux manual pages website
+    link: https://gitlab.archlinux.org/archlinux/archmanweb
+
+  - title: archweb
+    subtitle: Arch Linux website code
+    link: https://github.com/archlinux/archweb
+
+  - title: aurweb
+    subtitle: Arch User Repository (AUR)
+    link: https://gitlab.archlinux.org/archlinux/aurweb
+
+  - title: bugbot
+    subtitle: Arch Linux \#archlinux-bugs bug bot
+    link: https://gitlab.archlinux.org/archlinux/bugbot
+
+  - title: contrib
+    subtitle: a toolbox with various useful scripts for package management
+    link: https://github.com/archlinux/contrib
+
+  - title: dbscripts
+    subtitle: Arch Linux repository management scripts
+    link: https://github.com/archlinux/dbscripts
+
+  - title: infrastructure
+    subtitle: complete collection of ansible playbooks and roles for the Arch Linux infrastructure
+    link: https://gitlab.archlinux.org/archlinux/infrastructure
+
+  - title: namcap
+    subtitle: tool for checking binary packages and source PKGBUILDs
+    link: https://gitlab.archlinux.org/pacman/namcap
+
+  - title: pacman
+    subtitle: library-based package manager with dependency support
+    link: https://gitlab.archlinux.org/pacman/pacman
+
+  - title: pacman-contrib
+    subtitle: contributed scripts to pacman
+    link: https://gitlab.archlinux.org/pacman/pacman-contrib
+
+  - title: pyalpm
+    subtitle: C extension for Python 3 that give access to the libalpm API for package management
+    link: https://gitlab.archlinux.org/archlinux/pyalpm
