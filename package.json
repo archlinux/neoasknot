@@ -1,0 +1,44 @@
+{
+  "name": "neoasknot",
+  "version": "0.0.1",
+  "description": "Place for contributors to start looking for new projects to work on",
+  "author": {
+    "name": "Daniel M. Capella",
+    "email": "polyzen@archlinux.org",
+    "url": "https://danielcapella.com"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
+  "devDependencies": {
+    "@modyfi/vite-plugin-yaml": "^1.0.4",
+    "@skeletonlabs/skeleton": "^0.99.5",
+    "@sveltejs/adapter-static": "^1.0.6",
+    "@sveltejs/kit": "^1.3.10",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "prettier-plugin-svelte": "^2.9.0",
+    "svelte": "^3.55.1",
+    "svelte-check": "^3.0.3",
+    "svelte-preprocess": "^5.0.1",
+    "tailwindcss": "^3.2.4",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vite-plugin-dynamic-import": "^1.2.7"
+  },
+  "type": "module"
+}

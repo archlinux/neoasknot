@@ -12,11 +12,11 @@ external linkcheck:
     - if: '$CI_PIPELINE_SOURCE == "schedule"'
 
 internal linkcheck:
+  stage: .pre
   before_script:
     - pacman -Syu --noconfirm go-yq lychee-link-checker
   script:
-    - yq eval -N '..|.link?' questions/archlinux.yml
-      questions/includes/archlinux/**/*.yml | lychee -v -
+    - yq eval -N '..|.link?' src/content/**/*.yml | lychee -v -
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
@@ -24,12 +24,20 @@ internal linkcheck:
       allow_failure: true
 
 lint:
+  stage: .pre
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - .npm
   before_script:
-    - pacman -Syu --noconfirm eslint stylelint-config-standard yamllint
+    - pacman -Syu --noconfirm npm yamllint
+    - npm ci --cache .npm --prefer-offline
   script:
-    - eslint static/site.js
-    - stylelint static/themes/*/css
-    - yamllint questions
+    - npx eslint .
+    - yamllint src/content
+  artifacts:
+    paths:
+      - node_modules
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
     - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
@@ -43,16 +51,13 @@ lint:
 
 .build:
   extends: .artifacts
+  stage: build
   before_script:
-    - pacman -Syu --noconfirm python-mako python-yaml
-  script: ./build.sh
+    - pacman -Syu --noconfirm npm
+  script:
+    - npm run build
   after_script:
     - mv build public
-    - |
-      cat << EOF > public/_redirects
-      / /en/ 302
-      /index.html /en/index.html 302
-      EOF
 
 build:
   extends: .build
@@ -78,12 +83,6 @@ pages:
   stage: deploy
   variables:
     GIT_STRATEGY: none
-  before_script:
-    - pacman -Syu --noconfirm brotli
-  script:
-    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\|svg\)' -exec
-      gzip -k {} +
-    - find public -type f -regex '.*\.\(css\|html\|jpg\|js\|png\|svg\)' -exec
-      brotli {} +
+  script: "true"
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'

@@ -1,115 +1,75 @@
-# asknot-ng
+# neoasknot
 
 Ask not what `$ORG` can do for you, but what you can do for `$ORG`.
 
-Originally written by [@ralphbean].  Inspired by [the original work][wcidfm] of
-[Josh Matthews][jdm], [Henri Koivuneva][wham], and [others][asknot-contribs].
+Rewrite of [asknot-ng], which was written by [@ralphbean] and its
+[contributors][asknot-ng-contribs], which itself was inspired by the
+original [asknot] by [Josh Matthews][jdm], [Henri Koivuneva][wham], and
+[others][asknot-contribs]. The concept is a basic decision tree.
 
-> I stumbled upon and loved the original [whatcanidoformozilla.org][wcidfm] and
-> wanted to deploy it for the [Fedora Community][fedora] but I found that I
-> couldn't easily change the questions and links that were presented.  A year
-> went by and in 2015 I wrote this:  "asknot-ng".
 
-The gist of this “next generation” rewrite is to make it as configurable as
-possible.  There is a primary script, ``asknot-ng.py``
-that works like a static-site generator.  It takes as input three things:
+``neoasknot`` is built with [SvelteKit] and [Tailwind CSS] using the [Skeleton] UI
+library:<br>
+https://whatcanidofor.archlinux.org
 
-- A questions file, written in yaml (see eg.
-  [archlinux.yml](questions/archlinux.yml)).  You’ll have to write your own one of
-  these.
-- A template file, written in mako (the [default](templates/index.html) should work
-  for everybody).
-- A ‘theme’ argument to specify what CSS to use.  The default is nice enough,
-  but you’ll probably want to customize it to your own use case.
+Curious if these tools would be of use to you? See the following:<br>
+https://github.com/feltcoop/why-svelte<br>
+https://tailwindcss.com/docs/utility-first<br>
+https://www.skeleton.dev/docs/why
 
-We have a (WIP) [Arch Linux instance up and running][wcidfa] if you’d like to
-poke it.
+## Usage
 
-## Requirements
+Clean install the project's development dependencies:
 
-The site-generator script is written in Python, so you’ll need that:
+    $ npm ci
 
-    $ sudo pacman -Syu python-mako python-yaml
+Start the dev server:
 
-The script can optionally generate an svg visualizing your question tree.  This
-requires pygraphviz which you could install like so:
+    $ npm run dev
 
-    $ git clone https://aur.archlinux.org/python-pygraphviz.git
-    $ cd python-pygraphviz
-    $ makepkg -isr
+Build for production and preview the static site:
 
-## Giving it a run
+    $ npm run build
+    $ npm run preview
 
-Clone the repo:
+## Deployment
 
-    $ git clone https://gitlab.archlinux.org/archlinux/asknot-ng.git
-    $ cd asknot-ng
-
-Run the script with the Arch Linux configuration:
-
-    $ ./asknot-ng.py templates/index.html questions/archlinux.yml l10n/fedora/locale --theme archlinux
-    Wrote build/en/index.html
-
-and open up `build/en/index.html` in your favorite browser.
-
-## Preparing Translations
-
-**Note**: Currently we piggyback off of Fedora's translations, so skip this.
-
-First, install Babel, setup a virtualenv, and build the egg info:
-
-    $ sudo pacman -Syu python-babel
-    $ python -m venv --system-site-packages venv
-    $ venv/bin/python setup.py develop
-
-Then, extract the translatable strings:
-
-    $ venv/bin/python setup.py extract_messages --output-file l10n/fedora/locale/asknot-ng.pot --input-dir=.
-
-## Application Deployment
-
-The (WIP) Arch Linux ``asknot-ng`` instance currently runs on GitLab Pages.
-There are 2 deployments one in [staging] and one in [production].
-
-The deployment of new versions to these environments is managed from the GitLab
-repository, thanks to the following 2 branches: ``staging`` and ``archlinux``.
+The Arch Linux instance runs on [GitLab Pages][glpages].
+There are 2 deployments: one in [staging] and one in [production].
 
 ### Staging
 
 Currently this is a bit convoluted and done on gitlab.com (at least until
-[multiple version Pages
-support](https://gitlab.com/gitlab-org/gitlab/-/issues/16208) is implemented or
-one of the proposed solutions is used).
+[multiple version Pages support][multiverpages] is implemented or one of the
+proposed solutions is used).
 
 ### Production
 
-To deploy a change in the production environment you need to push the commits
-to the ``archlinux`` branch, then GitLab Pages will build and deploy the site.
+Push to the ``main`` branch and GitLab CI will build and publish the site.
 
-## Contributing back
+## Contributing
 
-``asknot-ng`` is licensed GPLv3+ and we’d love to get patches back containing
-even the things you might not think we want.  If you have a questions file for
-your repo, a modified template, or a CSS theme for your use case, please [send
-them to us][patches].  It would be nice to build a library of deployments so we
-can all learn.
+Development of neoasknot takes place on Arch Linux’s GitLab:
+https://gitlab.archlinux.org/archlinux/neoasknot
 
-**Note**: While the application is licensed GPLv3+, The [Fedora 22
-wallpaper](static/themes/archlinux/img/background.jpg) used is licensed under a
-*Creative Commons Attribution 4 License*.
+Please read our distribution-wide [Code of Conduct][coc] before contributing,
+to understand what actions will and will not be tolerated.
 
-Of course, bug reports and patches to the main script are appreciated as
-always.
+All code contributions fall under the terms of the [GPL-3.0-or-later][license].
 
-Happy Hacking!
-
+[asknot-ng]: https://whatcanidoforfedora.org
 [@ralphbean]: http://threebean.org
-[fedora]: https://getfedora.org
-[patches]: https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html
-[wcidfm]: https://whatcanidoformozilla.org
-[wcidfa]: https://whatcanidofor.archlinux.org
+[asknot-ng-contribs]: https://github.com/fedora-infra/asknot-ng/graphs/contributors
+[asknot]: https://whatcanidoformozilla.org
 [jdm]: https://www.joshmatthews.net
 [wham]: https://koivuneva.net/
 [asknot-contribs]: https://github.com/jdm/asknot/contributors
-[staging]: https://polyzen.gitlab.io/asknot-ng-staging
+[SvelteKit]: https://kit.svelte.dev
+[Tailwind CSS]: https://tailwindcss.com
+[Skeleton]: https://www.skeleton.dev
+[glpages]: https://docs.gitlab.com/ee/user/project/pages/
+[staging]: https://polyzen.gitlab.io/neoasknot-staging
 [production]: https://whatcanidofor.archlinux.org
+[multiverpages]: https://gitlab.com/gitlab-org/gitlab/-/issues/16208
+[coc]: https://terms.archlinux.org/docs/code-of-conduct/
+[license]: https://gitlab.archlinux.org/main/neoasknot/-/blob/archlinux/LICENSE

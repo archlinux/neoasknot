@@ -1,5 +1,0 @@
-"extends": "stylelint-config-standard"
-"rules": {
-  "no-descending-specificity": null,
-  "string-quotes": "single",
-}

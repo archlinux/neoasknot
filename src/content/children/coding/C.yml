@@ -1,0 +1,12 @@
+children:
+  - title: pacman
+    subtitle: Library-based package manager with dependency support
+    link: https://gitlab.archlinux.org/pacman/pacman
+
+  - title: pacman-contrib
+    subtitle: Contributed scripts to pacman
+    link: https://gitlab.archlinux.org/pacman/pacman-contrib
+
+  - title: pyalpm
+    subtitle: C extension for Python 3 that give access to the libalpm API for package management
+    link: https://gitlab.archlinux.org/archlinux/pyalpm
