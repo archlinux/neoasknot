@@ -2,16 +2,19 @@ heading: Which language do you like the most?
 
 children:
   - title: Bash
-    subtitle: simple but loved <3
 
   - title: C
-    subtitle: close to the metal
+
+  - title: Go
 
   - title: JavaScript
-    subtitle: a dynamic web-oriented language for backend and frontend
 
   - title: Perl
-    subtitle: general-purpose programming language
+
+  - title: PHP
 
   - title: Python
-    subtitle: a dynamic language for rapid development
+
+  - title: Rust
+
+  - title: Zsh

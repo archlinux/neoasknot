@@ -7,9 +7,13 @@ children:
     subtitle: Arch Linux website code
     link: https://github.com/archlinux/archweb
 
-  - title: asknot-ng
+  - title: neoasknot
     subtitle: Contribution landing page for Arch Linux
-    link: https://gitlab.archlinux.org/archlinux/asknot-ng
+    link: https://gitlab.archlinux.org/archlinux/neoasknot
+
+  - title: pkgstats.archlinux.de
+    subtitle: Arch Linux package statistics website
+    link: https://github.com/archlinux-de/pkgstats.archlinux.de
 
   - title: Rebuilderd Website
     subtitle: Arch Linux Rebuilderd status webpage

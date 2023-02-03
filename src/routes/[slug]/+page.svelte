@@ -25,9 +25,11 @@
         <a class="card card-hover flex flex-col" href="{url}">
           <div class="p-4 space-y-4">
             <h2>{title}</h2>
-            <article>
-              <p>{subtitle}</p>
-            </article>
+            {#if subtitle}
+              <article>
+                <p>{subtitle}</p>
+              </article>
+            {/if}
           </div>
         </a>
       {/each}
