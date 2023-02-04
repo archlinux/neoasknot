@@ -6,6 +6,7 @@
 </script>
 
 <svelte:head>
+  <meta name="description" content="Arch Linux projects using {slug} that you may be interested in contributing to.">
   <title>{slug} · {data.roottitle}</title>
 </svelte:head>
 

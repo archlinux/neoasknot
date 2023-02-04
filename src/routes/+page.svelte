@@ -4,6 +4,7 @@
 </script>
 
 <svelte:head>
+  <meta name="description" content="Landing page for areas of Arch Linux you may be interested in contributing to.">
   <title>{data.content.default.title}</title>
 </svelte:head>
 
