@@ -19,7 +19,10 @@
       <svelte:fragment slot="trail">
         <LightSwitch />
         {#each data.content.default.navlinks as { name, link }}
-          <a class="btn btn-sm variant-ghost-surface hidden md:inline" href="{link}">{name}</a>
+          <a
+            class="btn btn-sm variant-ghost-surface hidden md:inline"
+            href={link}>{name}</a
+          >
         {/each}
       </svelte:fragment>
     </AppBar>

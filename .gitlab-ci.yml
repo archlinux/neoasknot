@@ -4,7 +4,7 @@ default:
 external linkcheck:
   image:
     name: lycheeverse/lychee
-    entrypoint: [""]
+    entrypoint: ['']
   variables:
     GIT_STRATEGY: none
   script: lychee -v https://whatcanidofor.archlinux.org
@@ -33,7 +33,7 @@ lint:
     - pacman -Syu --noconfirm npm yamllint
     - npm ci --cache .npm --prefer-offline
   script:
-    - npx eslint .
+    - npm run lint
     - yamllint src/content
   artifacts:
     paths:
@@ -83,6 +83,6 @@ pages:
   stage: deploy
   variables:
     GIT_STRATEGY: none
-  script: "true"
+  script: 'true'
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'

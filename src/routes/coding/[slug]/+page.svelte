@@ -6,7 +6,10 @@
 </script>
 
 <svelte:head>
-  <meta name="description" content="Arch Linux projects using {slug} that you may be interested in contributing to.">
+  <meta
+    name="description"
+    content="Arch Linux projects using {slug} that you may be interested in contributing to."
+  />
   <title>{slug} · {data.roottitle}</title>
 </svelte:head>
 
@@ -24,7 +27,7 @@
   <section class="space-y-4">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {#each data.content.default.children as { title, subtitle, link }}
-        <a class="card card-hover flex flex-col" href="{link}">
+        <a class="card card-hover flex flex-col" href={link}>
           <div class="p-4 space-y-4">
             <h2>{title}</h2>
             <article>

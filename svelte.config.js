@@ -5,17 +5,17 @@ import preprocess from 'svelte-preprocess';
 const config = {
   kit: {
     adapter: adapter({
-      precompress: true
+      precompress: true,
     }),
     alias: {
-      '$content': 'src/content'
+      $content: 'src/content',
     },
   },
   preprocess: [
     preprocess({
-      postcss: true
-    })
-  ]
+      postcss: true,
+    }),
+  ],
 };
 
 export default config;
