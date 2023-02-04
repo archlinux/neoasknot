@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>{slug} · What can I do for Arch Linux?</title>
+  <title>{slug} · {data.roottitle}</title>
 </svelte:head>
 
 <div class="container mx-auto p-8 space-y-8">
