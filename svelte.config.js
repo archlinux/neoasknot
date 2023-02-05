@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
+const basePath = process.env.VITE_BASE_PATH || '';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
@@ -9,6 +11,9 @@ const config = {
     }),
     alias: {
       $content: 'src/content',
+    },
+    paths: {
+      base: basePath,
     },
   },
   preprocess: [
