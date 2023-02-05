@@ -1,10 +1,10 @@
-import { sveltekit } from '@sveltejs/kit/vite';
 import ViteYaml from '@modyfi/vite-plugin-yaml';
-import dynamicImport from 'vite-plugin-dynamic-import';
+import { sveltekit } from '@sveltejs/kit/vite';
 import type { UserConfig } from 'vite';
+import dynamicImport from 'vite-plugin-dynamic-import';
 
 const config: UserConfig = {
-  plugins: [sveltekit(), ViteYaml(), dynamicImport()],
+  plugins: [dynamicImport(), sveltekit(), ViteYaml()],
 };
 
 export default config;
