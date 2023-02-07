@@ -31,11 +31,13 @@
         {@const url = link ? link : slug + '/' + title}
         <a class="card card-hover flex flex-col" href={url}>
           <div class="space-y-4 p-4">
-            <h2>{title}</h2>
             {#if subtitle}
               <article>
+                <h2>{title}</h2>
                 <p>{subtitle}</p>
               </article>
+            {:else}
+              <h2>{title}</h2>
             {/if}
           </div>
         </a>

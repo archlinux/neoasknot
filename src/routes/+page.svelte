@@ -21,8 +21,8 @@
         {@const url = link ? link : '/' + title.toLowerCase()}
         <a class="card card-hover flex flex-col" href={url}>
           <div class="space-y-4 p-4">
-            <h2>{title}</h2>
             <article>
+              <h2>{title}</h2>
               <p>{subtitle}</p>
             </article>
           </div>
