@@ -5,6 +5,7 @@
 
   /** @type {import('./$types').PageData} */
   export let data;
+  const nodeContent = data.nodeImport.default;
 </script>
 
 <svelte:head>
@@ -12,7 +13,7 @@
     name="description"
     content="Arch Linux {slug} topics that you may be interested in contributing to."
   />
-  <title>{slug} · {data.roottitle}</title>
+  <title>{slug} · {data.rootTitle}</title>
 </svelte:head>
 
 <div class="container mx-auto space-y-8 p-8">
@@ -22,11 +23,11 @@
     <li class="capitalize">{slug}</li>
   </ol>
 
-  <h1>{data.content.default.heading}</h1>
+  <h1>{nodeContent.heading}</h1>
 
   <section class="space-y-4">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {#each data.content.default.children as { title, subtitle, link }}
+      {#each nodeContent.children as { title, subtitle, link }}
         {@const url = link ? link : slug + '/' + title}
         <a class="card card-hover flex flex-col" href={url}>
           <div class="space-y-4 p-4">

@@ -6,6 +6,7 @@
 
   /** @type {import('./$types').LayoutData} */
   export let data;
+  const nodeContent = data.nodeImport.default;
 </script>
 
 <!-- App Shell -->
@@ -14,11 +15,11 @@
     <!-- App Bar -->
     <AppBar>
       <svelte:fragment slot="lead">
-        <strong class="text-xl">{data.content.default.title}</strong>
+        <strong class="text-xl">{nodeContent.title}</strong>
       </svelte:fragment>
       <svelte:fragment slot="trail">
         <LightSwitch />
-        {#each data.content.default.navlinks as { name, link }}
+        {#each nodeContent.navlinks as { name, link }}
           <a
             class="btn btn-sm variant-ghost-surface hidden md:inline"
             href={link}>{name}</a
