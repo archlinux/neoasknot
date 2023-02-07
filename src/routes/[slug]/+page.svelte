@@ -18,7 +18,7 @@
 
 <div class="container mx-auto space-y-8 p-8">
   <ol class="breadcrumb">
-    <li class="crumb"><span>🏠</span><a href={base}>Home</a></li>
+    <li class="crumb"><span>🏠</span><a href="{base}/">Home</a></li>
     <li class="crumb-separator" aria-hidden>&rsaquo;</li>
     <li class="capitalize">{slug}</li>
   </ol>
