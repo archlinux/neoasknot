@@ -1,11 +1,8 @@
 <script>
-  import { base } from '$app/paths';
-  import { page } from '$app/stores';
-
-  const slug = $page.params.slug;
-
   /** @type {import('./$types').PageData} */
   export let data;
+  import { page } from '$app/stores';
+  const slug = $page.params.slug;
 </script>
 
 <svelte:head>
@@ -18,7 +15,7 @@
 
 <div class="container mx-auto space-y-8 p-8">
   <ol class="breadcrumb">
-    <li class="crumb"><span>🏠</span><a href={base}>Home</a></li>
+    <li class="crumb"><span>🏠</span><a href="/">Home</a></li>
     <li class="crumb-separator" aria-hidden>&rsaquo;</li>
     <li class="capitalize">{slug}</li>
   </ol>
@@ -28,7 +25,7 @@
   <section class="space-y-4">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {#each data.content.default.children as { title, subtitle, link }}
-        {@const url = link ? link : base + '/' + slug + '/' + title}
+        {@const url = link ? link : slug + '/' + title}
         <a class="card card-hover flex flex-col" href={url}>
           <div class="space-y-4 p-4">
             <h2>{title}</h2>
