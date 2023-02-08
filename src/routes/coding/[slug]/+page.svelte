@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div class="container mx-auto space-y-8 p-8">
-  <ol class="breadcrumb">
+  <ol class="breadcrumb-nonresponsive">
     <li class="crumb"><span>🏠</span><a href="{base}/">Home</a></li>
     <li class="crumb-separator" aria-hidden>&rsaquo;</li>
     <li class="crumb"><span>🧑‍💻</span><a href="{base}/coding">Coding</a></li>
