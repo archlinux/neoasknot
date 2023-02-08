@@ -31,9 +31,9 @@
       {#each nodeContent.children as { title, subtitle, link }}
         {@const url = link || base + '/' + slug + '/' + title}
         <a class="card card-hover flex flex-col" href={url}>
-          <div class="space-y-4 p-4">
+          <div class="p-4">
             {#if subtitle}
-              <article>
+              <article class="space-y-4">
                 <h2>{title}</h2>
                 <p>{subtitle}</p>
               </article>

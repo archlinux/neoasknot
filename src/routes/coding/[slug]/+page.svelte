@@ -32,8 +32,8 @@
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {#each nodeContent.children as { title, subtitle, link }}
         <a class="card card-hover flex flex-col" href={link}>
-          <div class="space-y-4 p-4">
-            <article>
+          <div class="p-4">
+            <article class="space-y-4">
               <h2>{title}</h2>
               <p>{subtitle}</p>
             </article>
