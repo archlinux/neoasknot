@@ -9,10 +9,8 @@
   const nodeContent = data.nodeImport.default;
 </script>
 
-<!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell>
   <svelte:fragment slot="header">
-    <!-- App Bar -->
     <AppBar>
       <svelte:fragment slot="lead">
         <strong class="text-xl">{nodeContent.title}</strong>
@@ -28,6 +26,7 @@
       </svelte:fragment>
     </AppBar>
   </svelte:fragment>
-  <!-- Page Route Content -->
-  <slot />
+  <div class="container mx-auto space-y-8 p-8">
+    <slot />
+  </div>
 </AppShell>
