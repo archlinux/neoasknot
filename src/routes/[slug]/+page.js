@@ -8,6 +8,6 @@ export async function load({ params, parent }) {
     metaDescription: `Arch Linux ${slug} topics that you may be interested in contributing to.`,
     nodeContent: nodeImport.default,
     slug,
-    title: `${slug} · ${root.nodeContent.title}`,
+    title: `${slug} · ${root.title}`,
   };
 }
