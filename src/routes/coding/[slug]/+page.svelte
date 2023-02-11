@@ -1,6 +1,5 @@
 <script>
   import { base } from '$app/paths';
-  import { page } from '$app/stores';
 
   /** @type {import('./$types').PageData} */
   export let data;
@@ -11,10 +10,10 @@
   <li class="crumb-separator" aria-hidden>&rsaquo;</li>
   <li class="crumb"><span>🧑‍💻</span><a href="{base}/coding">Coding</a></li>
   <li class="crumb-separator" aria-hidden>&rsaquo;</li>
-  <li>{$page.params.slug}</li>
+  <li>{data.slug}</li>
 </ol>
 
-<h1>Projects using {$page.params.slug}</h1>
+<h1>Projects using {data.slug}</h1>
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
   {#each data.nodeContent.children as { title, subtitle, link }}

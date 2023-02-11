@@ -4,10 +4,12 @@ export async function load({ params, parent }) {
     `$content/children/coding/${params.slug}.yml`
   );
   const root = await parent();
+  const slug = params.slug;
 
   return {
-    metaDescription: `Arch Linux projects using ${params.slug} that you may be interested in contributing to.`,
+    metaDescription: `Arch Linux projects using ${slug} that you may be interested in contributing to.`,
     nodeContent: nodeImport.default,
-    title: `${params.slug} · ${root.nodeContent.title}`,
+    slug: slug,
+    title: `${slug} · ${root.nodeContent.title}`,
   };
 }
