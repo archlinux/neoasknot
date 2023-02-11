@@ -1,8 +1,11 @@
 /** @type {import('./$types').PageLoad} */
 export async function load({ params, parent }) {
+  const nodeImport = await import(`$content/children/${params.slug}.yml`);
   const root = await parent();
+
   return {
-    nodeImport: import(`$content/children/${params.slug}.yml`),
-    rootTitle: root.nodeImport.default.title,
+    metaDescription: `Arch Linux ${params.slug} topics that you may be interested in contributing to.`,
+    nodeContent: nodeImport.default,
+    title: `${params.slug} · ${root.nodeContent.title}`,
   };
 }
