@@ -19,7 +19,10 @@
   {#each data.nodeContent.children as { title, subtitle, link }}
     <a class="card card-hover flex flex-col" href={link}>
       <article class="space-y-4 p-4">
-        <h2>{title}</h2>
+        <div class="flex place-content-between">
+          <h2 class="inline">{title}</h2>
+          <span class="mt-1 md:mt-1.5">🔗</span>
+        </div>
         <p>{subtitle}</p>
       </article>
     </a>

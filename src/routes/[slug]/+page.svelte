@@ -15,16 +15,21 @@
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
   {#each data.nodeContent.children as { title, subtitle, link }}
+    {@const icon = link ? '🔗' : '📁'}
     {@const url = link || `${base}/${data.slug}/${title}`}
     <a class="card card-hover flex flex-col" href={url}>
       {#if subtitle}
         <article class="space-y-4 p-4">
-          <h2>{title}</h2>
+          <div class="flex place-content-between">
+            <h2 class="inline">{title}</h2>
+            <span class="mt-1 md:mt-1.5">{icon}</span>
+          </div>
           <p>{subtitle}</p>
         </article>
       {:else}
-        <div class="p-4">
-          <h2>{title}</h2>
+        <div class="flex place-content-between p-4">
+          <h2 class="inline">{title}</h2>
+          <span class="mt-1 md:mt-1.5">{icon}</span>
         </div>
       {/if}
     </a>
