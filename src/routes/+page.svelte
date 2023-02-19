@@ -11,7 +11,7 @@
   {#each data.nodeContent.children as { title, subtitle, link }}
     {@const icon = link ? '🔗' : '📁'}
     {@const url = link || `${base}/${title.toLowerCase()}`}
-    <a class="card card-hover flex flex-col" href={url}>
+    <a href={url} class="card card-hover flex flex-col">
       <article class="space-y-4  p-4">
         <div class="flex place-content-between">
           <h2 class="inline">{title}</h2>

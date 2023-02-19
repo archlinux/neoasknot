@@ -22,10 +22,11 @@
       </svelte:fragment>
       <svelte:fragment slot="trail">
         <LightSwitch />
-        {#each data.nodeContent.navlinks as { name, link }}
+        {#each data.nodeContent.navlinks as { name, title, link }}
           <a
-            class="btn btn-sm variant-ghost-surface hidden md:inline"
-            href={link}>{name}</a
+            href={link}
+            class="btn btn-sm variant-ghost-surface hidden lg:inline"
+            {title}>{name}</a
           >
         {/each}
       </svelte:fragment>

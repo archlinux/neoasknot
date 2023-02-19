@@ -6,7 +6,7 @@
 </script>
 
 <ol class="breadcrumb">
-  <li class="crumb"><span>🏠</span><a href="{base}/">Home</a></li>
+  <li class="crumb"><a href="{base}/" class="!no-underline">🏠</a></li>
   <li class="crumb-separator" aria-hidden>&rsaquo;</li>
   <li class="capitalize">{data.slug}</li>
 </ol>
@@ -17,7 +17,7 @@
   {#each data.nodeContent.children as { title, subtitle, link }}
     {@const icon = link ? '🔗' : '📁'}
     {@const url = link || `${base}/${data.slug}/${title}`}
-    <a class="card card-hover flex flex-col" href={url}>
+    <a href={url} class="card card-hover flex flex-col">
       {#if subtitle}
         <article class="space-y-4 p-4">
           <div class="flex place-content-between">

@@ -6,9 +6,11 @@
 </script>
 
 <ol class="breadcrumb-nonresponsive">
-  <li class="crumb"><span>🏠</span><a href="{base}/">Home</a></li>
+  <li class="crumb"><a href="{base}/" class="!no-underline">🏠</a></li>
   <li class="crumb-separator" aria-hidden>&rsaquo;</li>
-  <li class="crumb"><span>🧑‍💻</span><a href="{base}/coding">Coding</a></li>
+  <li class="crumb">
+    <a href="{base}/coding" class="!no-underline">🧑‍💻 Coding</a>
+  </li>
   <li class="crumb-separator" aria-hidden>&rsaquo;</li>
   <li>{data.slug}</li>
 </ol>
@@ -17,7 +19,7 @@
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
   {#each data.nodeContent.children as { title, subtitle, link }}
-    <a class="card card-hover flex flex-col" href={link}>
+    <a href={link} class="card card-hover flex flex-col">
       <article class="space-y-4 p-4">
         <div class="flex place-content-between">
           <h2 class="inline">{title}</h2>

@@ -2,10 +2,37 @@ title: What can I do for Arch Linux?
 heading: What's your area of interest?
 
 navlinks:
-  - name: Get Arch Linux
+  - name: Home
+    title: Arch news, packages, projects and more
+    link: https://archlinux.org
+
+  - name: Packages
+    title: Arch Package Database
+    link: https://archlinux.org/packages
+
+  - name: Forums
+    title: Community forums
+    link: https://bbs.archlinux.org
+
+  - name: Wiki
+    title: Community documentation
+    link: https://wiki.archlinux.org
+
+  - name: Bugs
+    title: Report and track bugs
+    link: https://bugs.archlinux.org
+
+  - name: Security
+    title: Arch Linux Security Tracker
+    link: https://security.archlinux.org
+
+  - name: AUR
+    title: Arch Linux User Repository
+    link: https://aur.archlinux.org
+
+  - name: Download
+    title: Get Arch Linux
     link: https://archlinux.org/download/
-  - name: Chat
-    link: https://wiki.archlinux.org/title/Arch_IRC_channels
 
 children:
   - title: Coding

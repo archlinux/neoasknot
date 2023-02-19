@@ -3,7 +3,7 @@ heading: How do you want to make our packages better?
 children:
   - title: Make new AUR packages
     subtitle: Create, adopt and maintain unofficial packages in our community-driven repository
-    link: https://aur.archlinux.org/
+    link: https://aur.archlinux.org
 
   - title: Test packages
     subtitle: Join the Arch Testing Team and test new packages
