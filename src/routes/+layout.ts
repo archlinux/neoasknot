@@ -1,8 +1,9 @@
+import type { LayoutLoad } from './$types';
+
 export const prerender = true;
 export const trailingSlash = 'always';
 
-/** @type {import('./$types').LayoutLoad} */
-export async function load() {
+export const load = (async () => {
   const nodeImport = await import('$content/root.yml');
 
   return {
@@ -11,4 +12,4 @@ export async function load() {
     nodeContent: nodeImport.default,
     title: nodeImport.default.title,
   };
-}
+}) satisfies LayoutLoad;

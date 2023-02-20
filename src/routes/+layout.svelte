@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
   import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
   import '@skeletonlabs/skeleton/styles/all.css';
   import '../app.postcss';
   import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
   import { page } from '$app/stores';
+  import type { LayoutData } from './$types';
 
-  /** @type {import('./$types').LayoutData} */
-  export let data;
+  export let data: LayoutData;
 </script>
 
 <svelte:head>
