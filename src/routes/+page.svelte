@@ -5,6 +5,6 @@
   export let data: LayoutData;
 </script>
 
-<h1>{data.nodeContent.heading}</h1>
+<h1>{data.heading}</h1>
 
-<ChildGrid {...data.nodeContent} />
+<ChildGrid children={data.children} />

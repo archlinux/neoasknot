@@ -18,4 +18,4 @@
 
 <h1>Projects using {data.slug}</h1>
 
-<ChildGrid {...data.nodeContent} />
+<ChildGrid children={data.children} />

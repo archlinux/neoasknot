@@ -7,9 +7,9 @@ export const load = (async () => {
   const nodeImport = await import('$content/root.yml');
 
   return {
+    ...nodeImport.default,
     metaDescription:
       'Landing page for areas of Arch Linux you may be interested in contributing to.',
-    nodeContent: nodeImport.default,
     title: nodeImport.default.title,
   };
 }) satisfies LayoutLoad;

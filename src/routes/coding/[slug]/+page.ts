@@ -8,8 +8,8 @@ export const load = (async ({ params, parent }) => {
   const slug = params.slug;
 
   return {
+    ...nodeImport.default,
     metaDescription: `Arch Linux projects using ${slug} that you may be interested in contributing to.`,
-    nodeContent: nodeImport.default,
     slug,
     title: `${slug} · ${parentData.title}`,
   };

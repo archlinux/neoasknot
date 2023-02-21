@@ -12,6 +12,6 @@
   <li class="capitalize">{data.slug}</li>
 </ol>
 
-<h1>{data.nodeContent.heading}</h1>
+<h1>{data.heading}</h1>
 
-<ChildGrid {...data.nodeContent} slug={data.slug} />
+<ChildGrid children={data.children} slug={data.slug} />
