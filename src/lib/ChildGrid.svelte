@@ -8,8 +8,8 @@
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
   {#each children as { title, subtitle, link }}
-    {@const icon = link ? '🔗' : '📁'}
     {@const href = link || `${routePath}/${title}`}
+    {@const icon = link ? '🔗' : '📁'}
     <a {href} class="card card-hover flex flex-col">
       {#if subtitle}
         <article class="space-y-4 p-4">
