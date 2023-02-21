@@ -1,8 +1,8 @@
 <script lang="ts">
   import ChildGrid from '$lib/ChildGrid.svelte';
-  import type { LayoutData } from './$types';
+  import type { PageData } from './$types';
 
-  export let data: LayoutData;
+  export let data: PageData;
 </script>
 
 <h1>{data.heading}</h1>

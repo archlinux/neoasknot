@@ -8,8 +8,5 @@ export const load = (async () => {
 
   return {
     ...nodeImport.default,
-    metaDescription:
-      'Landing page for areas of Arch Linux you may be interested in contributing to.',
-    title: nodeImport.default.title,
   };
 }) satisfies LayoutLoad;
