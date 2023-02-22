@@ -35,31 +35,34 @@ navlinks:
     link: https://archlinux.org/download/
 
 children:
-  - title: coding
+  - title: Coding
     subtitle: Software is our daily prayer..
+    node: coding
 
-  - title: infrastructure
+  - title: Infrastructure
     subtitle: Join the DevOps team and keep our servers running
     link: https://gitlab.archlinux.org/archlinux/infrastructure
 
-  - title: packaging
+  - title: Packaging
     subtitle: Get involved with the packaging community
+    node: packaging
 
-  - title: reproducible packages
+  - title: Reproducible packages
     subtitle: Make Arch Linux more secure with reproducible package builds
     link: https://reproducible.archlinux.org/
 
-  - title: security
+  - title: Security
     subtitle: Join the Security Team
     link: https://wiki.archlinux.org/index.php/Arch_Security_Team
 
-  - title: translation
+  - title: Translation
     subtitle: Do you like spoken languages?
+    node: translation
 
-  - title: wiki housekeeping
+  - title: Wiki housekeeping
     subtitle: Help clean and maintain the ArchWiki
     link: https://wiki.archlinux.org/title/ArchWiki:Contributing
 
-  - title: wrangling bugs
+  - title: Wrangling bugs
     subtitle: Help manage bugs and assign them to maintainers
     link: https://bugs.archlinux.org

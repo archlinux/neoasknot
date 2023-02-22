@@ -2,21 +2,31 @@ heading: Which language do you like the most?
 
 children:
   - title: Bash
+    node: Bash
 
   - title: C
+    node: C
 
   - title: Go
+    node: Go
 
   - title: Java
+    node: Java
 
   - title: JavaScript
+    node: JavaScript
 
   - title: Perl
+    node: Perl
 
   - title: PHP
+    node: PHP
 
   - title: Python
+    node: Python
 
   - title: Rust
+    node: Rust
 
   - title: Zsh
+    node: Zsh
