@@ -1,8 +1,6 @@
 <script lang="ts">
-  import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
-  import '@skeletonlabs/skeleton/styles/all.css';
-  import '../app.postcss';
-  import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+  import '../app.css';
+  import logo from '$lib/archlogo.5b2d40168a1c.svg';
   import { page } from '$app/stores';
   import type { LayoutData } from './$types';
 
@@ -14,25 +12,28 @@
   <title>{$page.data.title}</title>
 </svelte:head>
 
-<AppShell>
-  <svelte:fragment slot="header">
-    <AppBar>
-      <svelte:fragment slot="lead">
-        <strong class="text-xl">{data.title}</strong>
-      </svelte:fragment>
-      <svelte:fragment slot="trail">
-        <LightSwitch />
-        {#each data.navlinks as { name, title, link }}
-          <a
-            href={link}
-            class="btn btn-sm variant-ghost-surface hidden lg:inline"
-            {title}>{name}</a
-          >
-        {/each}
-      </svelte:fragment>
-    </AppBar>
-  </svelte:fragment>
-  <div class="container mx-auto space-y-8 p-8">
-    <slot />
+<div class="navbar">
+  <div class="navbar-start">
+    {#each data.logo as { name, title, link }}
+      <a href={link} {title}>
+        <img src={logo} alt={name} class="w-36 lg:w-48" />
+      </a>
+    {/each}
   </div>
-</AppShell>
+  <div class="navbar-end">
+    <div class="btn-group">
+      {#each data.navlinks as { name, title, link }}
+        <a
+          href={link}
+          role="button"
+          class="btn-ghost btn-sm btn hidden normal-case lg:btn-md md:inline-flex"
+          {title}>{name}</a
+        >
+      {/each}
+    </div>
+  </div>
+</div>
+
+<main class="container mx-auto space-y-8 p-8">
+  <slot />
+</main>

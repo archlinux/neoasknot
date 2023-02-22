@@ -7,8 +7,8 @@ Rewrite of [asknot-ng], which was written by [@ralphbean] and its
 original [asknot] by [Josh Matthews][jdm], Henri Koivuneva, and
 [others][asknot-contribs]. The concept is a basic decision tree.
 
-`neoasknot` is built with [SvelteKit] and [Tailwind CSS] using the [Skeleton] UI
-library:<br>
+`neoasknot` is built with [SvelteKit] and [Tailwind CSS] using the [daisyUI]
+component library:<br>
 https://whatcanidofor.archlinux.org
 
 ## Usage
@@ -59,7 +59,7 @@ All code contributions fall under the terms of the [GPL-3.0-or-later][license].
 [asknot-contribs]: https://github.com/jdm/asknot/contributors
 [SvelteKit]: https://kit.svelte.dev
 [Tailwind CSS]: https://tailwindcss.com
-[Skeleton]: https://www.skeleton.dev
+[daisyUI]: https://daisyui.com/
 [glpages]: https://docs.gitlab.com/ee/user/project/pages/
 [staging]: https://polyzen.gitlab.io/neoasknot-staging
 [production]: https://whatcanidofor.archlinux.org

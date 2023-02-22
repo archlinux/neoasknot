@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 const basePath = process.env.VITE_BASE_PATH || '';
 
@@ -16,11 +16,7 @@ const config = {
       base: basePath,
     },
   },
-  preprocess: [
-    preprocess({
-      postcss: true,
-    }),
-  ],
+  preprocess: vitePreprocess(),
 };
 
 export default config;

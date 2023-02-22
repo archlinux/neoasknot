@@ -6,12 +6,13 @@
   export let data: PageData;
 </script>
 
-<ol class="breadcrumb">
-  <li class="crumb"><a href="{base}/" class="!no-underline">🏠</a></li>
-  <li class="crumb-separator" aria-hidden>&rsaquo;</li>
-  <li class="capitalize">{data.slug}</li>
-</ol>
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="{base}/" class="!no-underline">🏠</a></li>
+    <li class="capitalize">{data.slug}</li>
+  </ul>
+</div>
 
-<h1>{data.heading}</h1>
+<h1 class="text-xl">{data.heading}</h1>
 
 <ChildGrid children={data.children} slug={data.slug} />

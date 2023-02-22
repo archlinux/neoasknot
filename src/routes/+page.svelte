@@ -5,6 +5,6 @@
   export let data: PageData;
 </script>
 
-<h1>{data.heading}</h1>
+<h1 class="text-xl">{data.heading}</h1>
 
 <ChildGrid children={data.children} />
