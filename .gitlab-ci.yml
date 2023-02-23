@@ -1,17 +1,7 @@
 default:
   image: archlinux
 
-external linkcheck:
-  image:
-    name: lycheeverse/lychee
-    entrypoint: ['']
-  variables:
-    GIT_STRATEGY: none
-  script: lychee -v https://whatcanidofor.archlinux.org
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
-
-internal linkcheck:
+linkcheck:
   stage: .pre
   before_script:
     - pacman -Syu --noconfirm go-yq lychee-link-checker
@@ -22,6 +12,7 @@ internal linkcheck:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: manual
       allow_failure: true
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
 
 lint:
   stage: .pre
