@@ -4,7 +4,7 @@ Ask not what `$ORG` can do for you, but what you can do for `$ORG`.
 
 Rewrite of [asknot-ng], which was written by [@ralphbean] and its
 [contributors][asknot-ng-contribs], which itself was inspired by the
-original [asknot] by [Josh Matthews][jdm], [Henri Koivuneva][wham], and
+original [asknot] by [Josh Matthews][jdm], Henri Koivuneva, and
 [others][asknot-contribs]. The concept is a basic decision tree.
 
 `neoasknot` is built with [SvelteKit] and [Tailwind CSS] using the [Skeleton] UI
@@ -61,7 +61,6 @@ All code contributions fall under the terms of the [GPL-3.0-or-later][license].
 [asknot-ng-contribs]: https://github.com/fedora-infra/asknot-ng/graphs/contributors
 [asknot]: https://whatcanidoformozilla.org
 [jdm]: https://www.joshmatthews.net
-[wham]: https://koivuneva.net/
 [asknot-contribs]: https://github.com/jdm/asknot/contributors
 [SvelteKit]: https://kit.svelte.dev
 [Tailwind CSS]: https://tailwindcss.com
