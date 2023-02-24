@@ -21,8 +21,9 @@ linkcheck:
 lint:
   stage: .pre
   cache:
-    files:
-      - package-lock.json
+    key:
+      files:
+        - package-lock.json
     paths:
       - .npm
   before_script:
