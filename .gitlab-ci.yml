@@ -17,7 +17,8 @@ linkcheck:
 lint:
   stage: .pre
   cache:
-    key: $CI_COMMIT_REF_SLUG
+    files:
+      - package-lock.json
     paths:
       - .npm
   before_script:
