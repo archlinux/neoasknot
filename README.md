@@ -11,11 +11,6 @@ original [asknot] by [Josh Matthews][jdm], Henri Koivuneva, and
 library:<br>
 https://whatcanidofor.archlinux.org
 
-Curious if these tools would be of use to you? See the following:<br>
-https://github.com/feltcoop/why-svelte<br>
-https://tailwindcss.com/docs/utility-first<br>
-https://www.skeleton.dev/docs/why
-
 ## Usage
 
 Clean install the project's development dependencies:
