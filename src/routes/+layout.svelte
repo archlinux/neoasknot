@@ -12,7 +12,7 @@
   <title>{$page.data.title}</title>
 </svelte:head>
 
-<div class="navbar">
+<div class="navbar border-b-[5px] border-[#08c] bg-base-200">
   <div class="navbar-start">
     {#each data.logo as { name, title, link }}
       <a href={link} {title}>
