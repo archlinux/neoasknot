@@ -1,6 +1,6 @@
 <script lang="ts">
   import '../app.css';
-  import logo from '$lib/archlogo.5b2d40168a1c.svg';
+  import logo from '$lib/archlogo.svg';
   import { page } from '$app/stores';
   import type { LayoutData } from './$types';
 
