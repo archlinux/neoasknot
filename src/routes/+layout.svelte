@@ -33,7 +33,7 @@
     </div>
     <!-- svelte-ignore a11y-label-has-associated-control a11y-no-noninteractive-tabindex -->
     <div class="dropdown-left dropdown md:hidden">
-      <label tabindex="0" class="btn-ghost btn m-1 pb-1 font-extrabold">…</label
+      <label tabindex="0" class="btn-ghost btn pb-1 font-extrabold">…</label
       >
       <ul
         tabindex="0"
