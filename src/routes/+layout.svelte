@@ -31,20 +31,13 @@
     </div>
     <!-- svelte-ignore a11y-label-has-associated-control a11y-no-noninteractive-tabindex -->
     <div class="dropdown-left dropdown md:hidden">
-      <label tabindex="0" class="btn-ghost btn">☰</label>
+      <label tabindex="0" class="btn-ghost btn-square btn">☰</label>
       <ul
         tabindex="0"
         class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
       >
         {#each data.navlinks as { name, title, link }}
-          <li>
-            <a
-              href={link}
-              role="button"
-              class="btn-ghost btn-sm btn normal-case lg:btn-md"
-              {title}>{name}</a
-            >
-          </li>
+          <li><a href={link} {title}>{name}</a></li>
         {/each}
       </ul>
     </div>
