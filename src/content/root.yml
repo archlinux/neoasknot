@@ -2,9 +2,9 @@ title: What can I do for Arch Linux?
 heading: What's your area of interest?
 
 logo:
-  - name: Arch Linux logo
-    title: Return to the main page
-    link: https://archlinux.org
+  name: Arch Linux logo
+  title: Return to the main page
+  link: https://archlinux.org
 
 navlinks:
   - name: Home

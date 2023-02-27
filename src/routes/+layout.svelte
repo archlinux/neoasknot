@@ -14,11 +14,9 @@
 
 <div class="navbar border-b-[5px] border-[#08c] bg-base-200">
   <div class="navbar-start">
-    {#each data.logo as { name, title, link }}
-      <a href={link} {title}>
-        <img src={logo} alt={name} class="w-36 lg:w-48" />
-      </a>
-    {/each}
+    <a href={data.logo.link} title={data.logo.title}>
+      <img src={logo} alt={data.logo.name} class="w-36 lg:w-48" />
+    </a>
   </div>
   <div class="navbar-end">
     <div class="btn-group hidden md:inline-flex">
