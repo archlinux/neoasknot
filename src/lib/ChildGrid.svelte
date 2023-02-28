@@ -1,7 +1,14 @@
 <script lang="ts">
   import { base } from '$app/paths';
 
-  export let children: any[];
+  interface Children {
+    readonly title: string;
+    readonly subtitle?: string;
+    readonly link?: string;
+    readonly node?: string;
+  }
+
+  export let children: Children[];
   export let slug = '';
   export const routePath = slug ? `${base}/${slug}` : base;
 </script>
