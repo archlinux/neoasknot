@@ -7,10 +7,10 @@
 </script>
 
 <div class="breadcrumbs">
-  <ul>
+  <ol>
     <li><a href="{base}/" class="!no-underline">🏠</a></li>
     <li class="capitalize">{data.slug}</li>
-  </ul>
+  </ol>
 </div>
 
 <h1 class="text-xl">{data.heading}</h1>

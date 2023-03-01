@@ -7,11 +7,11 @@
 </script>
 
 <div class="breadcrumbs">
-  <ul>
+  <ol>
     <li><a href="{base}/" class="!no-underline">🏠</a></li>
     <li><a href="{base}/coding" class="!no-underline">🧑‍💻 Coding</a></li>
     <li>{data.slug}</li>
-  </ul>
+  </ol>
 </div>
 
 <h1 class="text-xl">Projects using {data.slug}</h1>
