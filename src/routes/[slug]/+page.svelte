@@ -13,6 +13,4 @@
   </ol>
 </div>
 
-<h1 class="text-xl">{data.heading}</h1>
-
-<ChildGrid children={data.children} slug={data.slug} />
+<ChildGrid heading={data.heading} children={data.children} slug={data.slug} />

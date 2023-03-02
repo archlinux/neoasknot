@@ -12,5 +12,6 @@ export const load = (async ({ params, parent }) => {
     metaDescription: `Arch Linux projects using ${slug} that you may be interested in contributing to.`,
     slug,
     title: `${slug} · ${parentData.title}`,
+    heading: `Projects using ${slug}`,
   };
 }) satisfies PageLoad;

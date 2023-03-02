@@ -8,10 +8,13 @@
     readonly node?: string;
   }
 
+  export let heading: string;
   export let children: Children[];
   export let slug = '';
   export const routePath = slug ? `${base}/${slug}` : base;
 </script>
+
+<h1 class="text-xl">{heading}</h1>
 
 <div class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
   {#each children as { title, subtitle, link, node }}

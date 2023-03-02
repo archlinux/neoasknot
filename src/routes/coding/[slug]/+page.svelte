@@ -14,6 +14,4 @@
   </ol>
 </div>
 
-<h1 class="text-xl">Projects using {data.slug}</h1>
-
-<ChildGrid children={data.children} />
+<ChildGrid heading={data.heading} children={data.children} />
