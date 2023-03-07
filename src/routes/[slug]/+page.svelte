@@ -13,4 +13,4 @@
   </ol>
 </div>
 
-<ChildGrid heading={data.heading} children={data.children} slug={data.slug} />
+<ChildGrid heading={data.heading} children={data.children} />
