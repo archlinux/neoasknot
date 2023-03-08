@@ -13,7 +13,7 @@
 <h1 class="text-xl">{heading}</h1>
 
 <nav
-  aria-label="Contents of the current level of the decision tree"
+  aria-label="Current level of the decision tree"
   class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
 >
   {#each children as { title, subtitle, link, node }}
