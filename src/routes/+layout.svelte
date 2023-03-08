@@ -12,37 +12,42 @@
   <title>{$page.data.title}</title>
 </svelte:head>
 
-<div class="navbar border-b-[5px] border-[#08c] bg-base-200">
-  <div class="navbar-start">
-    <a href={data.logo.link} title={data.logo.title}>
-      <img src={logo} alt={data.logo.name} class="w-36 lg:w-48" />
-    </a>
-  </div>
-  <div class="navbar-end">
-    <div class="btn-group hidden md:inline-flex">
-      {#each data.navlinks as { name, title, link }}
-        <a
-          href={link}
-          role="button"
-          class="btn-ghost btn-sm btn normal-case lg:btn-md"
-          {title}>{name}</a
-        >
-      {/each}
+<header>
+  <nav
+    aria-label="Navigation bar"
+    class="navbar border-b-[5px] border-[#08c] bg-base-200"
+  >
+    <div class="navbar-start">
+      <a href={data.logo.link} title={data.logo.title}>
+        <img src={logo} alt={data.logo.name} class="w-36 lg:w-48" />
+      </a>
     </div>
-    <!-- svelte-ignore a11y-label-has-associated-control a11y-no-noninteractive-tabindex -->
-    <div class="dropdown-left dropdown md:hidden">
-      <label tabindex="0" class="btn-ghost btn-square btn">☰</label>
-      <ul
-        tabindex="0"
-        class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
-      >
+    <div class="navbar-end">
+      <div class="btn-group hidden md:inline-flex">
         {#each data.navlinks as { name, title, link }}
-          <li><a href={link} {title}>{name}</a></li>
+          <a
+            href={link}
+            role="button"
+            class="btn-ghost btn-sm btn normal-case lg:btn-md"
+            {title}>{name}</a
+          >
         {/each}
-      </ul>
+      </div>
+      <!-- svelte-ignore a11y-label-has-associated-control a11y-no-noninteractive-tabindex -->
+      <div class="dropdown-left dropdown md:hidden">
+        <label tabindex="0" class="btn-ghost btn-square btn">☰</label>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
+        >
+          {#each data.navlinks as { name, title, link }}
+            <li><a href={link} {title}>{name}</a></li>
+          {/each}
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
+  </nav>
+</header>
 
 <main class="container mx-auto space-y-8 p-8">
   <slot />
