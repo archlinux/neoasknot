@@ -3,6 +3,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
+    'plugin:svelte/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:yml/standard',
     'prettier',
@@ -10,18 +11,22 @@ module.exports = {
   rules: {
     'yml/quotes': ['error', { prefer: 'single' }],
   },
-  plugins: ['svelte3', '@typescript-eslint'],
+  plugins: ['@typescript-eslint'],
   ignorePatterns: ['*.cjs'],
   overrides: [
-    { files: ['*.svelte'], processor: 'svelte3/svelte3' },
+    {
+      files: ['*.svelte'],
+      parser: 'svelte-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+      },
+    },
     { files: ['*.yaml', '*.yml'], parser: 'yaml-eslint-parser' },
   ],
-  settings: {
-    'svelte3/typescript': () => require('typescript'),
-  },
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,
+    extraFileExtensions: ['.svelte'],
   },
   env: {
     browser: true,
