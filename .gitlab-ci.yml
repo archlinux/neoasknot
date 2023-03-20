@@ -1,6 +1,29 @@
 default:
   image: archlinux
 
+diagnostics:
+  stage: .pre
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm
+  before_script:
+    - pacman -Syu --noconfirm npm
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run check
+    - npm run lint
+  artifacts:
+    paths:
+      - node_modules
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
+      when: never
+    - if: '$CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
+
 linkcheck:
   stage: .pre
   cache:
@@ -17,28 +40,6 @@ linkcheck:
       when: manual
       allow_failure: true
     - if: '$CI_PIPELINE_SOURCE == "schedule"'
-
-lint:
-  stage: .pre
-  cache:
-    key:
-      files:
-        - package-lock.json
-    paths:
-      - .npm
-  before_script:
-    - pacman -Syu --noconfirm npm
-    - npm ci --cache .npm --prefer-offline
-  script:
-    - npm run lint
-  artifacts:
-    paths:
-      - node_modules
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
-      when: never
-    - if: '$CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
 
 .artifacts:
   artifacts:
