@@ -2,9 +2,8 @@
   import '../app.css';
   import { page } from '$app/stores';
   import logo from '$lib/archlogo.svg';
-  import type { LayoutData } from './$types';
 
-  export let data: LayoutData;
+  export let data;
 </script>
 
 <svelte:head>

@@ -1,5 +1,3 @@
-import type { PageLoad } from './$types';
-
 export const load = (async ({ params, parent }) => {
   const slug = params.slug;
   const nodeImport = await import(`$content/children/coding/${slug}.yml`);
@@ -12,4 +10,4 @@ export const load = (async ({ params, parent }) => {
     title: `${slug} · ${title}`,
     heading: `Projects using ${slug}`,
   };
-}) satisfies PageLoad;
+});

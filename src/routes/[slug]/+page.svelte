@@ -1,9 +1,8 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import ChildGrid from '$lib/ChildGrid.svelte';
-  import type { PageData } from './$types';
 
-  export let data: PageData;
+  export let data;
 </script>
 
 <div class="breadcrumbs">
