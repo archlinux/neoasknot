@@ -1,4 +1,4 @@
-export const load = (async ({ params, parent }) => {
+export const load = async ({ params, parent }) => {
   const slug = params.slug;
   const nodeImport = await import(`$content/children/coding/${slug}.yml`);
   const { title } = await parent();
@@ -10,4 +10,4 @@ export const load = (async ({ params, parent }) => {
     title: `${slug} · ${title}`,
     heading: `Projects using ${slug}`,
   };
-});
+};
