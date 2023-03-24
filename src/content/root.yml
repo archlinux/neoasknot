@@ -1,12 +1,13 @@
 title: What can I do for Arch Linux?
 heading: What's your area of interest?
+donationLink: https://archlinux.org/donate/
 
 logo:
   name: Arch Linux logo
   title: Return to the main page
   link: https://archlinux.org
 
-navlinks:
+navLinks:
   - name: Home
     title: Arch news, packages, projects and more
     link: https://archlinux.org

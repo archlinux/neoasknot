@@ -23,7 +23,7 @@
     </div>
     <div class="navbar-end">
       <div class="btn-group hidden md:inline-flex">
-        {#each data.navlinks as { name, title, link }}
+        {#each data.navLinks as { name, title, link }}
           <a
             href={link}
             role="button"
@@ -39,7 +39,7 @@
           tabindex="0"
           class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
         >
-          {#each data.navlinks as { name, title, link }}
+          {#each data.navLinks as { name, title, link }}
             <li><a href={link} {title}>{name}</a></li>
           {/each}
         </ul>
@@ -51,3 +51,19 @@
 <main class="container mx-auto space-y-8 p-8">
   <slot />
 </main>
+
+<footer class="footer footer-center mt-auto bg-base-300 p-4 text-base-content">
+  <p class="inline">
+    Powered by <a
+      href="https://gitlab.archlinux.org/archlinux/neoasknot"
+      class="link-hover link">neoasknot</a
+    >, using
+    <a href="https://kit.svelte.dev" class="link-hover link">SvelteKit</a>
+    and
+    <a href="https://daisyui.com" class="link-hover link">daisyUI</a> ❤️
+    {#if data.donationLink}
+      Donate to Arch Linux
+      <a href={data.donationLink} class="link-hover link">here</a>
+    {/if}
+  </p>
+</footer>
