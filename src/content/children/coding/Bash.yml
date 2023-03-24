@@ -1,72 +1,72 @@
 children:
-  - title: arch-boxes
-    subtitle: The project that builds our Vagrant and cloud images
+  - name: arch-boxes
+    description: The project that builds our Vagrant and cloud images
     link: https://gitlab.archlinux.org/archlinux/arch-boxes
 
-  - title: arch-install-scripts
-    subtitle: Small suite of scripts aimed at automating some menial tasks when installing Arch Linux
+  - name: arch-install-scripts
+    description: Small suite of scripts aimed at automating some menial tasks when installing Arch Linux
     link: https://github.com/archlinux/arch-install-scripts
 
-  - title: archboot
-    subtitle: Set of scripts to generate bootable media for CD/USB/PXE, designed for installation or rescue operation
+  - name: archboot
+    description: Set of scripts to generate bootable media for CD/USB/PXE, designed for installation or rescue operation
     link: https://gitlab.archlinux.org/tpowa/archboot
 
-  - title: archiso
-    subtitle: Small set of bash scripts capable of building fully functional Arch Linux live CD/DVD/USB images
+  - name: archiso
+    description: Small set of bash scripts capable of building fully functional Arch Linux live CD/DVD/USB images
     link: https://gitlab.archlinux.org/archlinux/archiso
 
-  - title: archivetools
-    subtitle: Used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and bootstrap tarballs
+  - name: archivetools
+    description: Used to run the Arch Linux Archive. It's a turnkey solution to snapshot Arch Linux packages repositories, ISOs images and bootstrap tarballs
     link: https://gitlab.archlinux.org/archlinux/archivetools
 
-  - title: archlinux-docker
-    subtitle: Builds our official Arch Linux Docker images
+  - name: archlinux-docker
+    description: Builds our official Arch Linux Docker images
     link: https://gitlab.archlinux.org/archlinux/archlinux-docker
 
-  - title: archlinux-repro
-    subtitle: Tools to reproduce Arch Linux packages
+  - name: archlinux-repro
+    description: Tools to reproduce Arch Linux packages
     link: https://github.com/archlinux/archlinux-repro
 
-  - title: asp
-    subtitle: Arch Linux build source management tool
+  - name: asp
+    description: Arch Linux build source management tool
     link: https://github.com/archlinux/asp
 
-  - title: contrib
-    subtitle: Toolbox with various useful scripts for package management
+  - name: contrib
+    description: Toolbox with various useful scripts for package management
     link: https://github.com/archlinux/contrib
 
-  - title: dbscripts
-    subtitle: Arch Linux repository management scripts
+  - name: dbscripts
+    description: Arch Linux repository management scripts
     link: https://gitlab.archlinux.org/archlinux/dbscripts
 
-  - title: devtools
-    subtitle: Tools for building Arch Linux packages
+  - name: devtools
+    description: Tools for building Arch Linux packages
     link: https://gitlab.archlinux.org/archlinux/devtools
 
-  - title: infrastructure
-    subtitle: Complete collection of ansible playbooks and roles for the Arch Linux infrastructure
+  - name: infrastructure
+    description: Complete collection of ansible playbooks and roles for the Arch Linux infrastructure
     link: https://gitlab.archlinux.org/archlinux/infrastructure
 
-  - title: mkinitcpio
-    subtitle: Arch Linux initramfs generation tools
+  - name: mkinitcpio
+    description: Arch Linux initramfs generation tools
     link: https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio
 
-  - title: mkinitcpio-archiso
-    subtitle: Provides initcpio integration for archiso
+  - name: mkinitcpio-archiso
+    description: Provides initcpio integration for archiso
     link: https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio-archiso
 
-  - title: netctl
-    subtitle: Profile based systemd network management
+  - name: netctl
+    description: Profile based systemd network management
     link: https://gitlab.archlinux.org/archlinux/netctl
 
-  - title: pacman
-    subtitle: Library-based package manager with dependency support
+  - name: pacman
+    description: Library-based package manager with dependency support
     link: https://gitlab.archlinux.org/pacman/pacman
 
-  - title: pacman-contrib
-    subtitle: Contributed scripts to pacman
+  - name: pacman-contrib
+    description: Contributed scripts to pacman
     link: https://gitlab.archlinux.org/pacman/pacman-contrib
 
-  - title: releng
-    subtitle: Arch Linux release engineering
+  - name: releng
+    description: Arch Linux release engineering
     link: https://github.com/archlinux/contrib

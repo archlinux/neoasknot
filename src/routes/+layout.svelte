@@ -14,21 +14,21 @@
 <header>
   <nav
     aria-label="Navigation bar"
-    class="navbar border-b-[5px] border-[#08c] bg-base-200"
+    class="navbar border-b-[5px] border-b-[#08c] bg-base-200"
   >
     <div class="navbar-start">
-      <a href={data.logo.link} title={data.logo.title}>
+      <a href={data.logo.link} title={data.logo.description}>
         <img src={logo} alt={data.logo.name} class="w-36 lg:w-48" />
       </a>
     </div>
     <div class="navbar-end">
       <div class="btn-group hidden md:inline-flex">
-        {#each data.navLinks as { name, title, link }}
+        {#each data.navbarLinks as { name, description, link }}
           <a
             href={link}
             role="button"
             class="btn-ghost btn-sm btn normal-case lg:btn-md"
-            {title}>{name}</a
+            title={description}>{name}</a
           >
         {/each}
       </div>
@@ -39,8 +39,8 @@
           tabindex="0"
           class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
         >
-          {#each data.navLinks as { name, title, link }}
-            <li><a href={link} {title}>{name}</a></li>
+          {#each data.navbarLinks as { name, description, link }}
+            <li><a href={link} title={description}>{name}</a></li>
           {/each}
         </ul>
       </div>

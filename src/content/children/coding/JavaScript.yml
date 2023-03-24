@@ -1,20 +1,20 @@
 children:
-  - title: archlinux-common-style
-    subtitle: Common Arch Linux style components
+  - name: archlinux-common-style
+    description: Common Arch Linux style components
     link: https://gitlab.archlinux.org/archlinux/archlinux-common-style
 
-  - title: archweb
-    subtitle: Arch Linux website code
+  - name: archweb
+    description: Arch Linux website code
     link: https://github.com/archlinux/archweb
 
-  - title: neoasknot
-    subtitle: Contribution landing page for Arch Linux
+  - name: neoasknot
+    description: Contribution landing page for Arch Linux
     link: https://gitlab.archlinux.org/archlinux/neoasknot
 
-  - title: pkgstats.archlinux.de
-    subtitle: Arch Linux package statistics website
+  - name: pkgstats.archlinux.de
+    description: Arch Linux package statistics website
     link: https://github.com/archlinux-de/pkgstats.archlinux.de
 
-  - title: Rebuilderd Website
-    subtitle: Arch Linux Rebuilderd status webpage
+  - name: Rebuilderd Website
+    description: Arch Linux Rebuilderd status webpage
     link: https://gitlab.archlinux.org/archlinux/rebuilderd-website

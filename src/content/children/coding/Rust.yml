@@ -1,16 +1,16 @@
 children:
-  - title: arch-rebuild-order
-    subtitle: CLI tool to determine the rebuild order of provided package(s)
+  - name: arch-rebuild-order
+    description: CLI tool to determine the rebuild order of provided package(s)
     link: https://gitlab.archlinux.org/archlinux/arch-rebuild-order
 
-  - title: arch-repro-status
-    subtitle: CLI tool for querying the reproducibility status of the Arch Linux packages
+  - name: arch-repro-status
+    description: CLI tool for querying the reproducibility status of the Arch Linux packages
     link: https://gitlab.archlinux.org/archlinux/arch-repro-status
 
-  - title: gitlab-exporter
-    subtitle: Extracts metrics from GitLab using GraphQL API and outputs them in a prometheus compatible format
+  - name: gitlab-exporter
+    description: Extracts metrics from GitLab using GraphQL API and outputs them in a prometheus compatible format
     link: https://gitlab.archlinux.org/archlinux/gitlab-exporter
 
-  - title: gluebuddy
-    subtitle: Secure helper daemon that watches several aspects of the Arch Linux infrastructure and makes sure that certain conditions are met
+  - name: gluebuddy
+    description: Secure helper daemon that watches several aspects of the Arch Linux infrastructure and makes sure that certain conditions are met
     link: https://gitlab.archlinux.org/archlinux/gluebuddy

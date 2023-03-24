@@ -1,4 +1,4 @@
 children:
-  - title: pkgstats.archlinux.de
-    subtitle: Arch Linux package statistics website
+  - name: pkgstats.archlinux.de
+    description: Arch Linux package statistics website
     link: https://github.com/archlinux-de/pkgstats.archlinux.de
