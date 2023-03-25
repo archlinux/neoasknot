@@ -1,3 +1,5 @@
+import { PUBLIC_ORG } from '$env/static/public';
+
 export const prerender = true;
 export const trailingSlash = 'always';
 
@@ -6,5 +8,7 @@ export const load = async () => {
 
   return {
     ...nodeImport.default,
+    title: `What can I do for ${PUBLIC_ORG}?`,
+    heading: 'What is your area of interest?',
   };
 };
