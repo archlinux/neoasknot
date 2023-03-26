@@ -3,7 +3,6 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 import { loadEnv } from 'vite';
 
 const env = loadEnv(process.env.NODE_ENV, process.cwd(), 'PUBLIC_');
-const content = `src/content/${env.PUBLIC_ORG}`;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,10 +11,10 @@ const config = {
       precompress: true,
     }),
     alias: {
-      $content: content,
+      $content: 'src/content',
     },
     files: {
-      assets: `${content}/static`,
+      assets: `src/content/${env.PUBLIC_ORG}/static`,
     },
     paths: {
       relative: true,
