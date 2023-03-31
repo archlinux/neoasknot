@@ -31,9 +31,9 @@ linkcheck:
     paths:
       - .lycheecache
   before_script:
-    - pacman -Syu --noconfirm go-yq lychee
+    - pacman -Syu --noconfirm lychee
   script:
-    - yq eval -N '..|.link?' src/content/**/*.yml | lychee -v --cache -- README.md -
+    - lychee --cache -- README.md 'src/content/**/*.yml'
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
