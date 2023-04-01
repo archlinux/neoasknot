@@ -1,9 +1,7 @@
-title: What can I do for Arch Linux?
-heading: What's your area of interest?
 donationLink: https://archlinux.org/donate/
 
 logo:
-  name: Arch Linux logo
+  image: archlogo.svg
   description: Return to the main page
   link: https://archlinux.org
 
