@@ -1,6 +1,10 @@
 heading: Which project do you want to translate?
 
 children:
+  - name: ArchWiki
+    description: Arch Linux wiki
+    link: https://wiki.archlinux.org/title/ArchWiki:Contributing#Translating
+
   - name: aurweb
     description: Arch User Repository (AUR)
     link: https://explore.transifex.com/lfleischer/aurweb/
