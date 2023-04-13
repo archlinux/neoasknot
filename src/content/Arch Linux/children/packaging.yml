@@ -1,11 +1,11 @@
 heading: How do you want to make our packages better?
 
 children:
-  - name: Make new AUR packages
-    description: Create, adopt and maintain unofficial packages in our community-driven repository
+  - name: Maintain AUR packages
+    description: Create, adopt and maintain unofficial packages in the Arch User Repository
     link: https://aur.archlinux.org
 
-  - name: Test packages
+  - name: Test repo packages
     description: Join the Arch Testing Team and test new packages
     link: https://wiki.archlinux.org/title/Arch_Testing_Team
 
@@ -14,5 +14,5 @@ children:
     link: https://reproducible.archlinux.org/
 
   - name: Join the Trusted Users
-    description: Join the Trusted Users and maintain the operation of the AUR packages
+    description: Maintain packages in the official community repo and moderate the AUR
     link: https://wiki.archlinux.org/index.php/Trusted_Users
