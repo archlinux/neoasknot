@@ -52,7 +52,7 @@ children:
     node: packaging
 
   - name: Security
-    description: Join the Security Team
+    description: Join the Security Team and track upstream vulnerabilities
     link: https://wiki.archlinux.org/index.php/Arch_Security_Team
 
   - name: Translation
