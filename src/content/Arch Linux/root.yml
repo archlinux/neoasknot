@@ -62,7 +62,3 @@ children:
   - name: Wiki housekeeping
     description: Help clean and maintain the ArchWiki
     link: https://wiki.archlinux.org/title/ArchWiki:Contributing
-
-  - name: Wrangling bugs
-    description: Help manage bugs and assign them to maintainers
-    link: https://bugs.archlinux.org

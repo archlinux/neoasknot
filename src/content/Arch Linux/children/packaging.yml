@@ -9,6 +9,10 @@ children:
     description: Join the Arch Testing Team and test new packages
     link: https://wiki.archlinux.org/title/Arch_Testing_Team
 
+  - name: Bug wrangling
+    description: Help manage bugs and assign them to maintainers
+    link: https://bugs.archlinux.org
+
   - name: Reproducible builds
     description: Make Arch Linux more secure with reproducible package builds
     link: https://reproducible.archlinux.org/
