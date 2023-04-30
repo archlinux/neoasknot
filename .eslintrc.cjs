@@ -19,7 +19,7 @@ module.exports = {
     es2017: true,
     node: true,
   },
-  rules: { 'yml/quotes': ['error', { prefer: 'single' }], },
+  rules: { 'yml/quotes': ['error', { prefer: 'single' }] },
   overrides: [
     {
       files: ['*.svelte'],
