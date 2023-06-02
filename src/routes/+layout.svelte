@@ -27,28 +27,26 @@
       </a>
     </div>
     <div class="navbar-end">
-      <div class="btn-group hidden md:inline-flex">
+      <div class="join hidden md:inline-flex">
         {#each data.navbarLinks as { name, description, link }}
           <a
             href={link}
             role="button"
-            class="btn-ghost btn-sm btn normal-case lg:btn-md"
+            class="btn-sm join-item btn normal-case lg:btn-md"
             title={description}>{name}</a
           >
         {/each}
       </div>
-      <!-- svelte-ignore a11y-label-has-associated-control a11y-no-noninteractive-tabindex -->
-      <div class="dropdown-left dropdown md:hidden">
-        <label tabindex="0" class="btn-ghost btn-square btn">☰</label>
+      <details class="dropdown-left dropdown md:hidden">
+        <summary class="btn-square btn">☰</summary>
         <ul
-          tabindex="0"
-          class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
+          class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 shadow"
         >
           {#each data.navbarLinks as { name, description, link }}
             <li><a href={link} title={description}>{name}</a></li>
           {/each}
         </ul>
-      </div>
+      </details>
     </div>
   </nav>
 </header>
