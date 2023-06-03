@@ -63,7 +63,8 @@
     >, using
     <a href="https://kit.svelte.dev" class="link-hover link">SvelteKit</a>
     and
-    <a href="https://daisyui.com" class="link-hover link">daisyUI</a> ❤️
+    <a href="https://daisyui.com" class="link-hover link">daisyUI</a>
+    <span class="mx-1">❤️</span>
     {#if data.donationLink}
       Donate to {PUBLIC_ORG}
       <a href={data.donationLink} class="link-hover link">here</a>
