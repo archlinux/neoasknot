@@ -37,7 +37,9 @@
           >
         {/each}
       </div>
-      <details class="dropdown-left dropdown md:hidden">
+      <details
+        class="dropdown-left dropdown md:hidden [&_summary]:open:bg-base-300"
+      >
         <summary class="btn-square btn">☰</summary>
         <ul
           class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 shadow"
