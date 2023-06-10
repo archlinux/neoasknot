@@ -3,6 +3,10 @@ children:
     description: The project that builds our Vagrant and cloud images
     link: https://gitlab.archlinux.org/archlinux/arch-boxes
 
+  - name: arch-historical-archive
+    description: The Arch Linux Historical Archive of Packages
+    link: https://gitlab.archlinux.org/archlinux/arch-historical-archive
+
   - name: arch-release-promotion
     description: Promotion and synchronization of existing releases of a project in Arch Linux's Gitlab instance
     link: https://gitlab.archlinux.org/archlinux/arch-release-promotion
