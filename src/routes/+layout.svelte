@@ -18,7 +18,7 @@
     class="navbar border-b-[5px] border-b-[#08c] bg-base-200"
   >
     <div class="navbar-start">
-      <a href={data.logo.link} title={data.logo.description}>
+      <a href={data.logo.href} title={data.logo.description}>
         <img
           src="{base}/{data.logo.image}"
           alt="{PUBLIC_ORG} logo"
@@ -28,9 +28,9 @@
     </div>
     <div class="navbar-end">
       <div class="join hidden md:inline-flex">
-        {#each data.navbarLinks as { name, description, link }}
+        {#each data.navbarLinks as { name, description, href }}
           <a
-            href={link}
+            {href}
             class="btn-sm join-item btn normal-case lg:btn-md"
             title={description}>{name}</a
           >
@@ -43,8 +43,8 @@
         <ul
           class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 shadow"
         >
-          {#each data.navbarLinks as { name, description, link }}
-            <li><a href={link} title={description}>{name}</a></li>
+          {#each data.navbarLinks as { name, description, href }}
+            <li><a {href} title={description}>{name}</a></li>
           {/each}
         </ul>
       </details>

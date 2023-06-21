@@ -1,12 +1,12 @@
 children:
   - name: pacman
     description: Library-based package manager with dependency support
-    link: https://gitlab.archlinux.org/pacman/pacman
+    href: https://gitlab.archlinux.org/pacman/pacman
 
   - name: pacman-contrib
     description: Contributed scripts to pacman
-    link: https://gitlab.archlinux.org/pacman/pacman-contrib
+    href: https://gitlab.archlinux.org/pacman/pacman-contrib
 
   - name: pyalpm
     description: C extension for Python 3 that give access to the libalpm API for package management
-    link: https://gitlab.archlinux.org/archlinux/pyalpm
+    href: https://gitlab.archlinux.org/archlinux/pyalpm

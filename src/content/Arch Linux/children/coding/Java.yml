@@ -1,4 +1,4 @@
 children:
   - name: keycloak-archlinux-theme
     description: Keycloak Arch Linux theme
-    link: https://gitlab.archlinux.org/archlinux/keycloak-archlinux-theme
+    href: https://gitlab.archlinux.org/archlinux/keycloak-archlinux-theme

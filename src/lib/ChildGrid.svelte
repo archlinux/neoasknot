@@ -2,8 +2,7 @@
   interface Children {
     readonly name: string;
     readonly description?: string;
-    readonly link?: string;
-    readonly node?: string;
+    readonly href: string;
   }
 
   export let heading: string;
@@ -16,9 +15,8 @@
   aria-label="Current level of the decision tree"
   class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
 >
-  {#each children as { name, description, link, node }}
-    {@const href = link || node}
-    {@const icon = link ? '🔗' : '📁'}
+  {#each children as { name, description, href }}
+    {@const icon = /:\/\//.test(href) ? '🔗' : '📁'}
     <a
       {href}
       aria-label={name}

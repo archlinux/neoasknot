@@ -1,4 +1,4 @@
 children:
   - name: infrastructure
     description: Complete collection of ansible playbooks and roles for the Arch Linux infrastructure
-    link: https://gitlab.archlinux.org/archlinux/infrastructure
+    href: https://gitlab.archlinux.org/archlinux/infrastructure

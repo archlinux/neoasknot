@@ -3,62 +3,62 @@ donationLink: https://archlinux.org/donate/
 logo:
   image: archlogo.svg
   description: Return to the main page
-  link: https://archlinux.org
+  href: https://archlinux.org
 
 navbarLinks:
   - name: Home
     description: Arch news, packages, projects and more
-    link: https://archlinux.org
+    href: https://archlinux.org
 
   - name: Packages
     description: Arch Package Database
-    link: https://archlinux.org/packages
+    href: https://archlinux.org/packages
 
   - name: Forums
     description: Community forums
-    link: https://bbs.archlinux.org
+    href: https://bbs.archlinux.org
 
   - name: Wiki
     description: Community documentation
-    link: https://wiki.archlinux.org
+    href: https://wiki.archlinux.org
 
   - name: Bugs
     description: Report and track bugs
-    link: https://bugs.archlinux.org
+    href: https://bugs.archlinux.org
 
   - name: Security
     description: Arch Linux Security Tracker
-    link: https://security.archlinux.org
+    href: https://security.archlinux.org
 
   - name: AUR
     description: Arch Linux User Repository
-    link: https://aur.archlinux.org
+    href: https://aur.archlinux.org
 
   - name: Download
     description: Get Arch Linux
-    link: https://archlinux.org/download/
+    href: https://archlinux.org/download/
 
 children:
   - name: Coding
     description: Software is our daily prayer..
-    node: coding
+    href: coding
 
   - name: Infrastructure
     description: Join the DevOps team and keep our servers running
-    link: https://gitlab.archlinux.org/archlinux/infrastructure
+    href: https://gitlab.archlinux.org/archlinux/infrastructure
 
   - name: Packaging
     description: Get involved with the packaging community
-    node: packaging
+    href: packaging
 
   - name: Security
     description: Join the Security Team and track upstream vulnerabilities
-    link: https://wiki.archlinux.org/index.php/Arch_Security_Team
+    href: https://wiki.archlinux.org/index.php/Arch_Security_Team
 
   - name: Translation
     description: Do you like spoken languages?
-    node: translation
+    href: translation
 
   - name: Wiki housekeeping
     description: Help clean and maintain the ArchWiki
-    link: https://wiki.archlinux.org/title/ArchWiki:Contributing
+    href: https://wiki.archlinux.org/title/ArchWiki:Contributing

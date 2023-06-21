@@ -1,4 +1,4 @@
 children:
   - name: pkgstats-cli
     description: pkgstats client
-    link: https://github.com/archlinux-de/pkgstats-cli
+    href: https://github.com/archlinux-de/pkgstats-cli

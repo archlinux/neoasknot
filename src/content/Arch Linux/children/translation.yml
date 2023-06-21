@@ -3,12 +3,12 @@ heading: Which project do you want to translate?
 children:
   - name: ArchWiki
     description: Arch Linux wiki
-    link: https://wiki.archlinux.org/title/ArchWiki:Contributing#Translating
+    href: https://wiki.archlinux.org/title/ArchWiki:Contributing#Translating
 
   - name: aurweb
     description: Arch User Repository (AUR)
-    link: https://explore.transifex.com/lfleischer/aurweb/
+    href: https://explore.transifex.com/lfleischer/aurweb/
 
   - name: pacman
     description: Library-based package manager with dependency support
-    link: https://explore.transifex.com/toofishes/archlinux-pacman/
+    href: https://explore.transifex.com/toofishes/archlinux-pacman/
