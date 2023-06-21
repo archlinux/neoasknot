@@ -31,7 +31,6 @@
         {#each data.navbarLinks as { name, description, link }}
           <a
             href={link}
-            role="button"
             class="btn-sm join-item btn normal-case lg:btn-md"
             title={description}>{name}</a
           >
