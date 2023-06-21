@@ -21,6 +21,7 @@
     {@const icon = link ? '🔗' : '📁'}
     <a
       {href}
+      aria-label={name}
       class="card shadow-lg transition-all hover:-translate-y-1 hover:bg-base-200"
     >
       {#if description}
