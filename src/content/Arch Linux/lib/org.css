@@ -1,0 +1,3 @@
+.navbar {
+  @apply border-b-[5px] border-b-[#08c];
+}

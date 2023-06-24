@@ -1,5 +1,6 @@
 <script lang="ts">
   import '../app.css';
+  import '$orgLib/org.css';
   import { base } from '$app/paths';
   import { page } from '$app/stores';
   import { PUBLIC_ORG } from '$env/static/public';
@@ -13,10 +14,7 @@
 </svelte:head>
 
 <header>
-  <nav
-    aria-label="Navigation bar"
-    class="navbar border-b-[5px] border-b-[#08c] bg-base-200"
-  >
+  <nav aria-label="Navigation bar" class="navbar bg-base-200">
     <div class="navbar-start">
       <a href={data.logo.href} title={data.logo.description}>
         <img

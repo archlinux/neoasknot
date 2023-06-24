@@ -12,6 +12,7 @@ const config = {
     }),
     alias: {
       $content: 'src/content',
+      $orgLib: `src/content/${env.PUBLIC_ORG}/lib`,
     },
     files: {
       assets: `src/content/${env.PUBLIC_ORG}/static`,
