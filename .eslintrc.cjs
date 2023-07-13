@@ -3,6 +3,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic',
     'plugin:prettier/recommended',
     'plugin:svelte/recommended',
     'plugin:yml/standard',
