@@ -27,10 +27,6 @@ children:
     description: Tools to reproduce Arch Linux packages
     href: https://github.com/archlinux/archlinux-repro
 
-  - name: asp
-    description: Arch Linux build source management tool
-    href: https://github.com/archlinux/asp
-
   - name: contrib
     description: Toolbox with various useful scripts for package management
     href: https://github.com/archlinux/contrib
