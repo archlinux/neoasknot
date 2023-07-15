@@ -18,5 +18,5 @@ children:
     href: https://reproducible.archlinux.org/
 
   - name: Join the Trusted Users
-    description: Maintain packages in the official community repo and moderate the AUR
+    description: Maintain packages in the official extra repo and moderate the AUR
     href: https://wiki.archlinux.org/index.php/Trusted_Users
