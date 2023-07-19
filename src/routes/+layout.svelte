@@ -29,17 +29,17 @@
         {#each data.navbarLinks as { name, description, href }}
           <a
             {href}
-            class="btn-sm join-item btn normal-case lg:btn-md"
+            class="btn join-item btn-sm normal-case lg:btn-md"
             title={description}>{name}</a
           >
         {/each}
       </div>
       <details
-        class="dropdown-left dropdown md:hidden [&_summary]:open:bg-base-300"
+        class="dropdown dropdown-left md:hidden [&_summary]:open:bg-base-300"
       >
-        <summary class="btn-square btn">☰</summary>
+        <summary class="btn btn-square">☰</summary>
         <ul
-          class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 shadow"
+          class="menu dropdown-content rounded-box z-[1] w-52 bg-base-100 shadow"
         >
           {#each data.navbarLinks as { name, description, href }}
             <li><a {href} title={description}>{name}</a></li>
