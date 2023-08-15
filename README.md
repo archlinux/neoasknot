@@ -15,16 +15,22 @@ https://whatcanidofor.archlinux.org
 
 Clean install the project's development dependencies:
 
-    $ npm ci
+```
+$ npm ci
+```
 
 Start the dev server:
 
-    $ npm run dev
+```
+$ npm run dev
+```
 
 Build for production and preview the static site:
 
-    $ npm run build
-    $ npm run preview
+```
+$ npm run build
+$ npm run preview
+```
 
 ## Deployment
 
@@ -51,17 +57,17 @@ to understand what actions will and will not be tolerated.
 
 All code contributions fall under the terms of the [GPL-3.0-or-later][license].
 
-[asknot-ng]: https://whatcanidoforfedora.org
 [@ralphbean]: http://threebean.org
-[asknot-ng-contribs]: https://github.com/fedora-infra/asknot-ng/graphs/contributors
-[jdm]: https://www.joshmatthews.net
 [asknot-contribs]: https://github.com/jdm/asknot/contributors
-[SvelteKit]: https://kit.svelte.dev
-[Tailwind CSS]: https://tailwindcss.com
-[daisyUI]: https://daisyui.com/
-[glpages]: https://docs.gitlab.com/ee/user/project/pages/
-[staging]: https://polyzen.gitlab.io/neoasknot-staging
-[production]: https://whatcanidofor.archlinux.org
-[multiverpages]: https://gitlab.com/gitlab-org/gitlab/-/issues/16208
+[asknot-ng]: https://whatcanidoforfedora.org
+[asknot-ng-contribs]: https://github.com/fedora-infra/asknot-ng/graphs/contributors
 [coc]: https://terms.archlinux.org/docs/code-of-conduct/
+[daisyui]: https://daisyui.com/
+[glpages]: https://docs.gitlab.com/ee/user/project/pages/
+[jdm]: https://www.joshmatthews.net
 [license]: https://gitlab.archlinux.org/main/neoasknot/-/blob/archlinux/LICENSE
+[multiverpages]: https://gitlab.com/gitlab-org/gitlab/-/issues/16208
+[production]: https://whatcanidofor.archlinux.org
+[staging]: https://polyzen.gitlab.io/neoasknot-staging
+[sveltekit]: https://kit.svelte.dev
+[tailwind css]: https://tailwindcss.com
