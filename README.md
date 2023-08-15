@@ -9,27 +9,27 @@ original asknot by [Josh Matthews][jdm], Henri Koivuneva, and
 
 `neoasknot` is built with [SvelteKit] and [Tailwind CSS] using the [daisyUI]
 component library:<br>
-https://whatcanidofor.archlinux.org
+<https://whatcanidofor.archlinux.org>
 
 ## Usage
 
 Clean install the project's development dependencies:
 
-```
-$ npm ci
+```sh
+npm ci
 ```
 
 Start the dev server:
 
-```
-$ npm run dev
+```sh
+npm run dev
 ```
 
 Build for production and preview the static site:
 
-```
-$ npm run build
-$ npm run preview
+```sh
+npm run build
+npm run preview
 ```
 
 ## Deployment
@@ -50,7 +50,7 @@ Push to the `main` branch and GitLab CI will build and publish the site.
 ## Contributing
 
 Development of neoasknot takes place on Arch Linux’s GitLab:
-https://gitlab.archlinux.org/archlinux/neoasknot
+<https://gitlab.archlinux.org/archlinux/neoasknot>
 
 Please read our distribution-wide [Code of Conduct][coc] before contributing,
 to understand what actions will and will not be tolerated.
