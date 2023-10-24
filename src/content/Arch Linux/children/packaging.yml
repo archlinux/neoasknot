@@ -17,6 +17,6 @@ children:
     description: Make Arch Linux more secure with reproducible package builds
     href: https://reproducible.archlinux.org/
 
-  - name: Join the Trusted Users
-    description: Maintain packages in the official extra repo and moderate the AUR
-    href: https://wiki.archlinux.org/index.php/Trusted_Users
+  - name: Join the Package Maintainers
+    description: Maintain packages in the official repo and moderate the AUR
+    href: https://wiki.archlinux.org/index.php/Package_Maintainers
