@@ -13,14 +13,10 @@ export default {
     themes: [
       {
         light: {
-          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)[ // eslint-disable-line @typescript-eslint/no-var-requires
-            '[data-theme=light]'
-          ],
+          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)['light'], // eslint-disable-line @typescript-eslint/no-var-requires
         },
         dark: {
-          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)[ // eslint-disable-line @typescript-eslint/no-var-requires
-            '[data-theme=dark]'
-          ],
+          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)['dark'], // eslint-disable-line @typescript-eslint/no-var-requires
         },
       },
     ],

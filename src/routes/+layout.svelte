@@ -27,10 +27,8 @@
     <div class="navbar-end">
       <div class="join hidden md:inline-flex">
         {#each data.navbarLinks as { name, description, href }}
-          <a
-            {href}
-            class="btn join-item btn-sm normal-case lg:btn-md"
-            title={description}>{name}</a
+          <a {href} class="btn join-item btn-sm lg:btn-md" title={description}
+            >{name}</a
           >
         {/each}
       </div>
@@ -39,7 +37,7 @@
       >
         <summary class="btn btn-square">☰</summary>
         <ul
-          class="menu dropdown-content rounded-box z-[1] w-52 bg-base-100 shadow"
+          class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 shadow"
         >
           {#each data.navbarLinks as { name, description, href }}
             <li><a {href} title={description}>{name}</a></li>
