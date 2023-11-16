@@ -1,3 +1,4 @@
+import daisyui, { Config as DaisyUIConfig } from 'daisyui';
 import type { Config } from 'tailwindcss';
 import { loadEnv } from 'vite';
 
@@ -8,7 +9,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')],
+  plugins: [daisyui],
   daisyui: {
     themes: [
       {
@@ -20,5 +21,5 @@ export default {
         },
       },
     ],
-  },
+  } satisfies DaisyUIConfig,
 } satisfies Config;

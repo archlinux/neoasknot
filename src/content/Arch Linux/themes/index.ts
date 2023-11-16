@@ -1,8 +1,10 @@
+import defaultThemes from 'daisyui/src/theming/themes';
+
 export default {
   dark: {
-    ...require('daisyui/src/theming/themes')['dark'], // eslint-disable-line @typescript-eslint/no-var-requires
+    ...defaultThemes.dark,
   },
   light: {
-    ...require('daisyui/src/theming/themes')['light'], // eslint-disable-line @typescript-eslint/no-var-requires
+    ...defaultThemes.light,
   },
 };
