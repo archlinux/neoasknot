@@ -3,7 +3,7 @@ import { PUBLIC_ORG } from '$env/static/public';
 export const load = async ({ params, parent }) => {
   const slug = params.slug;
   const nodeImport = await import(
-    `$content/${PUBLIC_ORG}/children/coding/${slug}.yml`
+    `$content/${PUBLIC_ORG}/tree/children/coding/${slug}.yml`
   );
   const { title } = await parent();
 
