@@ -22,9 +22,9 @@ navbarLinks:
     description: Community documentation
     href: https://wiki.archlinux.org
 
-  - name: Bugs
-    description: Report and track bugs
-    href: https://bugs.archlinux.org
+  - name: GitLab
+    description: GitLab
+    href: https://gitlab.archlinux.org/archlinux
 
   - name: Security
     description: Arch Linux Security Tracker
