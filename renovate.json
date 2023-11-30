@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "group:allNonMajor"],
+  "extends": ["config:recommended", "group:allNonMajor"],
   "ignorePresets": ["monorepo:typescript-eslint"],
   "lockFileMaintenance": { "enabled": true },
   "rangeStrategy": "bump"
