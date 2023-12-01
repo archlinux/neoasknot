@@ -21,7 +21,7 @@
     "@modyfi/vite-plugin-yaml": "^1.0.4",
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.27.6",
-    "@types/node": "^18.19.0",
+    "@types/node": "^20.10.1",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "autoprefixer": "^10.4.16",
