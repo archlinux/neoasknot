@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { loadEnv } from 'vite';
 
 const env = loadEnv(process.env.NODE_ENV, process.cwd(), 'PUBLIC_');
@@ -16,9 +16,6 @@ const config = {
     },
     files: {
       assets: `src/content/${env.PUBLIC_ORG}/static`,
-    },
-    paths: {
-      relative: true,
     },
   },
   preprocess: vitePreprocess(),

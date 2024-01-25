@@ -3,8 +3,6 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import type { UserConfig } from 'vite';
 import dynamicImport from 'vite-plugin-dynamic-import';
 
-const config: UserConfig = {
+export default {
   plugins: [dynamicImport(), sveltekit(), ViteYaml()],
-};
-
-export default config;
+} satisfies UserConfig;
