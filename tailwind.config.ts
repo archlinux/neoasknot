@@ -22,5 +22,6 @@ export default {
         },
       },
     ],
+    logs: false,
   } satisfies DaisyUIConfig,
 } satisfies Config;
