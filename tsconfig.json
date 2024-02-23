@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "types": ["@modyfi/vite-plugin-yaml/modules"],
-  },
+    "types": ["@modyfi/vite-plugin-yaml/modules"]
+  }
 }
