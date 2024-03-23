@@ -1,0 +1,6 @@
+#!/bin/sh
+
+npm run check
+npm run lint
+
+# vim: ft=sh
