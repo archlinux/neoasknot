@@ -10,8 +10,8 @@ children:
     href: https://wiki.archlinux.org/title/Arch_Testing_Team
 
   - name: Bug wrangling
-    description: Help manage bugs and assign them to maintainers
-    href: https://bugs.archlinux.org
+    description: Help triage new bugs and assign them to maintainers
+    href: https://gitlab.archlinux.org/groups/archlinux/packaging/packages/-/issues/?state=opened&label_name%5B%5D=status%3A%3Aunconfirmed
 
   - name: Reproducible builds
     description: Make Arch Linux more secure with reproducible package builds
