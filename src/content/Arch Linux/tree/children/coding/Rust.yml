@@ -1,4 +1,8 @@
 children:
+  - name: alpm.rs
+    description: Project that works on Rust bindings for libalpm
+    href: https://github.com/archlinux/alpm.rs
+
   - name: arch-rebuild-order
     description: CLI tool to determine the rebuild order of provided package(s)
     href: https://gitlab.archlinux.org/archlinux/arch-rebuild-order
