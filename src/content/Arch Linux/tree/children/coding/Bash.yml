@@ -5,7 +5,7 @@ children:
 
   - name: arch-install-scripts
     description: Small suite of scripts aimed at automating some menial tasks when installing Arch Linux
-    href: https://github.com/archlinux/arch-install-scripts
+    href: https://gitlab.archlinux.org/archlinux/arch-install-scripts
 
   - name: archboot
     description: Set of scripts to generate bootable media for CD/USB/PXE, designed for installation or rescue operation
