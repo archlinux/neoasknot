@@ -15,10 +15,10 @@ export default {
     themes: [
       {
         light: {
-          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)['light'], // eslint-disable-line @typescript-eslint/no-var-requires
+          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)['light'], // eslint-disable-line @typescript-eslint/no-require-imports
         },
         dark: {
-          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)['dark'], // eslint-disable-line @typescript-eslint/no-var-requires
+          ...require(`./src/content/${env.PUBLIC_ORG}/themes`)['dark'], // eslint-disable-line @typescript-eslint/no-require-imports
         },
       },
     ],
