@@ -22,7 +22,7 @@
     "@sveltejs/adapter-static": "^3.0.2",
     "@sveltejs/kit": "^2.5.18",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
-    "@types/eslint": "^8.56.11",
+    "@types/eslint": "^9.6.0",
     "@types/node": "^20.14.13",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.12.10",
