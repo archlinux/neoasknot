@@ -7,7 +7,7 @@ import svelteParser from 'svelte-eslint-parser';
 import tseslint from 'typescript-eslint';
 import yamlParser from 'yaml-eslint-parser';
 
-/** @type { import('eslint').Linter.FlatConfig[] } */
+/** @type { import('eslint').Linter.Config[] } */
 const config = [
   {
     ignores: ['.svelte-kit/**', 'build/**', 'package-lock.json'],
