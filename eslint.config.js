@@ -1,4 +1,5 @@
 import js from '@eslint/js';
+import json from '@eslint/json';
 import prettier from 'eslint-plugin-prettier/recommended';
 import svelte from 'eslint-plugin-svelte';
 import yml from 'eslint-plugin-yml';
@@ -25,6 +26,14 @@ const config = [
   {
     files: ['**/*.js', '**/*.ts'],
     ...js.configs.recommended,
+  },
+  {
+    files: ['**/*.json'],
+    plugins: {
+      json,
+    },
+    language: 'json/json',
+    ...json.configs.recommended,
   },
   {
     files: ['**/*.svelte'],
