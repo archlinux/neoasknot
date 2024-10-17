@@ -22,3 +22,7 @@ children:
   - name: gluebuddy
     description: Secure helper daemon that watches several aspects of the Arch Linux infrastructure and makes sure that certain conditions are met
     href: https://gitlab.archlinux.org/archlinux/gluebuddy
+
+  - name: signstar
+    description: A secure signing enclave
+    href: https://gitlab.archlinux.org/archlinux/signstar
