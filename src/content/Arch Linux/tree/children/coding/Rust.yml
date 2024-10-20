@@ -15,6 +15,10 @@ children:
     description: Helper daemon that watches the incoming bug reports for Arch Linux and makes sure that the right people are assigned to them
     href: https://gitlab.archlinux.org/archlinux/bugbuddy
 
+  - name: buildbtw
+    description: A service for assisting Arch Linux staff with building new versions of packages
+    href: https://gitlab.archlinux.org/archlinux/buildbtw
+
   - name: gitlab-exporter
     description: Extracts metrics from GitLab using GraphQL API and outputs them in a prometheus compatible format
     href: https://gitlab.archlinux.org/archlinux/gitlab-exporter
