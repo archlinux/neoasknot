@@ -1,7 +1,7 @@
 <script lang="ts">
   import ChildGrid from '$lib/ChildGrid.svelte';
 
-  export let data;
+  let { data } = $props();
 </script>
 
 <ChildGrid heading={data.heading} children={data.children} />

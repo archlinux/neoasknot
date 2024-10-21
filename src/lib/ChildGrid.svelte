@@ -5,8 +5,12 @@
     readonly href: string;
   }
 
-  export let heading: string;
-  export let children: Children[];
+  interface Props {
+    heading: string;
+    children: Children[];
+  }
+
+  let { heading, children }: Props = $props();
 </script>
 
 <h1 class="text-xl">{heading}</h1>

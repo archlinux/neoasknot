@@ -2,7 +2,7 @@
   import { base } from '$app/paths';
   import ChildGrid from '$lib/ChildGrid.svelte';
 
-  export let data;
+  let { data } = $props();
 </script>
 
 <div class="breadcrumbs">

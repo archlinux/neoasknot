@@ -59,6 +59,9 @@ const config = [
           extraFileExtensions: ['.svelte'],
         },
       },
+      rules: {
+        'prefer-const': 'off',
+      },
     }),
   ),
   ...[...tseslint.configs.strict, ...tseslint.configs.stylistic].map(

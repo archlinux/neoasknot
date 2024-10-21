@@ -5,7 +5,7 @@
   import { page } from '$app/stores';
   import { PUBLIC_ORG } from '$env/static/public';
 
-  export let data;
+  let { data, children } = $props();
 </script>
 
 <svelte:head>
@@ -49,7 +49,7 @@
 </header>
 
 <main class="container mx-auto space-y-8 p-8">
-  <slot />
+  {@render children?.()}
 </main>
 
 <footer class="footer footer-center mt-auto bg-base-300 p-4 text-base-content">
