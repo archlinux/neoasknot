@@ -49,7 +49,7 @@
 </header>
 
 <main class="container mx-auto space-y-8 p-8">
-  {@render children?.()}
+  {@render children()}
 </main>
 
 <footer class="footer footer-center mt-auto bg-base-300 p-4 text-base-content">
