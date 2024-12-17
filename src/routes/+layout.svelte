@@ -2,15 +2,15 @@
   import '../app.css';
   import '$orgLib/org.css';
   import { base } from '$app/paths';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import { PUBLIC_ORG } from '$env/static/public';
 
   let { data, children } = $props();
 </script>
 
 <svelte:head>
-  <meta name="description" content={$page.data.metaDescription} />
-  <title>{$page.data.title}</title>
+  <meta name="description" content={page.data.metaDescription} />
+  <title>{page.data.title}</title>
 </svelte:head>
 
 <header>
