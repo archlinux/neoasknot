@@ -2,8 +2,8 @@ import daisyui, { Config as DaisyUIConfig } from 'daisyui';
 import type { Config } from 'tailwindcss';
 import { loadEnv } from 'vite';
 
-const node_env = process.env.NODE_ENV as string;
-const env = loadEnv(node_env, process.cwd(), 'PUBLIC_');
+const runtimeEnv = process.env.NODE_ENV as string;
+const env = loadEnv(runtimeEnv, process.cwd(), 'PUBLIC_');
 
 export default {
   content: ['./src/**/*.{html,svelte,ts}'],
