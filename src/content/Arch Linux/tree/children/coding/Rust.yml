@@ -1,4 +1,8 @@
 children:
+  - name: alpm
+    description: Project that works on specifications, Rust libraries and tools for Arch Linux Package Management
+    href: https://gitlab.archlinux.org/archlinux/alpm/alpm
+
   - name: alpm.rs
     description: Project that works on Rust bindings for libalpm
     href: https://github.com/archlinux/alpm.rs
