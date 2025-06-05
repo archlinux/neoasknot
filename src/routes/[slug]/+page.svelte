@@ -7,7 +7,7 @@
 
 <div class="breadcrumbs">
   <ol>
-    <li><a href="{base}/" class="!no-underline">🏠</a></li>
+    <li><a href="{base}/" class="no-underline!">🏠</a></li>
     <li class="capitalize">{data.slug}</li>
   </ol>
 </div>

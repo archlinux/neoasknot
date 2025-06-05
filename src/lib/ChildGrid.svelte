@@ -24,7 +24,7 @@
     <a
       {href}
       aria-label={name}
-      class="card shadow-lg transition-all hover:-translate-y-1 hover:bg-base-200"
+      class="card hover:bg-base-200 shadow-lg transition-all hover:-translate-y-1"
     >
       {#if description}
         <article class="card-body space-y-4 p-4">

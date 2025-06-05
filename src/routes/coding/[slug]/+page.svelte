@@ -7,8 +7,8 @@
 
 <div class="breadcrumbs">
   <ol>
-    <li><a href="{base}/" class="!no-underline">🏠</a></li>
-    <li><a href="{base}/coding" class="!no-underline">🧑‍💻 Coding</a></li>
+    <li><a href="{base}/" class="no-underline!">🏠</a></li>
+    <li><a href="{base}/coding" class="no-underline!">🧑‍💻 Coding</a></li>
     <li>{data.slug}</li>
   </ol>
 </div>

@@ -33,11 +33,11 @@
         {/each}
       </div>
       <details
-        class="dropdown dropdown-left md:hidden [&_summary]:open:bg-base-300"
+        class="dropdown dropdown-left [&_summary]:open:bg-base-300 md:hidden"
       >
         <summary class="btn btn-square">☰</summary>
         <ul
-          class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 shadow"
+          class="menu dropdown-content rounded-box bg-base-100 z-1 w-52 shadow-sm"
         >
           {#each data.navbarLinks as { name, description, href }}
             <li><a {href} title={description}>{name}</a></li>
@@ -52,7 +52,7 @@
   {@render children()}
 </main>
 
-<footer class="footer footer-center mt-auto bg-base-300 p-4 text-base-content">
+<footer class="footer footer-center bg-base-300 text-base-content mt-auto p-4">
   <p class="inline">
     Powered by <a
       href="https://gitlab.archlinux.org/archlinux/neoasknot"
