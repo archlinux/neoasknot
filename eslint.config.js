@@ -7,6 +7,7 @@ import globals from 'globals';
 import svelteParser from 'svelte-eslint-parser';
 import tseslint from 'typescript-eslint';
 import yamlParser from 'yaml-eslint-parser';
+import svelteConfig from './svelte.config.js';
 
 /** @type { import('eslint').Linter.Config[] } */
 const config = [
@@ -44,6 +45,7 @@ const config = [
       parser: svelteParser,
       parserOptions: {
         parser: tseslint.parser,
+        svelteConfig,
       },
     },
     rules: {
@@ -57,6 +59,7 @@ const config = [
       languageOptions: {
         parserOptions: {
           extraFileExtensions: ['.svelte'],
+          svelteConfig,
         },
       },
       rules: {
