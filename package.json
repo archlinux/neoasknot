@@ -22,7 +22,7 @@
     "@modyfi/vite-plugin-yaml": "^1.1.1",
     "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/kit": "^2.21.2",
-    "@sveltejs/vite-plugin-svelte": "^4.0.4",
+    "@sveltejs/vite-plugin-svelte": "^5.1.0",
     "@tailwindcss/vite": "^4.1.8",
     "@types/eslint": "^9.6.1",
     "@types/node": "^20.17.58",
