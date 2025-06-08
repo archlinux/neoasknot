@@ -74,6 +74,16 @@ pages:
   image: busybox
   variables:
     GIT_STRATEGY: none
-  script: 'true'
+    PAGES_PREFIX: ''
+  script: echo "Pages accessible through ${CI_PAGES_URL}"
+  environment:
+    name: 'Pages ${PAGES_PREFIX}'
+    url: $CI_PAGES_URL
   rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"
+    - if: $CI_COMMIT_BRANCH == "staging"
+      variables:
+        PAGES_PREFIX: _stg
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: manual
+      variables:
+        PAGES_PREFIX: mr-$CI_MERGE_REQUEST_IID

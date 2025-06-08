@@ -35,17 +35,10 @@ npm run preview
 ## Deployment
 
 The Arch Linux instance runs on [GitLab Pages][glpages].
-There are 2 deployments: one in [staging] and one in [production].
 
-### Staging
+Push to the `main` branch and CI will build and publish the site.
 
-Currently this is a bit convoluted and done on gitlab.com (at least until
-[multiple version Pages support][multiverpages] is implemented or one of the
-proposed solutions is used).
-
-### Production
-
-Push to the `main` branch and GitLab CI will build and publish the site.
+[Parallel deployments] are made for the `staging` branch and merge requests.
 
 ## Contributing
 
@@ -66,8 +59,6 @@ All code contributions fall under the terms of the [GPL-3.0-or-later][license].
 [glpages]: https://docs.gitlab.com/ee/user/project/pages/
 [jdm]: https://www.joshmatthews.net
 [license]: https://gitlab.archlinux.org/main/neoasknot/-/blob/archlinux/LICENSE
-[multiverpages]: https://gitlab.com/gitlab-org/gitlab/-/issues/16208
-[production]: https://whatcanidofor.archlinux.org
-[staging]: https://polyzen.gitlab.io/neoasknot-staging
+[parallel deployments]: https://docs.gitlab.com/user/project/pages/parallel_deployments/
 [sveltekit]: https://kit.svelte.dev
 [tailwind css]: https://tailwindcss.com
