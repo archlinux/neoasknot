@@ -15,10 +15,10 @@ diagnostics:
     paths:
       - node_modules
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == 'push'
       when: never
-    - if: '$CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
+    - if: $CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
 
 linkcheck:
   stage: .pre
@@ -31,11 +31,11 @@ linkcheck:
       - .lycheecache
   script: lychee --cache -- README.md 'src/content/**/*.yml'
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
       when: manual
       allow_failure: true
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: $CI_PIPELINE_SOURCE == 'schedule'
 
 .artifacts:
   artifacts:
@@ -54,17 +54,17 @@ build:
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
       when: never
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == 'push'
       when: never
-    - if: '$CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
+    - if: $CI_COMMIT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
 
 build:secure:
   extends: .build
   tags:
     - secure
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
 
 pages:
   tags:
@@ -76,4 +76,4 @@ pages:
     GIT_STRATEGY: none
   script: 'true'
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == "push"'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
