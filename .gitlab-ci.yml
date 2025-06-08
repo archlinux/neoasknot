@@ -52,7 +52,7 @@ linkcheck:
 build:
   extends: .build
   rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH || $CI_COMMIT_BRANCH == 'staging'
       when: never
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
     - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == 'push'
@@ -65,6 +65,7 @@ build:secure:
     - secure
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
+    - if: $CI_COMMIT_BRANCH == 'staging' && $CI_PIPELINE_SOURCE == 'push'
 
 pages:
   tags:
@@ -74,6 +75,12 @@ pages:
   image: busybox
   variables:
     GIT_STRATEGY: none
+    PAGES_PREFIX: ''
+  pages:
+    path_prefix: $PAGES_PREFIX
   script: 'true'
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
+    - if: $CI_COMMIT_BRANCH == 'staging'
+      variables:
+        PAGES_PREFIX: _staging
