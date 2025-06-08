@@ -1,5 +1,6 @@
 import js from '@eslint/js';
 import json from '@eslint/json';
+import { defineConfig } from 'eslint/config';
 import prettier from 'eslint-plugin-prettier/recommended';
 import svelte from 'eslint-plugin-svelte';
 import yml from 'eslint-plugin-yml';
@@ -10,7 +11,7 @@ import yamlParser from 'yaml-eslint-parser';
 import svelteConfig from './svelte.config.js';
 
 /** @type { import('eslint').Linter.Config[] } */
-const config = [
+const config = defineConfig([
   {
     ignores: ['.svelte-kit/**', 'build/**', 'package-lock.json'],
   },
@@ -26,7 +27,10 @@ const config = [
   },
   {
     files: ['**/*.js', '**/*.ts'],
-    ...js.configs.recommended,
+    plugins: {
+      js,
+    },
+    extends: ['js/recommended'],
   },
   {
     files: ['**/*.json'],
@@ -34,7 +38,7 @@ const config = [
       json,
     },
     language: 'json/json',
-    ...json.configs.recommended,
+    extends: ['json/recommended'],
   },
   {
     files: ['**/*.svelte'],
@@ -45,34 +49,24 @@ const config = [
       parser: svelteParser,
       parserOptions: {
         parser: tseslint.parser,
+        extraFileExtensions: ['.svelte'],
         svelteConfig,
       },
     },
+    extends: [
+      'svelte/recommended',
+      tseslint.configs.strict,
+      tseslint.configs.stylistic,
+    ],
     rules: {
-      ...svelte.configs.recommended.rules,
+      'prefer-const': 'off',
+      'svelte/require-each-key': 'off',
     },
   },
-  ...[...tseslint.configs.strict, ...tseslint.configs.stylistic].map(
-    (conf) => ({
-      ...conf,
-      files: ['**/*.svelte'],
-      languageOptions: {
-        parserOptions: {
-          extraFileExtensions: ['.svelte'],
-          svelteConfig,
-        },
-      },
-      rules: {
-        'prefer-const': 'off',
-      },
-    }),
-  ),
-  ...[...tseslint.configs.strict, ...tseslint.configs.stylistic].map(
-    (conf) => ({
-      ...conf,
-      files: ['**/*.ts'],
-    }),
-  ),
+  {
+    files: ['**/*.ts'],
+    extends: [tseslint.configs.strict, tseslint.configs.stylistic],
+  },
   {
     files: ['**/*.yaml', '**/*.yml'],
     plugins: {
@@ -81,12 +75,12 @@ const config = [
     languageOptions: {
       parser: yamlParser,
     },
+    extends: ['yml/standard'],
     rules: {
-      ...yml.configs.standard.rules,
       'yml/quotes': ['error', { prefer: 'single' }],
     },
   },
   prettier,
-];
+]);
 
 export default config;
