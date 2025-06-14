@@ -76,10 +76,12 @@ pages:
   variables:
     GIT_STRATEGY: none
     PAGES_PREFIX: ''
-  script: echo "Pages accessible through ${CI_PAGES_URL}"
+  script:
+    - echo "${CI_PAGES_DOMAIN}"
+    - echo "${CI_PAGES_HOSTNAME}"
+    - echo "${CI_PAGES_URL}"
   environment:
     name: 'Pages ${PAGES_PREFIX}'
-    url: $CI_PAGES_URL
   rules:
     - if: $CI_COMMIT_BRANCH == 'staging'
       variables:
