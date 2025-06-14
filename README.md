@@ -8,22 +8,25 @@ original asknot by [Josh Matthews], Henri Koivuneva, and
 [others][asknot-contribs]. The concept is a basic decision tree.
 
 `neoasknot` is built with [SvelteKit] and [Tailwind CSS] using the [daisyUI]
-component library: \
-<https://whatcanidofor.archlinux.org>
+component library.
 
-## Usage
+You can find the Arch Linux deployment at <https://whatcanidofor.archlinux.org>.
 
-Clean install the project's development dependencies:
+## Hacking
+
+Install the project's development dependencies:
 
 ```sh
-npm ci
+npm i
 ```
 
-Start the dev server:
+Start Vite dev server:
 
 ```sh
 npm run dev
 ```
+
+## Deployment
 
 Build for production and preview the static site:
 
@@ -32,22 +35,18 @@ npm run build
 npm run preview
 ```
 
-## Deployment
+The Arch Linux instance uses [GitLab Pages]:
 
-The Arch Linux instance runs on [GitLab Pages].
-
-Push to the `main` branch to have CI build and publish the site.
-
-The `staging` branch gets deployed to the [/staging subdirectory][staging].
+- Push to the `main` branch to have CI build and publish the site.
+- The `staging` branch gets deployed to the [/staging subdirectory][staging].
 
 ## Contributing
 
-Development of neoasknot takes place on Arch Linux’s GitLab: \
-<https://gitlab.archlinux.org/archlinux/neoasknot>
+Development takes place at <https://gitlab.archlinux.org/archlinux/neoasknot>.
 
 Please read our distribution-wide [Code of Conduct] before contributing.
 
-All code contributions fall under the terms of the [GPL-3.0-or-later][license].
+All code contributions fall under the terms of the GPL-3.0-or-later license.
 
 [@ralphbean]: http://threebean.org
 [asknot-contribs]: https://github.com/jdm/asknot/contributors
@@ -55,9 +54,8 @@ All code contributions fall under the terms of the [GPL-3.0-or-later][license].
 [asknot-ng-contribs]: https://github.com/fedora-infra/asknot-ng/graphs/contributors
 [code of conduct]: https://terms.archlinux.org/docs/code-of-conduct/
 [daisyui]: https://daisyui.com/
-[gitlab pages]: https://docs.gitlab.com/ee/user/project/pages/
+[gitlab pages]: https://docs.gitlab.com/user/project/pages/
 [josh matthews]: https://www.joshmatthews.net
-[license]: https://gitlab.archlinux.org/main/neoasknot/-/blob/archlinux/LICENSE
-[staging]: https://whatcanidofor.archlinux.org/staging
+[staging]: https://whatcanidofor.archlinux.org/staging/
 [sveltekit]: https://kit.svelte.dev
 [tailwind css]: https://tailwindcss.com
