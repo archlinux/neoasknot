@@ -76,14 +76,14 @@ pages:
   variables:
     GIT_STRATEGY: none
     PAGES_PREFIX: ''
+  pages:
+    path_prefix: $PAGES_PREFIX"
   script:
     - echo "${CI_PAGES_DOMAIN}"
     - echo "${CI_PAGES_HOSTNAME}"
     - echo "${CI_PAGES_URL}"
-  environment:
-    name: 'Pages ${PAGES_PREFIX}'
-    url: https://whatcanidofor.archlinux.org
   rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
     - if: $CI_COMMIT_BRANCH == 'staging'
       variables:
         PAGES_PREFIX: _stg
