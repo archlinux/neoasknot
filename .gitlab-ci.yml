@@ -77,7 +77,7 @@ pages:
     GIT_STRATEGY: none
     PAGES_PREFIX: ''
   pages:
-    path_prefix: $PAGES_PREFIX"
+    path_prefix: $PAGES_PREFIX
   script:
     - echo "${CI_PAGES_DOMAIN}"
     - echo "${CI_PAGES_HOSTNAME}"
@@ -86,4 +86,4 @@ pages:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
     - if: $CI_COMMIT_BRANCH == 'staging'
       variables:
-        PAGES_PREFIX: _stg
+        PAGES_PREFIX: _staging
