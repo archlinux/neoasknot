@@ -14,7 +14,7 @@ You can find the Arch Linux deployment at <https://whatcanidofor.archlinux.org>.
 
 ## Hacking
 
-Install the project's development dependencies:
+Install the development dependencies:
 
 ```sh
 npm i
@@ -28,7 +28,7 @@ npm run dev
 
 ## Deployment
 
-Build for production and preview the static site:
+Create optimized production build of the static site and preview it:
 
 ```sh
 npm run build
