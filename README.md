@@ -38,7 +38,8 @@ npm run preview
 The Arch Linux instance uses [GitLab Pages]:
 
 - Push to the `main` branch to have CI build and publish the site.
-- The `staging` branch gets deployed to the [/staging subdirectory][staging].
+- The `staging` branch gets deployed to the /staging subdirectory. \
+  Note: The next production deployment will remove this subdirectory.
 
 ## Contributing
 
@@ -57,6 +58,5 @@ All code contributions fall under the terms of the GPL-3.0-or-later license.
 [daisyui]: https://daisyui.com/
 [gitlab pages]: https://docs.gitlab.com/user/project/pages/
 [josh matthews]: https://www.joshmatthews.net
-[staging]: https://whatcanidofor.archlinux.org/staging/
 [sveltekit]: https://kit.svelte.dev
 [tailwind css]: https://tailwindcss.com
