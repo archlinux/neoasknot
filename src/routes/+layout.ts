@@ -4,7 +4,7 @@ export const prerender = true;
 export const trailingSlash = 'always';
 
 export const load = async () => {
-  const nodeImport = await import(`$content/${PUBLIC_ORG}/tree/root.yml`);
+  const nodeImport = await import(`$content/${PUBLIC_ORG}/tree/root.yaml`);
 
   return {
     ...nodeImport.default,

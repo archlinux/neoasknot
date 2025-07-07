@@ -3,7 +3,7 @@ import json from '@eslint/json';
 import { defineConfig } from 'eslint/config';
 import prettier from 'eslint-plugin-prettier/recommended';
 import svelte from 'eslint-plugin-svelte';
-import yml from 'eslint-plugin-yml';
+import yaml from 'eslint-plugin-yml';
 import globals from 'globals';
 import svelteParser from 'svelte-eslint-parser';
 import tseslint from 'typescript-eslint';
@@ -70,12 +70,12 @@ const config = defineConfig([
   {
     files: ['**/*.yaml', '**/*.yml'],
     plugins: {
-      yml,
+      yaml,
     },
     languageOptions: {
       parser: yamlParser,
     },
-    extends: ['yml/standard'],
+    extends: ['yaml/standard'],
     rules: {
       'yml/quotes': ['error', { prefer: 'single' }],
     },
