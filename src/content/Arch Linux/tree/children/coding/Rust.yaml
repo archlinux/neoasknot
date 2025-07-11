@@ -34,3 +34,7 @@ children:
   - name: signstar
     description: A secure signing enclave
     href: https://gitlab.archlinux.org/archlinux/signstar
+
+  - name: voa
+    description: Rust libraries, command line tools to interact with the File Hierarchy for the Verification of OS Artifacts (VOA)
+    href: https://gitlab.archlinux.org/archlinux/alpm/voa
