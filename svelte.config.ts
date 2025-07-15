@@ -1,11 +1,12 @@
 import adapter from '@sveltejs/adapter-static';
+import type { Config } from '@sveltejs/kit';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { loadEnv } from 'vite';
 
-const env = loadEnv(process.env.NODE_ENV, process.cwd(), 'PUBLIC_');
+const runtimeEnv = process.env.NODE_ENV as string;
+const env = loadEnv(runtimeEnv, process.cwd(), 'PUBLIC_');
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
   kit: {
     adapter: adapter({
       precompress: true,
@@ -19,6 +20,4 @@ const config = {
     },
   },
   preprocess: vitePreprocess(),
-};
-
-export default config;
+} satisfies Config;
