@@ -19,4 +19,4 @@ children:
 
   - name: Join the Package Maintainers
     description: Maintain packages in the official repo and moderate the AUR
-    href: https://wiki.archlinux.org/index.php/Package_Maintainers
+    href: https://wiki.archlinux.org/title/Package_Maintainers

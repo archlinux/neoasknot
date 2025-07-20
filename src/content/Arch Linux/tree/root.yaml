@@ -12,7 +12,7 @@ navbarLinks:
 
   - name: Packages
     description: Arch Package Database
-    href: https://archlinux.org/packages
+    href: https://archlinux.org/packages/
 
   - name: Forums
     description: Community forums
@@ -20,7 +20,7 @@ navbarLinks:
 
   - name: Wiki
     description: Community documentation
-    href: https://wiki.archlinux.org
+    href: https://wiki.archlinux.org/title/Main_page
 
   - name: GitLab
     description: GitLab
@@ -53,7 +53,7 @@ children:
 
   - name: Security
     description: Join the Security Team and track upstream vulnerabilities
-    href: https://wiki.archlinux.org/index.php/Arch_Security_Team
+    href: https://wiki.archlinux.org/title/Arch_Security_Team
 
   - name: Translation
     description: Do you like spoken languages?
