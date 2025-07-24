@@ -29,6 +29,18 @@
             >{name}</a
           >
         {/each}
+        {#if data.navbarAdditionalLinks}
+          <details class="dropdown dropdown-end join-item">
+            <summary class="btn join-item btn-sm lg:btn-md">☰</summary>
+            <ul
+              class="menu dropdown-content rounded-box bg-base-100 z-1 w-52 shadow-sm"
+            >
+              {#each data.navbarAdditionalLinks as { name, description, href }}
+                <li><a {href} title={description}>{name}</a></li>
+              {/each}
+            </ul>
+          </details>
+        {/if}
       </div>
       <details
         class="dropdown dropdown-left [&_summary]:open:bg-base-300 md:hidden"
@@ -40,6 +52,12 @@
           {#each data.navbarLinks as { name, description, href }}
             <li><a {href} title={description}>{name}</a></li>
           {/each}
+          {#if data.navbarAdditionalLinks}
+            <div class="divider"></div>
+            {#each data.navbarAdditionalLinks as { name, description, href }}
+              <li><a {href} title={description}>{name}</a></li>
+            {/each}
+          {/if}
         </ul>
       </details>
     </div>

@@ -37,6 +37,23 @@ navbarLinks:
     description: Get Arch Linux
     href: https://archlinux.org/download/
 
+navbarAdditionalLinks:
+  - name: Dev Blog
+    description: Development blog for all Arch Linux staff
+    href: https://devblog.archlinux.page
+
+  - name: Manual pages
+    description: Manual pages from Arch Linux packages
+    href: https://man.archlinux.org
+
+  - name: Monthly reports
+    description: Collection of monthly Arch Linux reports on key topics and progress
+    href: https://monthly-reports.archlinux.page
+
+  - name: pkgstats
+    description: Arch Linux package statistics
+    href: https://pkgstats.archlinux.de
+
 children:
   - name: Coding
     description: Software is our daily prayer..
