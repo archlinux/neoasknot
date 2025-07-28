@@ -1,10 +1,10 @@
 children:
   - name: alpm
-    description: Project that works on specifications, Rust libraries and tools for Arch Linux Package Management
+    description: Specifications, Rust libraries and tools for Arch Linux Package Management
     href: https://gitlab.archlinux.org/archlinux/alpm/alpm
 
   - name: alpm.rs
-    description: Project that works on Rust bindings for libalpm
+    description: Rust bindings for libalpm
     href: https://github.com/archlinux/alpm.rs
 
   - name: arch-rebuild-order
@@ -20,8 +20,12 @@ children:
     href: https://gitlab.archlinux.org/archlinux/bugbuddy
 
   - name: buildbtw
-    description: A service for assisting Arch Linux staff with building new versions of packages
+    description: Service for assisting Arch Linux staff with building new versions of packages
     href: https://gitlab.archlinux.org/archlinux/buildbtw
+
+  - name: bumpbuddy
+    description: Daemon watching for new upstream releases for our packages
+    href: https://gitlab.archlinux.org/archlinux/bumpbuddy
 
   - name: gitlab-exporter
     description: Extracts metrics from GitLab using GraphQL API and outputs them in a prometheus compatible format
@@ -32,9 +36,17 @@ children:
     href: https://gitlab.archlinux.org/archlinux/gluebuddy
 
   - name: signstar
-    description: A secure signing enclave
+    description: Secure signing enclave
     href: https://gitlab.archlinux.org/archlinux/signstar
+
+  - name: vmexec
+    description: Run a single command in a speedy virtual machine with zero-setup
+    href: https://gitlab.archlinux.org/archlinux/vmexec
 
   - name: voa
     description: Rust libraries, command line tools to interact with the File Hierarchy for the Verification of OS Artifacts (VOA)
     href: https://gitlab.archlinux.org/archlinux/alpm/voa
+
+  - name: wkd-exporter
+    description: Exports an OpenPGP keyring into an advanced WKD directory structure
+    href: https://gitlab.archlinux.org/archlinux/wkd-exporter

@@ -1,6 +1,6 @@
 children:
   - name: arch-boxes
-    description: The project that builds our Vagrant and cloud images
+    description: Builds QCOW2 images of Arch Linux
     href: https://gitlab.archlinux.org/archlinux/arch-boxes
 
   - name: arch-install-scripts

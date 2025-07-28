@@ -1,19 +1,15 @@
 children:
   - name: arch-boxes
-    description: The project that builds our Vagrant and cloud images
+    description: Builds QCOW2 images of Arch Linux
     href: https://gitlab.archlinux.org/archlinux/arch-boxes
 
   - name: arch-historical-archive
-    description: The Arch Linux Historical Archive of Packages
+    description: Arch Linux Historical Archive of Packages
     href: https://gitlab.archlinux.org/archlinux/arch-historical-archive
 
   - name: arch-release-promotion
     description: Promotion and synchronization of existing releases of a project in Arch Linux's Gitlab instance
     href: https://gitlab.archlinux.org/archlinux/arch-release-promotion
-
-  - name: arch-repo-management
-    description: Our next-generation repository management tools for migrating to git
-    href: https://gitlab.archlinux.org/archlinux/arch-repo-management
 
   - name: arch-security-tracker
     description: CVE tracker for our packages written with flask
