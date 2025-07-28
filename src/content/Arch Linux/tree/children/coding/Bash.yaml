@@ -27,6 +27,10 @@ children:
     description: Tools to reproduce Arch Linux packages
     href: https://github.com/archlinux/archlinux-repro
 
+  - name: archlinux-wsl
+    description: Builds our official Arch Linux WSL image
+    href: https://gitlab.archlinux.org/archlinux/archlinux-wsl
+
   - name: contrib
     description: Toolbox with various useful scripts for package management
     href: https://github.com/archlinux/contrib
