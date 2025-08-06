@@ -1,6 +1,5 @@
 words = [
     "asknot",
-    "contribs",
     "gitlab",
     "koivuneva",
     "modyfi",
@@ -10,5 +9,4 @@ words = [
     "sveltejs",
     "sveltekit",
     "vite",
-    "yml",
 ]
