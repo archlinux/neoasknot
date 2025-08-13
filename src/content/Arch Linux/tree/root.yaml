@@ -1,7 +1,6 @@
 donationLink: https://archlinux.org/donate/
 
 logo:
-  image: archlogo.svg
   description: Return to the main page
   href: https://archlinux.org
 

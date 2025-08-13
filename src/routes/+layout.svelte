@@ -1,7 +1,8 @@
 <script lang="ts">
   import '../app.css';
   import '$orgLib/org.css';
-  import { base } from '$app/paths';
+  import favicon from '$orgAssets/favicon.png';
+  import logo from '$orgAssets/logo.svg';
   import { page } from '$app/state';
   import { PUBLIC_ORG } from '$env/static/public';
 
@@ -10,6 +11,7 @@
 
 <svelte:head>
   <meta name="description" content={page.data.metaDescription} />
+  <link rel="icon" href={favicon} />
   <title>{page.data.title}</title>
 </svelte:head>
 
@@ -17,11 +19,7 @@
   <nav aria-label="Navigation bar" class="navbar bg-base-200">
     <div class="navbar-start">
       <a href={data.logo.href} title={data.logo.description}>
-        <img
-          src="{base}/{data.logo.image}"
-          alt="{PUBLIC_ORG} logo"
-          class="w-36 lg:w-48"
-        />
+        <img src={logo} alt="{PUBLIC_ORG} logo" class="w-36 lg:w-48" />
       </a>
     </div>
     <div class="navbar-end">

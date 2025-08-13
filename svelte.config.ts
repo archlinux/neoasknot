@@ -13,10 +13,8 @@ export default {
     }),
     alias: {
       $content: 'src/content',
+      $orgAssets: `src/content/${env.PUBLIC_ORG}/static`,
       $orgLib: `src/content/${env.PUBLIC_ORG}/lib`,
-    },
-    files: {
-      assets: `src/content/${env.PUBLIC_ORG}/static`,
     },
   },
   preprocess: vitePreprocess(),
