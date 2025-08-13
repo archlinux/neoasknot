@@ -6,4 +6,5 @@ import dynamicImport from 'vite-plugin-dynamic-import';
 
 export default defineConfig({
   plugins: [dynamicImport(), sveltekit(), tailwindcss(), ViteYaml()],
+  server: { fs: { allow: ['content'] } },
 });

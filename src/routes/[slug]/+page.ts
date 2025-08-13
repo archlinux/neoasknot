@@ -1,9 +1,9 @@
-import { PUBLIC_ORG } from '$env/static/public';
+import { PUBLIC_ORG, PUBLIC_ORG_DIR } from '$env/static/public';
 
 export const load = async ({ params, parent }) => {
   const slug = params.slug;
   const treeImport = await import(
-    `$content/${PUBLIC_ORG}/tree/children/${slug}.yaml`
+    `$contentRoot/${PUBLIC_ORG_DIR}/tree/children/${slug}.yaml`
   );
   const { title } = await parent();
 

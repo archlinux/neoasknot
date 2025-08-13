@@ -12,9 +12,8 @@ export default {
       precompress: true,
     }),
     alias: {
-      $content: 'src/content',
-      $orgAssets: `src/content/${env.PUBLIC_ORG}/static`,
-      $orgLib: `src/content/${env.PUBLIC_ORG}/lib`,
+      $content: `content/${env.PUBLIC_ORG_DIR}`,
+      $contentRoot: 'content',
     },
   },
   preprocess: vitePreprocess(),

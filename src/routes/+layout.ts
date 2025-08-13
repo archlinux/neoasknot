@@ -1,10 +1,12 @@
-import { PUBLIC_ORG } from '$env/static/public';
+import { PUBLIC_ORG, PUBLIC_ORG_DIR } from '$env/static/public';
 
 export const prerender = true;
 export const trailingSlash = 'always';
 
 export const load = async () => {
-  const treeImport = await import(`$content/${PUBLIC_ORG}/tree/root.yaml`);
+  const treeImport = await import(
+    `$contentRoot/${PUBLIC_ORG_DIR}/tree/root.yaml`
+  );
 
   return {
     ...treeImport.default,
