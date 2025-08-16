@@ -1,8 +1,8 @@
 <script lang="ts">
   import '../app.css';
+  import favicon from '$content/lib/favicon.png';
+  import logo from '$content/lib/logo.svg';
   import '$content/lib/org.css';
-  import favicon from '$content/static/favicon.png';
-  import logo from '$content/static/logo.svg';
   import { page } from '$app/state';
   import { PUBLIC_ORG } from '$env/static/public';
 
