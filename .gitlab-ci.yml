@@ -29,7 +29,7 @@ linkcheck:
     key: $CI_JOB_NAME
     paths:
       - .lycheecache
-  script: lychee -vv --cache --extensions md,yaml -- README.md 'content/*/tree/**/*.yaml'
+  script: lychee -vv --cache -- README.md 'content/*/tree/**/*.yaml'
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE == 'push'
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event' || $CI_COMMIT_BRANCH == 'staging'
