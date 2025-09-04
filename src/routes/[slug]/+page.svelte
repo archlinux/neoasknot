@@ -8,7 +8,7 @@
 <div class="breadcrumbs">
   <ol>
     <li><a href={resolve('/')} class="no-underline!">🏠</a></li>
-    <li class="capitalize">{data.slug}</li>
+    <li aria-current="page" class="capitalize">{data.slug}</li>
   </ol>
 </div>
 

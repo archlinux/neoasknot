@@ -9,7 +9,7 @@
   <ol>
     <li><a href={resolve('/')} class="no-underline!">🏠</a></li>
     <li><a href={resolve('/coding')} class="no-underline!">🧑‍💻 Coding</a></li>
-    <li>{data.slug}</li>
+    <li aria-current="page">{data.slug}</li>
   </ol>
 </div>
 
