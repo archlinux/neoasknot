@@ -56,7 +56,6 @@ const config = defineConfig([
       tseslint.configs.stylistic,
     ],
     rules: {
-      'prefer-const': 'off',
       'svelte/require-each-key': 'off',
       'svelte/no-navigation-without-resolve': 'off',
     },
