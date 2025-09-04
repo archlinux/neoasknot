@@ -58,6 +58,7 @@ const config = defineConfig([
     rules: {
       'prefer-const': 'off',
       'svelte/require-each-key': 'off',
+      'svelte/no-navigation-without-resolve': 'off',
     },
   },
   {

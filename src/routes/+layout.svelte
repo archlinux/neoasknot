@@ -3,7 +3,6 @@
   import favicon from '$content/lib/favicon.png';
   import logo from '$content/lib/logo.svg';
   import '$content/lib/org.css';
-  import { resolve } from '$app/paths';
   import { page } from '$app/state';
   import { PUBLIC_ORG } from '$env/static/public';
 
@@ -19,7 +18,7 @@
 <header>
   <nav aria-label="Navigation bar" class="navbar bg-base-200">
     <div class="navbar-start">
-      <a href={resolve(data.logo.href)} title={data.logo.description}>
+      <a href={data.logo.href} title={data.logo.description}>
         <img src={logo} alt="{PUBLIC_ORG} logo" class="w-36 lg:w-48" />
       </a>
     </div>
@@ -81,7 +80,7 @@
     <span class="mx-1">❤️</span>
     {#if data.donationLink}
       Donate to {PUBLIC_ORG}
-      <a href={resolve(data.donationLink)} class="link-hover link">here</a>
+      <a href={data.donationLink} class="link-hover link">here</a>
     {/if}
   </p>
 </footer>
