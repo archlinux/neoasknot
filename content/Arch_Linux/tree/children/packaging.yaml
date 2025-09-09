@@ -13,6 +13,10 @@ children:
     description: Help triage packaging issues
     href: https://wiki.archlinux.org/title/Bug_reporting_guidelines
 
+  - name: Repository mirroring
+    description: Join the worldwide network of package mirrors
+    href: https://wiki.archlinux.org/title/DeveloperWiki:NewMirrors
+
   - name: Reproducible builds
     description: Make our packages more secure with reproducible builds
     href: https://reproducible.archlinux.org/
