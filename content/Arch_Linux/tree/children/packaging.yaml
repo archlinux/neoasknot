@@ -1,22 +1,22 @@
 heading: How do you want to make our packages better?
 
 children:
-  - name: Maintain AUR packages
+  - name: AUR package maintenance
     description: Create, adopt and maintain unofficial packages in the Arch User Repository
     href: https://aur.archlinux.org
 
-  - name: Test repo packages
-    description: Join the Arch Testing Team and test new packages
-    href: https://wiki.archlinux.org/title/Arch_Testing_Team
-
-  - name: Bug wrangling
-    description: Help triage new bugs and assign them to maintainers
-    href: https://gitlab.archlinux.org/groups/archlinux/packaging/packages/-/issues/?state=opened&label_name%5B%5D=status%3A%3Aunconfirmed
-
-  - name: Reproducible builds
-    description: Make Arch Linux more secure with reproducible package builds
-    href: https://reproducible.archlinux.org/
-
-  - name: Join the Package Maintainers
+  - name: Become a Package Maintainer
     description: Maintain packages in the official repo and moderate the AUR
     href: https://wiki.archlinux.org/title/Package_Maintainers
+
+  - name: Bug wrangling
+    description: Help triage packaging issues
+    href: https://wiki.archlinux.org/title/Bug_reporting_guidelines
+
+  - name: Reproducible builds
+    description: Make our packages more secure with reproducible builds
+    href: https://reproducible.archlinux.org/
+
+  - name: Sign off test packages
+    description: Join the Arch Testing Team and test new packages
+    href: https://wiki.archlinux.org/title/Arch_Testing_Team
