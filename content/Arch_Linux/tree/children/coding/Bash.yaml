@@ -69,4 +69,4 @@ children:
 
   - name: releng
     description: Arch Linux release engineering
-    href: https://github.com/archlinux/contrib
+    href: https://gitlab.archlinux.org/archlinux/releng
