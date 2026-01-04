@@ -81,7 +81,7 @@ children:
 
   - name: releng
     description: Arch Linux release engineering
-    href: https://github.com/archlinux/contrib
+    href: https://gitlab.archlinux.org/archlinux/releng
 
   - name: repod
     description: Tooling to maintain binary package repositories for Linux distributions using the pacman package manager
